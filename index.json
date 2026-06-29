@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "updatedUtc": "2026-06-29T22:25:59.8617223Z",
+  "mods": [
+    {
+      "id": "1mr1c1.test",
+      "name": "Test",
+      "author": "1MR1C1",
+      "authorId": "1MR1C1",
+      "version": "1.2.0.0",
+      "summary": "metestingstuff",
+      "description": "testtesttesttesttesttesttesttesttest",
+      "category": "Tools",
+      "tags": [
+        "test",
+        "testy",
+        "tested"
+      ],
+      "screenshots": [],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.test-v1.2.0.0/Xray.dll",
+      "size": 19456,
+      "sha256": "090F70B21F3B6AB9A77F6AC86A3141A7EB7AFDD0ED8A050A0F6CBE20842802A0",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "1.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "verified": false,
+      "flagged": false,
+      "createdUtc": "2026-06-29T22:25:59.4769217Z",
+      "updatedUtc": "2026-06-29T22:25:59.4769217Z",
+      "starText": "unrated",
+      "downloadsText": "0"
+    }
+  ]
+}
