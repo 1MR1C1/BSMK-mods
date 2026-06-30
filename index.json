@@ -1,5 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-06-30T18:23:07.0000000Z",
-  "mods": []
+  "updatedUtc": "2026-06-30T18:48:43.8636808Z",
+  "mods": [
+    {
+      "id": "sir-miraculous.minetest",
+      "name": "MineTest",
+      "author": "Sir-Miraculous",
+      "authorId": "Sir-Miraculous",
+      "version": "1.2.0.0",
+      "summary": "",
+      "description": "Mine Big",
+      "category": "Tools",
+      "tags": [
+        "Mine",
+        "Vein"
+      ],
+      "screenshots": [],
+      "downloadUrl": "https://github.com/Sir-Miraculous/BSMK-mods-uploads/releases/download/sir-miraculous.minetest-v1.2.0.0/VeinMiner.dll",
+      "size": 17920,
+      "sha256": "0A5D3FC2A47EFF785BD50BF421C4BA44DEAACEE19B968C0055BA366B5B6147EA",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "1.x"
+      ],
+      "minGameVersion": "1",
+      "maxGameVersion": "1",
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "verified": false,
+      "flagged": false,
+      "deprecated": false,
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-06-30T18:42:22.9418093Z",
+      "updatedUtc": "2026-06-30T18:42:22.9418093Z"
+    }
+  ]
 }
