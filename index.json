@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-06-29T22:25:59.8617223Z",
+  "updatedUtc": "2026-06-30T17:14:26.6718437Z",
   "mods": [
     {
       "id": "1mr1c1.test",
@@ -31,12 +31,13 @@
         "linux"
       ],
       "dependencies": [],
-      "verified": false,
+      "verified": true,
       "flagged": false,
+      "deprecated": false,
+      "conflicts": [],
+      "capabilities": [],
       "createdUtc": "2026-06-29T22:25:59.4769217Z",
-      "updatedUtc": "2026-06-29T22:25:59.4769217Z",
-      "starText": "unrated",
-      "downloadsText": "0"
+      "updatedUtc": "2026-06-29T22:25:59.4769217Z"
     }
   ]
 }
