@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-07-01T17:43:45.1517218Z",
+  "updatedUtc": "2026-07-01T17:53:04.4906639Z",
   "mods": [
     {
       "id": "sir-miraculous.minetest",
@@ -88,7 +88,7 @@
       "donateUrl": "https://ko-fi.com/test",
       "verified": false,
       "flagged": false,
-      "deprecated": true,
+      "deprecated": false,
       "changelog": "1.0.0 \u2014 first release",
       "minCoreVersion": "1.5.0",
       "conflicts": [],
@@ -97,7 +97,7 @@
         "patches nothing"
       ],
       "createdUtc": "2026-07-01T17:43:44.7986915Z",
-      "updatedUtc": "2026-07-01T17:43:44.7986915Z"
+      "updatedUtc": "2026-07-01T17:53:03.8874131Z"
     }
   ]
 }
