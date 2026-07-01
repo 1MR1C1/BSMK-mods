@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-07-01T18:22:13.6597972Z",
+  "updatedUtc": "2026-07-01T19:36:51.7246151Z",
   "mods": [
     {
       "id": "sir-miraculous.minetest",
@@ -40,6 +40,60 @@
       "capabilities": [],
       "createdUtc": "2026-06-30T18:42:22.9418093Z",
       "updatedUtc": "2026-06-30T18:42:22.9418093Z"
+    },
+    {
+      "id": "kettle99.shadow-rebalance",
+      "name": "Shadow Rebalance",
+      "author": "kettle",
+      "authorId": "kettle99",
+      "version": "4.8.0",
+      "summary": "Overhauls farming with sensible defaults.",
+      "description": "**Shadow Rebalance** is a demo entry in the Overhaul category. It focuses on farming and pairs well with the rest of your setup. This is placeholder text for testing the store UI \u2014 the download points at a real sample mod so Install works.\n\n- Handles farming and creative\n- Configurable\n- 1.13 / 1.14 / 1.15 / 1.16 tested",
+      "category": "Overhaul",
+      "tags": [
+        "farming",
+        "quality-of-life",
+        "automation",
+        "hardcore",
+        "creative"
+      ],
+      "iconUrl": "https://placehold.co/256x256/2c3e50/ffffff/png?text=Shadow",
+      "screenshots": [
+        "https://picsum.photos/seed/kettle99-shadow-rebalance1/640/360",
+        "https://picsum.photos/seed/kettle99-shadow-rebalance2/640/360",
+        "https://picsum.photos/seed/kettle99-shadow-rebalance3/640/360",
+        "https://picsum.photos/seed/kettle99-shadow-rebalance4/640/360",
+        "https://picsum.photos/seed/kettle99-shadow-rebalance5/640/360"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BlockStoryMods/releases/download/mods/Minimap.dll",
+      "size": 5890048,
+      "downloads": 270,
+      "rating": 4.6,
+      "ratingCount": 10,
+      "gameVersions": [
+        "1.13",
+        "1.14",
+        "1.15",
+        "1.16"
+      ],
+      "minGameVersion": "1.13",
+      "maxGameVersion": "1.16",
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "All rights reserved",
+      "sourceUrl": "https://github.com/kettle99/shadow-rebalance",
+      "donateUrl": "https://ko-fi.com/kettle99",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "changelog": "v-bump: tuned farming, fixed a crash on load.",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-06-22T12:42:12Z",
+      "updatedUtc": "2026-06-24T12:42:12Z"
     }
   ]
 }
