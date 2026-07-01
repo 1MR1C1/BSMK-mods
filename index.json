@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-07-01T19:36:51.7246151Z",
+  "updatedUtc": "2026-07-01T19:51:36.0270601Z",
   "mods": [
     {
       "id": "sir-miraculous.minetest",
@@ -94,6 +94,57 @@
       "capabilities": [],
       "createdUtc": "2026-06-22T12:42:12Z",
       "updatedUtc": "2026-06-24T12:42:12Z"
+    },
+    {
+      "id": "1mr1c1.xxxxxxxxx",
+      "name": "xxxxxxxxx",
+      "author": "MR C",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "xxxxxxxxxx",
+      "description": "xxxxxx\n\nCredits: none",
+      "category": "Tools",
+      "tags": [],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/shot3.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/shot4.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/shot5.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/shot6.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/shot7.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/shot8.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/shot9.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/shot10.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xxxxxxxxx-v1.0.0.0/MYSuperPanel.dll",
+      "size": 6656,
+      "sha256": "97B2CD53C45CD77653154D2F57241000D4376DFBF1AF5F05241298808719FE3E",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "1.x"
+      ],
+      "minGameVersion": "1",
+      "maxGameVersion": "1",
+      "videoUrl": "https://youtu.be/dQw4w9WgXcQ",
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/test",
+      "donateUrl": "https://ko-fi.com/test",
+      "verified": false,
+      "flagged": false,
+      "deprecated": false,
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-07-01T19:51:35.5488487Z",
+      "updatedUtc": "2026-07-01T19:51:35.5488487Z"
     }
   ]
 }
