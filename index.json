@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-06-30T19:14:29.0036986Z",
+  "updatedUtc": "2026-07-01T15:28:41.5875169Z",
   "mods": [
     {
       "id": "sir-miraculous.minetest",
@@ -40,51 +40,6 @@
       "capabilities": [],
       "createdUtc": "2026-06-30T18:42:22.9418093Z",
       "updatedUtc": "2026-06-30T18:42:22.9418093Z"
-    },
-    {
-      "id": "1mr1c1.00000",
-      "name": "00000",
-      "author": "1MR1C1",
-      "authorId": "1MR1C1",
-      "version": "1.0.0.0",
-      "summary": "1111111",
-      "description": "222222222",
-      "category": "Tools",
-      "tags": [],
-      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.00000-v1.0.0.0/icon1.png",
-      "screenshots": [
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.00000-v1.0.0.0/shot1.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.00000-v1.0.0.0/shot2.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.00000-v1.0.0.0/shot3.png"
-      ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.00000-v1.0.0.0/MyMod.dll",
-      "size": 7168,
-      "sha256": "D0D5BB66B3FB061EE4FBD312BFF67D3B406613994D73870C176FB9880DCAA9A6",
-      "downloads": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "gameVersions": [
-        "1.x"
-      ],
-      "minGameVersion": "1",
-      "maxGameVersion": "1",
-      "platforms": [
-        "win",
-        "linux"
-      ],
-      "dependencies": [],
-      "license": "MIT",
-      "verified": false,
-      "flagged": false,
-      "deprecated": false,
-      "changelog": "9999999",
-      "minCoreVersion": "1",
-      "conflicts": [],
-      "capabilities": [
-        "666666"
-      ],
-      "createdUtc": "2026-06-30T19:14:28.6182605Z",
-      "updatedUtc": "2026-06-30T19:14:28.6182605Z"
     }
   ]
 }
