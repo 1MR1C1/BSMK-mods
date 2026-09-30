@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-07-01T19:51:36.0270601Z",
+  "updatedUtc": "2026-09-30T16:18:04.6099814Z",
   "mods": [
     {
       "id": "sir-miraculous.minetest",
@@ -36,6 +36,7 @@
       "verified": false,
       "flagged": false,
       "deprecated": false,
+      "featured": false,
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-06-30T18:42:22.9418093Z",
@@ -89,6 +90,7 @@
       "verified": true,
       "flagged": false,
       "deprecated": false,
+      "featured": false,
       "changelog": "v-bump: tuned farming, fixed a crash on load.",
       "conflicts": [],
       "capabilities": [],
@@ -141,10 +143,39 @@
       "verified": false,
       "flagged": false,
       "deprecated": false,
+      "featured": false,
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-07-01T19:51:35.5488487Z",
       "updatedUtc": "2026-07-01T19:51:35.5488487Z"
+    },
+    {
+      "id": "demo.mod0",
+      "name": "Vein Miner 1",
+      "author": "1MR1C1",
+      "authorId": "1MR1C1",
+      "version": "1.0.0",
+      "summary": "Mines the whole ore vein in one swing.",
+      "description": "",
+      "category": "",
+      "tags": [],
+      "screenshots": [],
+      "downloadUrl": "",
+      "size": 81920,
+      "downloads": 120,
+      "rating": 3.5,
+      "ratingCount": 4,
+      "gameVersions": [],
+      "platforms": [],
+      "dependencies": [],
+      "verified": false,
+      "flagged": false,
+      "deprecated": false,
+      "featured": true,
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "",
+      "updatedUtc": ""
     }
   ]
 }
