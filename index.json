@@ -1,5 +1,51 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-09-30T17:08:18.0000000Z",
-  "mods": []
+  "updatedUtc": "2026-10-06T14:18:07.8864534Z",
+  "mods": [
+    {
+      "id": "1mr1c1.xray",
+      "name": "Xray",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "See through blocks to find ores",
+      "description": "X-Ray Vision for Block Story. Toggle it on to make the terrain turn semi-transparent, so you can spot ore veins, caves, dungeons and buried structures straight through solid blocks \u2014 perfect for mining runs and exploring. Toggle on/off with a keybind (rebindable in-game)",
+      "category": "Tools \u0026 Utility",
+      "tags": [
+        "Tools \u0026 Utility",
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/shot3.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/Xray.dll",
+      "size": 19456,
+      "sha256": "E5A8ECDE1F1E0309787BFEF0911298362BCD0E1195F8B3F94297E605F317E697",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": false,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.0.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-06T14:18:07.3987569Z",
+      "updatedUtc": "2026-10-06T14:18:07.3987569Z"
+    }
+  ]
 }
