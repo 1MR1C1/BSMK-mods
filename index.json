@@ -16,11 +16,7 @@
         "Quality of Life"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/icon1.png",
-      "screenshots": [
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/shot1.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/shot2.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/shot3.png"
-      ],
+      "screenshots": [],
       "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/Xray.dll",
       "size": 19456,
       "sha256": "E5A8ECDE1F1E0309787BFEF0911298362BCD0E1195F8B3F94297E605F317E697",
