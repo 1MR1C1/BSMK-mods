@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-10-06T14:18:07.8864534Z",
+  "updatedUtc": "2026-10-07T12:02:23.255141Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -10,9 +10,9 @@
       "version": "1.0.0.0",
       "summary": "See through blocks to find ores",
       "description": "X-Ray Vision for Block Story. Toggle it on to make the terrain turn semi-transparent, so you can spot ore veins, caves, dungeons and buried structures straight through solid blocks \u2014 perfect for mining runs and exploring. Toggle on/off with a keybind (rebindable in-game)",
-      "category": "Tools \u0026 Utility",
+      "category": "Tools & Utility",
       "tags": [
-        "Tools \u0026 Utility",
+        "Tools & Utility",
         "Quality of Life"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/icon1.png",
@@ -46,6 +46,46 @@
       "capabilities": [],
       "createdUtc": "2026-10-06T14:18:07.3987569Z",
       "updatedUtc": "2026-10-06T14:18:07.3987569Z"
+    },
+    {
+      "id": "1mr1c1.blockstorycore",
+      "name": "Block Story Core",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "The framework every Mod Kit mod runs on \u2014 install it once, it updates itself.",
+      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once \u2014 after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\nOpen source. No ads, nothing tracked, nothing hidden.\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you \u2014 your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox \u2014 blocks, items, creatures, pets, world/player/event hooks, keybinds \u2014 lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
+      "category": "Library/API",
+      "tags": [
+        "Library/API"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.0.0.0/icon1.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.0.0.0/BlockStoryCore.dll",
+      "size": 420352,
+      "sha256": "90C76F76591919777DF455B49217BFDAA5F39E640BCAC672ACB6760D86CA60F7",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-07T12:02:23.255141Z",
+      "updatedUtc": "2026-10-07T12:02:23.255141Z"
     }
   ]
 }
