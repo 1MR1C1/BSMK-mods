@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-10-07T12:02:23.255141Z",
+  "updatedUtc": "2026-10-07T12:23:01.491020Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -37,7 +37,7 @@
       "dependencies": [],
       "license": "MIT",
       "supportUrl": "https://discord.gg/haTEJB8NXE",
-      "verified": false,
+      "verified": true,
       "flagged": false,
       "deprecated": false,
       "featured": false,
@@ -86,6 +86,211 @@
       "capabilities": [],
       "createdUtc": "2026-10-07T12:02:23.255141Z",
       "updatedUtc": "2026-10-07T12:02:23.255141Z"
+    },
+    {
+      "id": "1mr1c1.charactereditor",
+      "name": "Character Editor",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Live-edit your stats, vitals, level, XP and skill points.",
+      "description": "A character editor for Block Story. Open it with the Character key to adjust your stats, vitals, level, XP and skill points on the fly \u2014 handy for testing a build, recovering a rough save, or just playing your own way. Single-player.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "category": "Tools & Utility",
+      "tags": [
+        "Tools & Utility",
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.0.0/icon1.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.0.0/CharacterEditor.dll",
+      "size": 44032,
+      "sha256": "5298236A09575B8508171A03EB1D3B6D6CC09418625895F2A6190DBE30691DA9",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.0.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-07T12:23:01.491020Z",
+      "updatedUtc": "2026-10-07T12:23:01.491020Z"
+    },
+    {
+      "id": "1mr1c1.minimap",
+      "name": "Minimap",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Round minimap + fullscreen world map + waypoints.",
+      "description": "A minimap for Block Story: a round, depth-aware minimap in the corner, a fullscreen world map, and custom waypoints (with automatic death markers so you can find your stuff). Toggle it with the Minimap key.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "category": "UI & HUD",
+      "tags": [
+        "UI & HUD",
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.0.0/icon1.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.0.0/Minimap.dll",
+      "size": 40960,
+      "sha256": "DE51524F50386D78E571CEA03DA0729DE06D7146E68DF02E2154FB0163DA330D",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.0.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-07T12:23:01.491020Z",
+      "updatedUtc": "2026-10-07T12:23:01.491020Z"
+    },
+    {
+      "id": "1mr1c1.npcmenu",
+      "name": "NPC Menu",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Talk to any NPC from anywhere to take or hand in quests.",
+      "description": "NPC Menu for Block Story. Open it with the NPC key to talk to any NPC from anywhere \u2014 pick up new quests or hand in finished ones without trekking all the way back. Great for questing and RPG play.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life",
+        "Adventure & RPG"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/icon1.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/NpcMenu.dll",
+      "size": 9728,
+      "sha256": "492FCE7A948F86172BE2A150358B3FB7255601A13417A6531A033E4B2B6E1FD8",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.0.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-07T12:23:01.491020Z",
+      "updatedUtc": "2026-10-07T12:23:01.491020Z"
+    },
+    {
+      "id": "1mr1c1.veinminer",
+      "name": "Vein Miner",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Break a whole ore vein in one hit.",
+      "description": "Vein Miner for Block Story. Mine a whole connected vein \u2014 or a set shape \u2014 in a single hit, with the drops going straight to your inventory. Speeds up mining runs without the grind.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "category": "Tools & Utility",
+      "tags": [
+        "Tools & Utility",
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/icon1.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/VeinMiner.dll",
+      "size": 17920,
+      "sha256": "4665FF3C0D96FF75F56797D9F98F1FD37E6B133F8D7F19962DF2DF63055434A2",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.0.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-07T12:23:01.491020Z",
+      "updatedUtc": "2026-10-07T12:23:01.491020Z"
+    },
+    {
+      "id": "1mr1c1.xenor",
+      "name": "Xenor",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "A xenomorph creature you can catch, raise and ride.",
+      "description": "Xenor adds a detailed xenomorph creature that spawns in the space biomes. Catch one, craft its spawner and its soul, and raise your own as a rideable pet with its own inventory \u2014 a full creature, not a reskin.\n\nShows up in the in-game Mods menu.",
+      "category": "Mobs & Creatures",
+      "tags": [
+        "Mobs & Creatures",
+        "Pets & Mounts"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/icon1.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/Xenor.dll",
+      "size": 48128,
+      "sha256": "C54DEA5FDD70CEA7BBF96240D22DC7A01C9174C94FE7BF84963DB976342AA82F",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.0.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-07T12:23:01.491020Z",
+      "updatedUtc": "2026-10-07T12:23:01.491020Z"
     }
   ]
 }
