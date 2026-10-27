@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-10-27T17:33:42.2958160Z",
+  "updatedUtc": "2026-10-27T17:37:46.8163320Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -89,7 +89,7 @@
       "name": "Character Editor",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.2.0",
+      "version": "1.0.1.0",
       "summary": "Live-edit your stats, vitals, level, XP and skill points.",
       "description": "A character editor for Block Story. Open it with the Character key to adjust your stats, vitals, level, XP and skill points on the fly — handy for testing a build, recovering a rough save, or just playing your own way. Single-player.\n\nShows up in the in-game Mods menu with its own on/off switch.",
       "category": "Tools & Utility",
@@ -99,9 +99,9 @@
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.0.0/icon1.png",
       "screenshots": [],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/CharacterEditor.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.1.0/CharacterEditor.dll",
       "size": 73216,
-      "sha256": "34CE4DC59859B06A60FF591A0AE0B716F7AD86728AC39168921B60476C5F869E",
+      "sha256": "DC09FE7219458FAFB5170C2EBD47A8CEBC709CBB6E858BF15DF8FA028741BA23",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -123,8 +123,8 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-27T17:33:42.2958160Z",
-      "changelog": "Fixes\n- Fixed the mod not showing up in game for some players (needs framework 1.1.0 - update it from Settings > Setup)\n- Time of day buttons (Dawn/Noon/Dusk/Midnight and set hour) work again\n- Changing the time now also works in creative"
+      "updatedUtc": "2026-10-27T17:37:46.8163320Z",
+      "changelog": "Fixes\n- Time of day buttons (Dawn/Noon/Dusk/Midnight and set hour) work again\n- Changing the time now also works in creative\n- Fixed the mod not showing up in game for some players (needs framework 1.1.0 - update it from Settings > Setup)"
     },
     {
       "id": "1mr1c1.minimap",
@@ -254,7 +254,7 @@
       "name": "Vein Miner",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.2.0",
+      "version": "1.0.1.0",
       "summary": "Break a whole ore vein in one hit.",
       "description": "Vein Miner for Block Story. Mine a whole connected vein — or a set shape — in a single hit, with the drops going straight to your inventory. Speeds up mining runs without the grind.\n\nShows up in the in-game Mods menu with its own on/off switch.",
       "category": "Tools & Utility",
@@ -272,9 +272,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot6.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot7.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.2.0/VeinMiner.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.1.0/VeinMiner.dll",
       "size": 48640,
-      "sha256": "1761423F83BC556159C8E0A3A136876C4B85161833F9C1CCC064941B8C1AD7FB",
+      "sha256": "17F94C3AF93F779526A4482F9CE178DFCFC0877089DDC95932594AA62A121886",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -296,8 +296,8 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-27T17:33:42.2958160Z",
-      "changelog": "Fixes\n- Fixed the mod not showing up in game for some players (needs framework 1.1.0 - update it from Settings > Setup)\n\nWhat's new (1.0.1)\n- Every block in the vein gives XP now, not just the one you hit\n- New setting \"Wear per block\": each block costs 1 durability like normal mining (turn it off to go back to 1 per hit)\n- New setting \"Protect my tool\": stops the vein early so your tool is left on 1 use instead of breaking\n- Diamonds and tickets from vein mining now land on you properly instead of getting stuck in the floor"
+      "updatedUtc": "2026-10-27T17:37:46.8163320Z",
+      "changelog": "What's new\n- Every block in the vein gives XP now, not just the one you hit\n- New setting \"Wear per block\": each block costs 1 durability like normal mining (turn it off to go back to 1 per hit)\n- New setting \"Protect my tool\": stops the vein early so your tool is left on 1 use instead of breaking\n\nFixes\n- Diamonds and tickets from vein mining now land on you properly instead of getting stuck in the floor\n- Fixed the mod not showing up in game for some players (needs framework 1.1.0 - update it from Settings > Setup)"
     }
   ]
 }
