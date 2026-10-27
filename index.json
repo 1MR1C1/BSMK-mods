@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-10-27T13:37:23.9927460Z",
+  "updatedUtc": "2026-10-27T17:33:42.2958160Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -48,7 +48,7 @@
       "name": "Block Story Core",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.0.0",
+      "version": "1.1.0.0",
       "summary": "The framework every Mod Kit mod runs on — install it once, it updates itself.",
       "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once — after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\nOpen source. No ads, nothing tracked, nothing hidden.\n\n─────────────────────────────\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you — your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox — blocks, items, creatures, pets, world/player/event hooks, keybinds — lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
       "category": "Library/API",
@@ -57,9 +57,9 @@
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.0.0.0/icon1.png",
       "screenshots": [],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.0.0.0/BlockStoryCore.dll",
-      "size": 422912,
-      "sha256": "F461C5B5C3E1BE54F88B1CC94AD057071490274130C98949AB0068DA0DD325AC",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.1.0.0/BlockStoryCore.dll",
+      "size": 510464,
+      "sha256": "F329DA5EF9B681AD654697A368A3CC96F0A443D930078F9CF05B56FCDC83FFAB",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -81,14 +81,15 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:02:23.255141Z",
-      "updatedUtc": "2026-10-07T12:02:23.255141Z"
+      "updatedUtc": "2026-10-27T17:33:42.2958160Z",
+      "changelog": "Framework update - needed by the latest Vein Miner and Character Editor.\n- Fixes those two mods not showing up in game on the older framework\n- Older mods keep working as before\nUpdate it from Settings > Setup (Install / update framework)."
     },
     {
       "id": "1mr1c1.charactereditor",
       "name": "Character Editor",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.1.0",
+      "version": "1.0.2.0",
       "summary": "Live-edit your stats, vitals, level, XP and skill points.",
       "description": "A character editor for Block Story. Open it with the Character key to adjust your stats, vitals, level, XP and skill points on the fly — handy for testing a build, recovering a rough save, or just playing your own way. Single-player.\n\nShows up in the in-game Mods menu with its own on/off switch.",
       "category": "Tools & Utility",
@@ -98,9 +99,9 @@
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.0.0/icon1.png",
       "screenshots": [],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.1.0/CharacterEditor.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/CharacterEditor.dll",
       "size": 73216,
-      "sha256": "F5874C7C2A4E6ABBC422B7FDA6E71DA439B668B89AD4E58AFCF33BA74EB26E31",
+      "sha256": "34CE4DC59859B06A60FF591A0AE0B716F7AD86728AC39168921B60476C5F869E",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -118,12 +119,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.0.0",
+      "minCoreVersion": "1.1.0",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-27T13:37:23.9927460Z",
-      "changelog": "Fixes\n- Time of day buttons (Dawn/Noon/Dusk/Midnight and set hour) work again\n- Changing the time now also works in creative"
+      "updatedUtc": "2026-10-27T17:33:42.2958160Z",
+      "changelog": "Fixes\n- Fixed the mod not showing up in game for some players (needs framework 1.1.0 - update it from Settings > Setup)\n- Time of day buttons (Dawn/Noon/Dusk/Midnight and set hour) work again\n- Changing the time now also works in creative"
     },
     {
       "id": "1mr1c1.minimap",
@@ -253,7 +254,7 @@
       "name": "Vein Miner",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.1.0",
+      "version": "1.0.2.0",
       "summary": "Break a whole ore vein in one hit.",
       "description": "Vein Miner for Block Story. Mine a whole connected vein — or a set shape — in a single hit, with the drops going straight to your inventory. Speeds up mining runs without the grind.\n\nShows up in the in-game Mods menu with its own on/off switch.",
       "category": "Tools & Utility",
@@ -271,9 +272,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot6.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot7.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.1.0/VeinMiner.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.2.0/VeinMiner.dll",
       "size": 48640,
-      "sha256": "C710264D6AFCFD43D06AD19B4F5D79F97D3F7C495946E70A2F35045A4A535C80",
+      "sha256": "1761423F83BC556159C8E0A3A136876C4B85161833F9C1CCC064941B8C1AD7FB",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -291,12 +292,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.0.0",
+      "minCoreVersion": "1.1.0",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-27T13:37:23.9927460Z",
-      "changelog": "What's new\n- Every block in the vein gives XP now, not just the one you hit\n- New setting \"Wear per block\": each block costs 1 durability like normal mining (turn it off to go back to 1 per hit)\n- New setting \"Protect my tool\": stops the vein early so your tool is left on 1 use instead of breaking\n\nFixes\n- Diamonds and tickets from vein mining now land on you properly instead of getting stuck in the floor"
+      "updatedUtc": "2026-10-27T17:33:42.2958160Z",
+      "changelog": "Fixes\n- Fixed the mod not showing up in game for some players (needs framework 1.1.0 - update it from Settings > Setup)\n\nWhat's new (1.0.1)\n- Every block in the vein gives XP now, not just the one you hit\n- New setting \"Wear per block\": each block costs 1 durability like normal mining (turn it off to go back to 1 per hit)\n- New setting \"Protect my tool\": stops the vein early so your tool is left on 1 use instead of breaking\n- Diamonds and tickets from vein mining now land on you properly instead of getting stuck in the floor"
     }
   ]
 }
