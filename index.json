@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-10-19T21:20:12.4855863Z",
+  "updatedUtc": "2026-10-27T13:37:23.9927460Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -9,10 +9,10 @@
       "authorId": "1MR1C1",
       "version": "1.0.0.0",
       "summary": "See through blocks to find ores",
-      "description": "X-Ray Vision for Block Story. Toggle it on to make the terrain turn semi-transparent, so you can spot ore veins, caves, dungeons and buried structures straight through solid blocks \u2014 perfect for mining runs and exploring. Toggle on/off with a keybind (rebindable in-game)",
-      "category": "Tools \u0026 Utility",
+      "description": "X-Ray Vision for Block Story. Toggle it on to make the terrain turn semi-transparent, so you can spot ore veins, caves, dungeons and buried structures straight through solid blocks — perfect for mining runs and exploring. Toggle on/off with a keybind (rebindable in-game)",
+      "category": "Tools & Utility",
       "tags": [
-        "Tools \u0026 Utility",
+        "Tools & Utility",
         "Quality of Life"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/icon1.png",
@@ -49,8 +49,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.0.0",
-      "summary": "The framework every Mod Kit mod runs on \u2014 install it once, it updates itself.",
-      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don\u0027t rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \u0022Mods\u0022 button to the game\u0027s main menu so you can see and manage what\u0027s running.\n\nIf a mod says it \u0022needs Core,\u0022 this is it. You install it once \u2014 after that it updates on its own through the Mod Kit whenever there\u0027s a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\nOpen source. No ads, nothing tracked, nothing hidden.\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you \u2014 your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you\u0027re coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game\u0027s BepInEx/plugins folder once Core is installed), and in your plugin\u0027s Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \u0022My Mod\u0022,\n        Description = \u0022What my mod does.\u0022,\n        GetEnabled  = () =\u003E _enabled,        // your mod\u0027s current on/off state\n        SetEnabled  = on =\u003E _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () =\u003E { /* open your settings screen */ }\n    });\n\nThat\u0027s the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox \u2014 blocks, items, creatures, pets, world/player/event hooks, keybinds \u2014 lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
+      "summary": "The framework every Mod Kit mod runs on — install it once, it updates itself.",
+      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once — after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\nOpen source. No ads, nothing tracked, nothing hidden.\n\n─────────────────────────────\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you — your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox — blocks, items, creatures, pets, world/player/event hooks, keybinds — lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
       "category": "Library/API",
       "tags": [
         "Library/API"
@@ -88,19 +88,19 @@
       "name": "Character Editor",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.0.0",
+      "version": "1.0.1.0",
       "summary": "Live-edit your stats, vitals, level, XP and skill points.",
-      "description": "A character editor for Block Story. Open it with the Character key to adjust your stats, vitals, level, XP and skill points on the fly \u2014 handy for testing a build, recovering a rough save, or just playing your own way. Single-player.\n\nShows up in the in-game Mods menu with its own on/off switch.",
-      "category": "Tools \u0026 Utility",
+      "description": "A character editor for Block Story. Open it with the Character key to adjust your stats, vitals, level, XP and skill points on the fly — handy for testing a build, recovering a rough save, or just playing your own way. Single-player.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "category": "Tools & Utility",
       "tags": [
-        "Tools \u0026 Utility",
+        "Tools & Utility",
         "Quality of Life"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.0.0/icon1.png",
       "screenshots": [],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.0.0/CharacterEditor.dll",
-      "size": 44032,
-      "sha256": "5298236A09575B8508171A03EB1D3B6D6CC09418625895F2A6190DBE30691DA9",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.1.0/CharacterEditor.dll",
+      "size": 73216,
+      "sha256": "F5874C7C2A4E6ABBC422B7FDA6E71DA439B668B89AD4E58AFCF33BA74EB26E31",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -122,7 +122,8 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-07T12:23:01.491020Z"
+      "updatedUtc": "2026-10-27T13:37:23.9927460Z",
+      "changelog": "Fixes\n- Time of day buttons (Dawn/Noon/Dusk/Midnight and set hour) work again\n- Changing the time now also works in creative"
     },
     {
       "id": "1mr1c1.minimap",
@@ -130,11 +131,11 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.0.0",
-      "summary": "Round minimap \u002B fullscreen world map \u002B waypoints.",
+      "summary": "Round minimap + fullscreen world map + waypoints.",
       "description": "A minimap for Block Story: a round, depth-aware minimap in the corner, a fullscreen world map, and custom waypoints (with automatic death markers so you can find your stuff). Toggle it with the Minimap key.\n\nShows up in the in-game Mods menu with its own on/off switch.",
-      "category": "UI \u0026 HUD",
+      "category": "UI & HUD",
       "tags": [
-        "UI \u0026 HUD",
+        "UI & HUD",
         "Quality of Life"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.0.0/icon1.png",
@@ -172,11 +173,11 @@
       "authorId": "1MR1C1",
       "version": "1.0.0.0",
       "summary": "Talk to any NPC from anywhere to take or hand in quests.",
-      "description": "NPC Menu for Block Story. Open it with the NPC key to talk to any NPC from anywhere \u2014 pick up new quests or hand in finished ones without trekking all the way back. Great for questing and RPG play.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "description": "NPC Menu for Block Story. Open it with the NPC key to talk to any NPC from anywhere — pick up new quests or hand in finished ones without trekking all the way back. Great for questing and RPG play.\n\nShows up in the in-game Mods menu with its own on/off switch.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
-        "Adventure \u0026 RPG"
+        "Adventure & RPG"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/icon1.png",
       "screenshots": [],
@@ -213,11 +214,11 @@
       "authorId": "1MR1C1",
       "version": "1.0.0.0",
       "summary": "A xenomorph creature you can catch, raise and ride.",
-      "description": "Xenor adds a detailed xenomorph creature that spawns in the space biomes. Catch one, craft its spawner and its soul, and raise your own as a rideable pet with its own inventory \u2014 a full creature, not a reskin.\n\nShows up in the in-game Mods menu.",
-      "category": "Mobs \u0026 Creatures",
+      "description": "Xenor adds a detailed xenomorph creature that spawns in the space biomes. Catch one, craft its spawner and its soul, and raise your own as a rideable pet with its own inventory — a full creature, not a reskin.\n\nShows up in the in-game Mods menu.",
+      "category": "Mobs & Creatures",
       "tags": [
-        "Mobs \u0026 Creatures",
-        "Pets \u0026 Mounts"
+        "Mobs & Creatures",
+        "Pets & Mounts"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/icon1.png",
       "screenshots": [],
@@ -252,12 +253,12 @@
       "name": "Vein Miner",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.0.0",
+      "version": "1.0.1.0",
       "summary": "Break a whole ore vein in one hit.",
-      "description": "Vein Miner for Block Story. Mine a whole connected vein \u2014 or a set shape \u2014 in a single hit, with the drops going straight to your inventory. Speeds up mining runs without the grind.\n\nShows up in the in-game Mods menu with its own on/off switch.",
-      "category": "Tools \u0026 Utility",
+      "description": "Vein Miner for Block Story. Mine a whole connected vein — or a set shape — in a single hit, with the drops going straight to your inventory. Speeds up mining runs without the grind.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "category": "Tools & Utility",
       "tags": [
-        "Tools \u0026 Utility",
+        "Tools & Utility",
         "Quality of Life"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/icon1.png",
@@ -270,9 +271,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot6.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot7.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/VeinMiner.dll",
-      "size": 17920,
-      "sha256": "4665FF3C0D96FF75F56797D9F98F1FD37E6B133F8D7F19962DF2DF63055434A2",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.1.0/VeinMiner.dll",
+      "size": 48640,
+      "sha256": "C710264D6AFCFD43D06AD19B4F5D79F97D3F7C495946E70A2F35045A4A535C80",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -294,7 +295,8 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-19T21:20:12.0148449Z"
+      "updatedUtc": "2026-10-27T13:37:23.9927460Z",
+      "changelog": "What's new\n- Every block in the vein gives XP now, not just the one you hit\n- New setting \"Wear per block\": each block costs 1 durability like normal mining (turn it off to go back to 1 per hit)\n- New setting \"Protect my tool\": stops the vein early so your tool is left on 1 use instead of breaking\n\nFixes\n- Diamonds and tickets from vein mining now land on you properly instead of getting stuck in the floor"
     }
   ]
 }
