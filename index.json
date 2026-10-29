@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-10-29T13:38:32.5240530Z",
+  "updatedUtc": "2026-10-29T21:47:29.7397570Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -323,6 +323,55 @@
       "createdUtc": "2026-10-07T12:23:01.491020Z",
       "updatedUtc": "2026-10-27T17:37:46.8163320Z",
       "changelog": "What's new\n- Every block in the vein gives XP now, not just the one you hit\n- New setting \"Wear per block\": each block costs 1 durability like normal mining (turn it off to go back to 1 per hit)\n- New setting \"Protect my tool\": stops the vein early so your tool is left on 1 use instead of breaking\n\nFixes\n- Diamonds and tickets from vein mining now land on you properly instead of getting stuck in the floor\n- Fixed the mod not showing up in game for some players (needs framework 1.1.0 - update it from Settings > Setup)"
+    },
+    {
+      "id": "1mr1c1.craftfrominventory",
+      "name": "Craft From Inventory",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "A recipe panel by the crafting grid that pulls from your bag and nearby chests.",
+      "description": "Crafting without the back-and-forth. Craft From Inventory puts a recipe panel right next to your crafting grid, in your inventory and at the crafting table. Find what you want by category or search, click it, and the ingredients drop straight into the grid. It pulls from your bag and from any chests nearby, so you don't have to go fetch stuff first.\n\nWant a lot? Ctrl-click loads 10 crafts, Shift-click loads 100, and Alt-click adds one more each time with a running count. The same keys work on the crafted item to make that many in one go. Changed your mind? Clear sends everything back to the chest it came from.\n\nQuick stack is in too. Press one key and everything in your bag goes onto matching stacks in nearby chests, without opening them. Your hotbar and tools stay put.\n\nOnly shows recipes you've unlocked, so it won't spoil your progress. You can peek at locked ones if you want. Chest range is a slider from 4 to 64 blocks. Single player only.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life",
+        "Tools & Utility"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot3.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot4.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot5.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot6.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/CraftFromInventory.dll",
+      "size": 91648,
+      "sha256": "932AB1BF7D1D6B08DC89C4E1FF3C47AF498D22E8090845F082F65E02B419E6A7",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.2.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-29T21:47:29.7397570Z",
+      "updatedUtc": "2026-10-29T21:47:29.7397570Z",
+      "changelog": "- First release"
     }
   ]
 }
