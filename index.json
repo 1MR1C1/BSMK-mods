@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-10-29T13:24:48.6614870Z",
+  "updatedUtc": "2026-10-29T13:38:32.5240530Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -8,8 +8,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
-      "summary": "See through blocks to find ores",
-      "description": "X-Ray Vision for Block Story. Toggle it on to make the terrain turn semi-transparent, so you can spot ore veins, caves, dungeons and buried structures straight through solid blocks — perfect for mining runs and exploring. Toggle on/off with a keybind (rebindable in-game)",
+      "summary": "See ores and gems through the ground.",
+      "description": "Press your Xray key and stone, dirt and sand fade away, leaving only the stuff worth digging for. Ores, gems, crystals and rare blocks stay visible, so you can see where a vein is before you dig.\n\nYou choose what shows. There's a switch for every ore and gem (iron, coal, gold, cobalt, sulphur, amethyst, pyrite, devil ores and the rest), and for liquids like water, lava, acid and swamp. There are separate groups for space rocks and value blocks too. All On and All Off flip a whole group at once.\n\nDon't like everything around you going invisible? Turn up the Ground see-through slider and the ground stays faintly visible, so you can still tell where the edges are and don't walk off a cliff.",
       "category": "Tools & Utility",
       "tags": [
         "Tools & Utility",
@@ -97,8 +97,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.2.0",
-      "summary": "Live-edit your stats, vitals, level, XP and skill points.",
-      "description": "A character editor for Block Story. Open it with the Character key to adjust your stats, vitals, level, XP and skill points on the fly — handy for testing a build, recovering a rough save, or just playing your own way. Single-player.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "summary": "Change your stats, items, world and quests.",
+      "description": "A full editor for your character and your world, for single-player.\n\n- Stats: set your level, XP, skill points and diamonds. Fill or raise your health, mana, breath and hunger, set your armour and damage, or turn on god mode.\n- Talents: set any talent, max them all or reset them.\n- World: switch between Survival, Creative, Story, Hardcore and Sandbox without losing your stuff. You can also turn on flying in any mode, set the time of day and pick the weather.\n- Inventory: add any item to your bag, crafting slots or hotbar. Fill your equipment slots and repair your gear.\n- Pets: edit your summoned pet's level, XP, health and hunger.\n- Quests: start, finish or reset any quest, with or without the reward.\n- Achievements: complete them one at a time or all at once.\n- Saves: save your whole loadout and load it back later.\n\nGood for testing a build, fixing a save that went wrong, or just playing your way.",
       "category": "Tools & Utility",
       "tags": [
         "Tools & Utility",
@@ -143,8 +143,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.2.0",
-      "summary": "Round minimap + fullscreen world map + waypoints.",
-      "description": "A minimap for Block Story: a round, depth-aware minimap in the corner, a fullscreen world map, and custom waypoints (with automatic death markers so you can find your stuff). Toggle it with the Minimap key.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "summary": "A minimap, a full world map and waypoints.",
+      "description": "A round minimap in the corner of your screen shows the land around you, with mobs, animals and NPCs marked with their names. It can stay pointing north or turn with you. You can zoom it, make it bigger or show your coordinates above it.\n\nOpen the full world map for the big picture. It remembers everywhere you've been, so the map fills in as you explore. Drag it around, zoom in and out, or switch between the surface and cave view.\n\nWaypoints let you mark your base, a good mine or anywhere else you want to find again. Pick a name, colour and icon, and it shows on both maps with how far away it is. Right-click the world map to drop one right there. When you die, a waypoint goes where it happened, so you can go get your stuff back.\n\nEvery world keeps its own map and waypoints. Realms and online servers get their own too, so they never draw over each other.",
       "category": "UI & HUD",
       "tags": [
         "UI & HUD",
@@ -190,8 +190,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.0.0",
-      "summary": "Talk to any NPC from anywhere to take or hand in quests.",
-      "description": "NPC Menu for Block Story. Open it with the NPC key to talk to any NPC from anywhere — pick up new quests or hand in finished ones without trekking all the way back. Great for questing and RPG play.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "summary": "Talk to any NPC from anywhere.",
+      "description": "Press the NPC key for a list of every NPC in the game. Click Talk and their normal quest window opens, as if you'd walked up to them. Take new quests or hand in finished ones without the long walk back.\n\nThe number next to each name shows how many quests that NPC has for you, so you can see who's worth visiting.\n\nNPCs are switched off in Creative mode, so the menu only works in the other modes.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -235,8 +235,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.0.0",
-      "summary": "A xenomorph creature you can catch, raise and ride.",
-      "description": "Xenor adds a detailed xenomorph creature that spawns in the space biomes. Catch one, craft its spawner and its soul, and raise your own as a rideable pet with its own inventory — a full creature, not a reskin.\n\nShows up in the in-game Mods menu.",
+      "summary": "A new creature you can fight, catch and ride.",
+      "description": "Xenor is a big new alien creature that lives in the space biomes. It levels up as you go further out, hits hard, spits acid, and drops meat, acid, bone, graviton and sometimes dark matter.\n\nYou can get your own Xenor in two ways:\n- Catch it: catch a wild one with a soul catcher to get its spawner. Then craft the Xenor Soul from the spawner, Spider Fangs, a Dragon Heart, Dragonscale and Bones.\n- Buy it: buy the Xenor Soul with diamonds.\n\nHold the soul and your Xenor appears as a pet. It follows you, fights for you, levels up and has its own inventory. You can name it, and you can climb on and ride it.",
       "category": "Mobs & Creatures",
       "tags": [
         "Mobs & Creatures",
@@ -281,7 +281,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
       "summary": "Break a whole ore vein in one hit.",
-      "description": "Vein Miner for Block Story. Mine a whole connected vein — or a set shape — in a single hit, with the drops going straight to your inventory. Speeds up mining runs without the grind.\n\nShows up in the in-game Mods menu with its own on/off switch.",
+      "description": "Hit one block of ore and every connected block of the same kind breaks with it. Everything goes straight into your inventory, and you still get your XP and your normal drop chances for each block.\n\nIt isn't only for ore. Switch the dig shape to dig a pillar up or down, or cut a staircase up or down. Choose how many blocks a single hit can take and how deep the shapes go.\n\nYour tool wears per block like normal mining, or you can turn that off. Protect my tool stops it just before your pick breaks, so you never lose a good one halfway through a vein.\n\nPress the Vein Miner key to turn it on or off whenever you like.",
       "category": "Tools & Utility",
       "tags": [
         "Tools & Utility",
