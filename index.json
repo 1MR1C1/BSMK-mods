@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-10-29T12:42:17.6094940Z",
+  "updatedUtc": "2026-10-29T13:24:48.6614870Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -16,7 +16,13 @@
         "Quality of Life"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/icon1.png",
-      "screenshots": [],
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/shot3.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/shot4.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/shot5.png"
+      ],
       "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/Xray.dll",
       "size": 45056,
       "sha256": "26B0090A9C59CE3DB48281DD52CEBE89EE1F562C06BF030E3B5B0CF291CABBB9",
@@ -99,7 +105,11 @@
         "Quality of Life"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.0.0/icon1.png",
-      "screenshots": [],
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/shot3.png"
+      ],
       "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/CharacterEditor.dll",
       "size": 73728,
       "sha256": "94E33252A13647C2B8DA1D58F617BD6830D26DFC81C13623A680B7C40675A59E",
@@ -132,7 +142,7 @@
       "name": "Minimap",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.1.0",
+      "version": "1.0.2.0",
       "summary": "Round minimap + fullscreen world map + waypoints.",
       "description": "A minimap for Block Story: a round, depth-aware minimap in the corner, a fullscreen world map, and custom waypoints (with automatic death markers so you can find your stuff). Toggle it with the Minimap key.\n\nShows up in the in-game Mods menu with its own on/off switch.",
       "category": "UI & HUD",
@@ -142,10 +152,14 @@
         "Online Compatible"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.0.0/icon1.png",
-      "screenshots": [],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.1.0/Minimap.dll",
-      "size": 80384,
-      "sha256": "2071259A0CA14B27C763CD03EB9E9C5D94651E27775C8FC0A78E9B4344F81015",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/shot3.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/Minimap.dll",
+      "size": 80896,
+      "sha256": "059B2FB2D355501BCB94B96A2C94CCA65AF78376C59165130BC5EBD0F6649AA8",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -167,8 +181,8 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-29T12:42:17.6094940Z",
-      "changelog": "Block Story 14.5 update\n- Realms get their own map instead of drawing over your normal world\n- Online servers get their own map and waypoints too\nNeeds framework 1.2.0"
+      "updatedUtc": "2026-10-29T13:24:48.6614870Z",
+      "changelog": "- Waypoint names on the map and minimap are readable now (they were squashed onto two lines)\n- Names near the edge of the map stay inside it instead of getting cut off\n- Edit and Del in the waypoint list no longer get cut off\nNeeds framework 1.2.0"
     },
     {
       "id": "1mr1c1.npcmenu",
@@ -184,7 +198,11 @@
         "Adventure & RPG"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/icon1.png",
-      "screenshots": [],
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/shot3.png"
+      ],
       "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/NpcMenu.dll",
       "size": 9728,
       "sha256": "492FCE7A948F86172BE2A150358B3FB7255601A13417A6531A033E4B2B6E1FD8",
@@ -225,7 +243,11 @@
         "Pets & Mounts"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/icon1.png",
-      "screenshots": [],
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/shot3.png"
+      ],
       "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/Xenor.dll",
       "size": 48128,
       "sha256": "C54DEA5FDD70CEA7BBF96240D22DC7A01C9174C94FE7BF84963DB976342AA82F",
