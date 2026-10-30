@@ -279,7 +279,7 @@
       "name": "Vein Miner",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.1.0",
+      "version": "1.0.2.0",
       "summary": "Break a whole ore vein in one hit.",
       "description": "Hit one block of ore and every connected block of the same kind breaks with it. Everything goes straight into your inventory, and you still get your XP and your normal drop chances for each block.\n\nIt isn't only for ore. Switch the dig shape to dig a pillar up or down, or cut a staircase up or down. Choose how many blocks a single hit can take and how deep the shapes go.\n\nYour tool wears per block like normal mining, or you can turn that off. Protect my tool stops it just before your pick breaks, so you never lose a good one halfway through a vein.\n\nPress the Vein Miner key to turn it on or off whenever you like.",
       "category": "Tools & Utility",
@@ -297,9 +297,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot6.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot7.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.1.0/VeinMiner.dll",
-      "size": 48640,
-      "sha256": "17F94C3AF93F779526A4482F9CE178DFCFC0877089DDC95932594AA62A121886",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.2.0/VeinMiner.dll",
+      "size": 52736,
+      "sha256": "4956068B9A4E36064BFFA0B1A9D9ED4F1B51CED1A68E3921F8BCFC98DAB16618",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -321,15 +321,15 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-27T17:37:46.8163320Z",
-      "changelog": "What's new\n- Every block in the vein gives XP now, not just the one you hit\n- New setting \"Wear per block\": each block costs 1 durability like normal mining (turn it off to go back to 1 per hit)\n- New setting \"Protect my tool\": stops the vein early so your tool is left on 1 use instead of breaking\n\nFixes\n- Diamonds and tickets from vein mining now land on you properly instead of getting stuck in the floor\n- Fixed the mod not showing up in game for some players (needs framework 1.1.0 - update it from Settings > Setup)"
+      "updatedUtc": "2026-10-30T17:34:37.0000000Z",
+      "changelog": "- New Gap reach slider (0 to 10): also mines the same ore a few blocks away when a vein has gaps\n- New key to switch dig shape ([ by default)\n- Gap searches run in the background, no stutter even at 10\n- Cobwebs, plants and other walk-through blocks can be vein mined now\n- Max blocks, depth, dig shape and on/off are saved between sessions"
     },
     {
       "id": "1mr1c1.craftfrominventory",
       "name": "Craft From Inventory",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.0.0",
+      "version": "1.0.1.0",
       "summary": "A recipe panel by the crafting grid that pulls from your bag and nearby chests.",
       "description": "Crafting without the back-and-forth. Craft From Inventory puts a recipe panel right next to your crafting grid, in your inventory and at the crafting table. Find what you want by category or search, click it, and the ingredients drop straight into the grid. It pulls from your bag and from any chests nearby, so you don't have to go fetch stuff first.\n\nWant a lot? Ctrl-click loads 10 crafts, Shift-click loads 100, and Alt-click adds one more each time with a running count. The same keys work on the crafted item to make that many in one go. Changed your mind? Clear sends everything back to the chest it came from.\n\nQuick stack is in too. Press one key and everything in your bag goes onto matching stacks in nearby chests, without opening them. Your hotbar and tools stay put.\n\nOnly shows recipes you've unlocked, so it won't spoil your progress. You can peek at locked ones if you want. Chest range is a slider from 4 to 64 blocks. Single player only.",
       "category": "Quality of Life",
@@ -346,9 +346,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot5.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot6.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/CraftFromInventory.dll",
-      "size": 91648,
-      "sha256": "932AB1BF7D1D6B08DC89C4E1FF3C47AF498D22E8090845F082F65E02B419E6A7",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.1.0/CraftFromInventory.dll",
+      "size": 92160,
+      "sha256": "9868D24E6156BCB92671638AD970A8EAD8AB0B1DA75605518A582E675FC003E6",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -370,7 +370,91 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-29T21:47:29.7397570Z",
-      "updatedUtc": "2026-10-29T21:47:29.7397570Z",
+      "updatedUtc": "2026-10-30T17:34:37.0000000Z",
+      "changelog": "- Furnace recipes load real fuel (coal first, then wood) instead of saying not enough energy\n- Items like spider webs in chests count now, ingredients match the way the game does\n- Any wood plank works where a recipe wants planks"
+    },
+    {
+      "id": "1mr1c1.soultools",
+      "name": "Soul Tools",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Spawners spawn on every click and the soul catcher locks on from any distance.",
+      "description": "Two fixes for things that feel random in the base game.\n\nSure-fire spawners: left click a spawner and it spawns one creature, every single click. Mob caps, a crowd around it or a shaky mouse no longer eat your clicks. The spawner's own timer keeps running like normal, this only adds the ones you ask for.\n\nLock-on soul catcher: aim at a creature and click once. The catch locks on and keeps charging by itself, at any range, even if you let go or walk off. Click again or put the staff away to stop. Mana works like normal.\n\nBoth parts have their own switch in the settings. Single player only.",
+      "category": "Quality of Life",
+      "tags": [
+        "Gameplay",
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.0.0/icon1.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.0.0/SoulTools.dll",
+      "size": 52736,
+      "sha256": "A74579A245C5ED445AB146BEEA04B169AE5622D5365B6CD86E3AB8D24B337FA7",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.2.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-30T17:34:37.0000000Z",
+      "updatedUtc": "2026-10-30T17:34:37.0000000Z",
+      "changelog": "- First release"
+    },
+    {
+      "id": "1mr1c1.betterfishing",
+      "name": "Better Fishing",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Auto catch, every catch lands, no rod cooldown and a tougher rod.",
+      "description": "Fishing without the waiting and the misses.\n\nAuto catch reels in the moment a fish bites, before it can break the line. Every catch lands, the base game only lands about half. No rod cooldown, so you can throw again straight away. Rod wear is a slider: 100% is normal, 25% makes the rod last about 4 times longer, 0% means it never wears out.\n\nBait still gets used like normal. Every option has its own switch.",
+      "category": "Quality of Life",
+      "tags": [
+        "Gameplay",
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterfishing-v1.0.0.0/icon1.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterfishing-v1.0.0.0/BetterFishing.dll",
+      "size": 40448,
+      "sha256": "6230B1A7EA4A1654524681C2BF9DB62AAED5410A0DE22D073DC8845A9D52C9D2",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.2.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-30T17:34:37.0000000Z",
+      "updatedUtc": "2026-10-30T17:34:37.0000000Z",
       "changelog": "- First release"
     }
   ]
