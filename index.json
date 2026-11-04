@@ -281,7 +281,7 @@
       "name": "Vein Miner",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.4.0",
+      "version": "1.0.5.0",
       "summary": "Break a whole ore vein in one hit.",
       "description": "Hit one block of ore and every connected block of the same kind breaks with it. Everything goes straight into your inventory, and you still get your XP and your normal drop chances for each block.\n\nIt isn't only for ore. Switch the dig shape to dig a pillar up or down, or cut a staircase up or down. Choose how many blocks a single hit can take and how deep the shapes go.\n\nYour tool wears per block like normal mining, or you can turn that off. Protect my tool stops it just before your pick breaks, so you never lose a good one halfway through a vein.\n\nPress the Vein Miner key to turn it on or off whenever you like.",
       "category": "Tools & Utility",
@@ -299,9 +299,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot6.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot7.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.4.0/VeinMiner.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.5.0/VeinMiner.dll",
       "size": 56832,
-      "sha256": "B362C3FFB57990F258034AF434A3D83E09B0D0FAAA994B865298628E390C0C2A",
+      "sha256": "29BCADFB0CB2BFE4D524A87E5A30B8AEA465A9B9B901F12DA174C8E79B86DF3D",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -323,8 +323,8 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-04T18:46:39.0000000Z",
-      "changelog": "- Stops the long freezes when mining on a server. 1.0.3 did not fully fix this, if you still get one please report it\n- Coins and gems mined on a server now land on you instead of on the block"
+      "updatedUtc": "2026-11-04T18:52:15.0000000Z",
+      "changelog": "- Coins on a server roll for every block in a vein again and land on you. Coins only, there are no gems on a server\n- If you still get a freeze when mining on a server, please report it"
     },
     {
       "id": "1mr1c1.craftfrominventory",
