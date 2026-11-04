@@ -63,7 +63,9 @@
         "Library/API"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.0.0.0/icon1.png",
-      "screenshots": [],
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.0.0.0/icon1.png"
+      ],
       "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.3.0.0/BlockStoryCore.dll",
       "size": 528384,
       "sha256": "A35ED16EBC0CFD7E466AB30283A5EF2D8DB29E2123B148B0F62DF61709B8FEC9",
