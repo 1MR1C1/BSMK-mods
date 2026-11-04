@@ -91,7 +91,7 @@
       "capabilities": [],
       "createdUtc": "2026-10-07T12:02:23.255141Z",
       "updatedUtc": "2026-11-04T12:10:57.3234840Z",
-      "changelog": "New toolbox for mods, plus fixes.\n- Mod items can now have their own 3D look in your hand and on the ground\n- Copied items now drop as themselves and can be picked up\n- Better handling of the game's keys while the Mods menu is open\n- Private servers can now lock mod settings for their players\n- Older mods keep working as before"
+      "changelog": "New toolbox for mods, plus fixes.\n- Mod items can now have their own 3D look in your hand and on the ground\n- Copied items now drop as themselves and can be picked up\n- Better handling of the game's keys while the Mods menu is open\n- Keybinds page in the Mods menu: every mod key in one place, with search and clash warnings\n- Private servers can now lock mod settings for their players\n- Older mods keep working as before"
     },
     {
       "id": "1mr1c1.charactereditor",
