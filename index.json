@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-04T18:20:38.0000000Z",
+  "updatedUtc": "2026-11-04T18:46:39.0000000Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -281,7 +281,7 @@
       "name": "Vein Miner",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.3.0",
+      "version": "1.0.4.0",
       "summary": "Break a whole ore vein in one hit.",
       "description": "Hit one block of ore and every connected block of the same kind breaks with it. Everything goes straight into your inventory, and you still get your XP and your normal drop chances for each block.\n\nIt isn't only for ore. Switch the dig shape to dig a pillar up or down, or cut a staircase up or down. Choose how many blocks a single hit can take and how deep the shapes go.\n\nYour tool wears per block like normal mining, or you can turn that off. Protect my tool stops it just before your pick breaks, so you never lose a good one halfway through a vein.\n\nPress the Vein Miner key to turn it on or off whenever you like.",
       "category": "Tools & Utility",
@@ -299,9 +299,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot6.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot7.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.3.0/VeinMiner.dll",
-      "size": 55808,
-      "sha256": "96B6088CA7FE6C1BF6FDEE21A492BD335C4D29A7EEE7DE806320B03FB608EA40",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.4.0/VeinMiner.dll",
+      "size": 56832,
+      "sha256": "B362C3FFB57990F258034AF434A3D83E09B0D0FAAA994B865298628E390C0C2A",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -319,12 +319,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.1.0",
+      "minCoreVersion": "1.2.0",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-04T18:20:38.0000000Z",
-      "changelog": "- Fixed the game freezing on big veins\n- Large veins now break over a few seconds instead of all at once\n- Swapping tools stops the vein where it is"
+      "updatedUtc": "2026-11-04T18:46:39.0000000Z",
+      "changelog": "- Stops the long freezes when mining on a server. 1.0.3 did not fully fix this, if you still get one please report it\n- Coins and gems mined on a server now land on you instead of on the block"
     },
     {
       "id": "1mr1c1.craftfrominventory",
