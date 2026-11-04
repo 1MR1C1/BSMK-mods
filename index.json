@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-04T18:46:39.0000000Z",
+  "updatedUtc": "2026-11-04T22:24:39.0000000Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
       "name": "Xray",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.1.0",
+      "version": "1.0.2.0",
       "summary": "See ores and gems through the ground.",
       "description": "Press your Xray key and stone, dirt and sand fade away, leaving only the stuff worth digging for. Ores, gems, crystals and rare blocks stay visible, so you can see where a vein is before you dig.\n\nYou choose what shows. There's a switch for every ore and gem (iron, coal, gold, cobalt, sulphur, amethyst, pyrite, devil ores and the rest), and for liquids like water, lava, acid and swamp. There are separate groups for space rocks and value blocks too. All On and All Off flip a whole group at once.\n\nDon't like everything around you going invisible? Turn up the Ground see-through slider and the ground stays faintly visible, so you can still tell where the edges are and don't walk off a cliff.",
       "category": "Tools & Utility",
@@ -23,9 +23,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/shot4.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/shot5.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/Xray.dll",
-      "size": 45056,
-      "sha256": "26B0090A9C59CE3DB48281DD52CEBE89EE1F562C06BF030E3B5B0CF291CABBB9",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.2.0/Xray.dll",
+      "size": 48128,
+      "sha256": "32EFFD842E16F0CA35C7275253FC8EFADA825B9C3FA3C3EC1152E0EE680A0380",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -43,21 +43,21 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.2.0",
+      "minCoreVersion": "1.4.0",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-06T14:18:07.3987569Z",
-      "updatedUtc": "2026-10-29T12:42:17.6094940Z",
-      "changelog": "What's new\n- Ground see-through slider (Xray settings): 0 = ground invisible like before, turn it up to see the ground faintly so you don't walk off a cliff\n- Added the new 14.5 ores: Pyrite Ore and Amethyst\nNeeds framework 1.2.0"
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "- New Scan range slider, from 32 to 320 blocks\n- Finds more blocks at once\nNeeds framework 1.4.0"
     },
     {
       "id": "1mr1c1.blockstorycore",
       "name": "Block Story Core",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.3.0.0",
-      "summary": "The framework every Mod Kit mod runs on — install it once, it updates itself.",
-      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once — after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\n─────────────────────────────\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you — your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox — blocks, items, creatures, pets, world/player/event hooks, keybinds — lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
+      "version": "1.4.0.0",
+      "summary": "The framework every Mod Kit mod runs on \u2014 install it once, it updates itself.",
+      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once \u2014 after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you \u2014 your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox \u2014 blocks, items, creatures, pets, world/player/event hooks, keybinds \u2014 lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
       "category": "Library/API",
       "tags": [
         "Library/API"
@@ -66,9 +66,9 @@
       "screenshots": [
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.0.0.0/icon1.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.3.0.0/BlockStoryCore.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.4.0.0/BlockStoryCore.dll",
       "size": 528384,
-      "sha256": "A35ED16EBC0CFD7E466AB30283A5EF2D8DB29E2123B148B0F62DF61709B8FEC9",
+      "sha256": "71C987BB2E4C9965939EECE9E2709AEFDB1270CD8C5D00EEF006CFEF918B1798",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -90,15 +90,15 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:02:23.255141Z",
-      "updatedUtc": "2026-11-04T12:10:57.3234840Z",
-      "changelog": "New toolbox for mods, plus fixes.\n- Mod items can now have their own 3D look in your hand and on the ground\n- Copied items now drop as themselves and can be picked up\n- Better handling of the game's keys while the Mods menu is open\n- Keybinds page in the Mods menu: every mod key in one place, with search and clash warnings\n- Private servers can now lock mod settings for their players\n- Older mods keep working as before"
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "- Adds what the new Better Aim and Better Guns mods need\n- Fixes the look of custom items when they drop\n- Nothing removed, older mods keep working"
     },
     {
       "id": "1mr1c1.charactereditor",
       "name": "Character Editor",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.2.0",
+      "version": "1.0.3.0",
       "summary": "Change your stats, items, world and quests.",
       "description": "A full editor for your character and your world, for single-player.\n\n- Stats: set your level, XP, skill points and diamonds. Fill or raise your health, mana, breath and hunger, set your armour and damage, or turn on god mode.\n- Talents: set any talent, max them all or reset them.\n- World: switch between Survival, Creative, Story, Hardcore and Sandbox without losing your stuff. You can also turn on flying in any mode, set the time of day and pick the weather.\n- Inventory: add any item to your bag, crafting slots or hotbar. Fill your equipment slots and repair your gear.\n- Pets: edit your summoned pet's level, XP, health and hunger.\n- Quests: start, finish or reset any quest, with or without the reward.\n- Achievements: complete them one at a time or all at once.\n- Saves: save your whole loadout and load it back later.\n\nGood for testing a build, fixing a save that went wrong, or just playing your way.",
       "category": "Tools & Utility",
@@ -112,9 +112,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/CharacterEditor.dll",
-      "size": 73728,
-      "sha256": "94E33252A13647C2B8DA1D58F617BD6830D26DFC81C13623A680B7C40675A59E",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.3.0/CharacterEditor.dll",
+      "size": 74240,
+      "sha256": "CEC414DABA00AD693CD3F3647761CEA324F1BB18CC46DBB566AA57463F59B4E0",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -132,19 +132,19 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.2.0",
+      "minCoreVersion": "1.4.0",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-29T12:42:17.6094940Z",
-      "changelog": "Block Story 14.5 update\n- Resetting a quest no longer breaks on 14.5\n- Quests on the new Old storyline now start, complete and reset properly\n- Lowering your diamond count works again\n- Added the new Sandbox mode to the game mode buttons\nNeeds framework 1.2.0"
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "- The game now waits while the editor is open\n- Esc closes the editor\nNeeds framework 1.4.0"
     },
     {
       "id": "1mr1c1.minimap",
       "name": "Minimap",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.2.0",
+      "version": "1.0.3.0",
       "summary": "A minimap, a full world map and waypoints.",
       "description": "A round minimap in the corner of your screen shows the land around you, with mobs, animals and NPCs marked with their names. It can stay pointing north or turn with you. You can zoom it, make it bigger or show your coordinates above it.\n\nOpen the full world map for the big picture. It remembers everywhere you've been, so the map fills in as you explore. Drag it around, zoom in and out, or switch between the surface and cave view.\n\nWaypoints let you mark your base, a good mine or anywhere else you want to find again. Pick a name, colour and icon, and it shows on both maps with how far away it is. Right-click the world map to drop one right there. When you die, a waypoint goes where it happened, so you can go get your stuff back.\n\nEvery world keeps its own map and waypoints. Realms and online servers get their own too, so they never draw over each other.",
       "category": "UI & HUD",
@@ -159,9 +159,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/Minimap.dll",
-      "size": 80896,
-      "sha256": "059B2FB2D355501BCB94B96A2C94CCA65AF78376C59165130BC5EBD0F6649AA8",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.3.0/Minimap.dll",
+      "size": 81408,
+      "sha256": "8F034A6E92ADEC6E9084684576992822B31D2F4F38E7251E0C6326BB248F86A9",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -179,19 +179,19 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.2.0",
+      "minCoreVersion": "1.4.0",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-29T13:24:48.6614870Z",
-      "changelog": "- Waypoint names on the map and minimap are readable now (they were squashed onto two lines)\n- Names near the edge of the map stay inside it instead of getting cut off\n- Edit and Del in the waypoint list no longer get cut off\nNeeds framework 1.2.0"
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "- New slider for the size of creature names\nNeeds framework 1.4.0"
     },
     {
       "id": "1mr1c1.npcmenu",
       "name": "NPC Menu",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.0.0",
+      "version": "1.0.1.0",
       "summary": "Talk to any NPC from anywhere.",
       "description": "Press the NPC key for a list of every NPC in the game. Click Talk and their normal quest window opens, as if you'd walked up to them. Take new quests or hand in finished ones without the long walk back.\n\nThe number next to each name shows how many quests that NPC has for you, so you can see who's worth visiting.\n\nNPCs are switched off in Creative mode, so the menu only works in the other modes.",
       "category": "Quality of Life",
@@ -205,9 +205,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/NpcMenu.dll",
-      "size": 9728,
-      "sha256": "492FCE7A948F86172BE2A150358B3FB7255601A13417A6531A033E4B2B6E1FD8",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.1.0/NpcMenu.dll",
+      "size": 35328,
+      "sha256": "5B2CF533C385CD02764C2F5DE197999590222800B1E082D914C17AD236762FF2",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -225,18 +225,19 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.0.0",
+      "minCoreVersion": "1.4.0",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-07T12:23:01.491020Z"
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "- New settings page with an Open button and a key you can change\nNeeds framework 1.4.0"
     },
     {
       "id": "1mr1c1.xenor",
       "name": "Xenor",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.0.0",
+      "version": "1.0.1.0",
       "summary": "A new creature you can fight, catch and ride.",
       "description": "Xenor is a big new alien creature that lives in the space biomes. It levels up as you go further out, hits hard, spits acid, and drops meat, acid, bone, graviton and sometimes dark matter.\n\nYou can get your own Xenor in two ways:\n- Catch it: catch a wild one with a soul catcher to get its spawner. Then craft the Xenor Soul from the spawner, Spider Fangs, a Dragon Heart, Dragonscale and Bones.\n- Buy it: buy the Xenor Soul with diamonds.\n\nHold the soul and your Xenor appears as a pet. It follows you, fights for you, levels up and has its own inventory. You can name it, and you can climb on and ride it.",
       "category": "Mobs & Creatures",
@@ -250,9 +251,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/Xenor.dll",
-      "size": 48128,
-      "sha256": "C54DEA5FDD70CEA7BBF96240D22DC7A01C9174C94FE7BF84963DB976342AA82F",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.1.0/Xenor.dll",
+      "size": 78848,
+      "sha256": "836A04920F7F68F7BA09206574D3B215B40B23AAF1A48956EF4B766DA365FC90",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -270,11 +271,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.0.0",
+      "minCoreVersion": "1.4.0",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-10-07T12:23:01.491020Z"
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "- Can be switched on and off from the Mods page\nNeeds framework 1.4.0"
     },
     {
       "id": "1mr1c1.veinminer",
@@ -380,7 +382,7 @@
       "name": "Soul Tools",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.0.0",
+      "version": "1.0.1.0",
       "summary": "Spawners spawn on every click and the soul catcher locks on from any distance.",
       "description": "Two fixes for things that feel random in the base game.\n\nSure-fire spawners: left click a spawner and it spawns one creature, every single click. Mob caps, a crowd around it or a shaky mouse no longer eat your clicks. The spawner's own timer keeps running like normal, this only adds the ones you ask for.\n\nLock-on soul catcher: aim at a creature and click once. The catch locks on and keeps charging by itself, at any range, even if you let go or walk off. Click again or put the staff away to stop. Mana works like normal.\n\nBoth parts have their own switch in the settings. Single player only.",
       "category": "Quality of Life",
@@ -394,9 +396,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.0.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.0.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.0.0/SoulTools.dll",
-      "size": 52736,
-      "sha256": "A74579A245C5ED445AB146BEEA04B169AE5622D5365B6CD86E3AB8D24B337FA7",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.1.0/SoulTools.dll",
+      "size": 56832,
+      "sha256": "0693DE729C3F66E5EC35E67A3F1E67868BFCB234371ACDA45C5FC05C57EBFC3A",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -414,12 +416,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.2.0",
+      "minCoreVersion": "1.4.0",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-30T17:34:37.0000000Z",
-      "updatedUtc": "2026-10-30T17:34:37.0000000Z",
-      "changelog": "- First release"
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "- New sliders for how far away a catch can start and how far you can get before it breaks\n- Caught souls can go straight into your bag\nNeeds framework 1.4.0"
     },
     {
       "id": "1mr1c1.betterfishing",
@@ -466,6 +468,770 @@
       "createdUtc": "2026-10-30T17:34:37.0000000Z",
       "updatedUtc": "2026-10-30T17:34:37.0000000Z",
       "changelog": "- First release"
+    },
+    {
+      "id": "1mr1c1.betteraim",
+      "name": "Better Aim",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Lock on to a target and bend your shots to it.",
+      "description": "Aim help for bows, guns, the rocket launcher and magic. Lock on to a creature with the middle mouse button and red corners mark your target. A path line shows where your arrow will go, and your shots can curve in to the locked target. Right Control jumps to the next target.\n\nEvery weapon type has its own switch. You can also set how strong the aim is, how fast shots curve, whether the arrow path shows, and whether animals count as targets. Both keys can be changed.\n\nThis mod switches itself off on multiplayer servers.",
+      "category": "Gameplay",
+      "tags": [
+        "Gameplay"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betteraim-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betteraim-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betteraim-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betteraim-v1.0.0.0/shot3.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betteraim-v1.0.0.0/BetterAim.dll",
+      "size": 34304,
+      "sha256": "E5BA5B1A7D3F4BB5544602236BFFB504E7F527E87EFB1E7B22921D596EF7615C",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.betterbows",
+      "name": "Better Bows",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Faster bows, arrows that pierce, and upgrades up to +5.",
+      "description": "Hold to draw and let go to shoot, with no cooldown. Arrows pass through enemies, you zoom in while drawing, and a full draw can land a critical hit. You can get your arrows back too.\n\nUpgrade your bow at the crafting table, from +1 up to +5. Each level adds damage, arrow speed, a faster draw and one more enemy pierced. From +3 it fires 3 arrows. At +5 that is 125% more damage, 75% more arrow speed and a 60% faster draw.\n\nDraw time, piercing, zoom, critical hits, multi-shot and arrows recovered are all in the settings.\n\nThis mod switches itself off on multiplayer servers.",
+      "category": "Gameplay",
+      "tags": [
+        "Gameplay"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.0.0/shot3.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.0.0/shot4.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.0.0/BetterBows.dll",
+      "size": 25600,
+      "sha256": "2A01FE2A2A0568663C4C5E552F7E742F6A5687FDBDA4ECB80D8143CBA9317A32",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.betterguns",
+      "name": "Better Guns",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "A bolt action rifle, four new bullets and sliders for your guns.",
+      "description": "Adds a bolt action rifle that hits as far as you can see and harder than the hand gun, with shots that go through 3 more enemies. Hold right click to zoom through the scope.\n\nFour new bullets fit every gun that shoots Bullets:\n- Incendiary sets what it hits on fire\n- Hollow-Point does 50% more damage\n- Explosive makes a small blast that hurts nearby creatures but doesn't break blocks\n- Armour-Piercing goes through 2 more enemies\n\nPut a bullet in the ammo slot from the Equipment HUD mod to pick which one you shoot.\n\nSliders set damage, fire rate, range, spread and recoil. Each one starts at 1, the game's own value. Rockets no longer damage the world.\n\nThis mod switches itself off on multiplayer servers.",
+      "category": "Gameplay",
+      "tags": [
+        "Gameplay"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/shot3.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/shot4.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/BetterGuns.dll",
+      "size": 147968,
+      "sha256": "08E526411A593D29740ACD99423AA9E6C06FCA48EE1A454960DEF62D9C13E589",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.bettermagic",
+      "name": "Better Magic",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Sliders for your staffs and tridents.",
+      "description": "Tune your staffs and tridents with six sliders: range, attack speed, durability, damage, mana cost and mana refill. Every slider starts at 1, the game's own value, so nothing changes until you move it. Magic swords stay as they are.\n\nIn creative worlds a button in the settings gives you every staff.\n\nThis mod switches itself off on multiplayer servers.",
+      "category": "Gameplay",
+      "tags": [
+        "Gameplay"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.bettermagic-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.bettermagic-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.bettermagic-v1.0.0.0/shot2.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.bettermagic-v1.0.0.0/BetterMagic.dll",
+      "size": 81408,
+      "sha256": "2B5D37EEE2E42D3F11F490A454E53C8B64F92F25262E24A0957073409C9764DB",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.buildwand",
+      "name": "Build Wand",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Build in big pieces, then undo if you don't like it.",
+      "description": "Hold the wand to build in big pieces: extend a surface, draw lines, walls, floors and boxes, make spheres, fill holes, and swap blocks between two points. A yellow outline shows what will be built before you commit.\n\nRight click builds, left click cancels and the middle button picks the block you're looking at. There are keys for the next mode and for undo, and you can change both. You can also set the most blocks placed at once and how far Fill Hole reaches.\n\nCraft the wand from a Gold Bar and two Sticks. In creative worlds a button in the settings gives you one.\n\nThis mod switches itself off on multiplayer servers.",
+      "category": "Tools & Utility",
+      "tags": [
+        "Tools & Utility"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.buildwand-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.buildwand-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.buildwand-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.buildwand-v1.0.0.0/shot3.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.buildwand-v1.0.0.0/shot4.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.buildwand-v1.0.0.0/BuildWand.dll",
+      "size": 44544,
+      "sha256": "BBDD90327470E83D00C2B4550CCE6AB70D423A5E8B763BF16975F36877948400",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.equipmenthud",
+      "name": "Equipment HUD",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "See your gear's durability and get real slots for ammo, torch, potions and food.",
+      "description": "Shows your worn gear and its durability above the hotbar. It also adds real slots for ammo, a torch that lights without you holding it, health potions, mana potions and food.\n\nThere are keys for the torch and for changing arrows, and optional keys for using a potion or eating. Auto health potion, auto mana potion and auto food can each be switched on or off.\n\nOn servers the slots and durability still show, but quick use and auto use are off.",
+      "category": "UI & HUD",
+      "tags": [
+        "UI & HUD",
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.0.0/shot3.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.0.0/EquipmentHud.dll",
+      "size": 34304,
+      "sha256": "D3558294E8F5CA27B9214BB7218B428A69E86F51112CA9FA8E297C355FB9413C",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.gravestone",
+      "name": "Gravestone",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Die and your items wait in a grave instead of dropping.",
+      "description": "When you die your items go into a grave at that spot instead of dropping on the ground. Right click it to get them back.\n\nThe distance to your grave shows on screen so you can find your way back, and graves can be marked on the map. Both can be switched off.\n\nOn servers and in realms you drop your items the normal way.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.gravestone-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.gravestone-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.gravestone-v1.0.0.0/shot2.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.gravestone-v1.0.0.0/Gravestone.dll",
+      "size": 28672,
+      "sha256": "8EF0F9B743676C9D78BB6CD101A18E2500802D1ECB8C28CE8124CB2C0854E769",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.petrecall",
+      "name": "Pet Recall",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "One key summons all your pets, or sends them all back.",
+      "description": "Press one key to summon every pet in your bag, and press it again to send them all back. Dead pets are skipped so you don't spend diamonds.\n\nYou can change the key and set the most pets you can have out at once.\n\nThis mod switches itself off on multiplayer servers.",
+      "category": "Pets & Mounts",
+      "tags": [
+        "Pets & Mounts",
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.petrecall-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.petrecall-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.petrecall-v1.0.0.0/shot2.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.petrecall-v1.0.0.0/PetRecall.dll",
+      "size": 17408,
+      "sha256": "311A47C2C1FFBD87A39D6AD5A6BE9F2FFC15C3098E406357BE763E0E7668DA52",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.flickerfix",
+      "name": "Flicker Fix",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Fixes certain blocks flickering against each other.",
+      "description": "Fixes certain blocks flickering against each other, especially blocks seen from a distance.\n\nThis only helps if you see this flicker. If you don't, you don't need it.\n\nTested on Linux. It should work on Windows too, but that isn't confirmed.\n\nThere is one strength slider. Raise it if flicker remains. Too high and you start seeing through blocks up close.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.flickerfix-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.flickerfix-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.flickerfix-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.flickerfix-v1.0.0.0/shot3.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.flickerfix-v1.0.0.0/FlickerFix.dll",
+      "size": 10752,
+      "sha256": "8922FBF6BB85789794D4FF97E7FEE85FCAAA3454777C2762569BBED09C2BABF9",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.moreslots",
+      "name": "More Inventory Slots",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "All your bag slots open from the start, plus extra rows.",
+      "description": "All your bag slots are open from the start, and you can add extra rows on top.\n\nThe number of rows can only be changed from the main menu.\n\nThis mod switches itself off on multiplayer servers.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.moreslots-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.moreslots-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.moreslots-v1.0.0.0/shot2.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.moreslots-v1.0.0.0/MoreSlots.dll",
+      "size": 12800,
+      "sha256": "08AB208E9FD404A604F2ACFE334F61B2497C9603EC16B0AB2FB88DF6FB170F1C",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.mousecontrols",
+      "name": "Mouse Controls",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Drag stacks around your bag, and hold right click to keep placing blocks.",
+      "description": "Every inventory and chest works with the mouse. Click to pick up and put down. Right click takes half, then one at a time. Shift click sends a stack across, from bag to chest and back, or bag to hotbar when no chest is open.\n\nHold a stack and drag over slots to share it out. Left drag shares it evenly, right drag places one in each slot.\n\nOut in the world, hold right click to keep placing blocks instead of clicking for each one, and set how many blocks per second. Summons and vehicles still take a single click, and this part is off on servers.\n\nEach of these can be switched off on its own.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.0.0/shot2.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.0.0/MouseControls.dll",
+      "size": 22528,
+      "sha256": "ECBACAB9533D5A907BD71B63B223636B036FCFD5C8E7166EF29175B21907B94B",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.autopickup",
+      "name": "Auto Pickup",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "What you mine or kill goes straight into your bag.",
+      "description": "What you mine or kill goes straight into your bag, and your pets' kills too. If the bag is full, items drop like normal.\n\nBlocks you mine, creatures you kill, creatures your pets kill, and coins and gems each have their own switch.\n\nOn a server you only ever get your own loot. Not fully tested on servers yet.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.autopickup-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.autopickup-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.autopickup-v1.0.0.0/shot2.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.autopickup-v1.0.0.0/AutoPickup.dll",
+      "size": 17920,
+      "sha256": "26EB8F1620522E06A56011B478BB9968915EE48BEC7F8D21DD7C5DE130E9258E",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.ogreplicator",
+      "name": "OG Replicator",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "The Replicator copies any block again.",
+      "description": "The Replicator copies any block again, like it did before the limits came in. That brings back ores, crystals, metal blocks, spawners, the Teleporter, the Safebox and the rest of the blocks the game stopped it copying.\n\nA slider sets how long the Replicator lasts. It starts at 1, the game's own value.\n\nThis mod switches itself off on multiplayer servers.",
+      "category": "Tools & Utility",
+      "tags": [
+        "Tools & Utility"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.ogreplicator-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.ogreplicator-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.ogreplicator-v1.0.0.0/shot2.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.ogreplicator-v1.0.0.0/OGReplicator.dll",
+      "size": 12288,
+      "sha256": "68EFA3311212670B377EC7B7A0D165DB3289A7E4AC215A0FAEC047587328AE23",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.fewerstructures",
+      "name": "Fewer Structures",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Fewer villages and buildings in land you haven't explored.",
+      "description": "Fewer villages and buildings in land you haven't explored yet. Trees and plants are left alone, and places you've already been stay as they are.\n\nA slider sets the percent of buildings that still appear. It can only be changed from the main menu.\n\nThis mod switches itself off on multiplayer servers.",
+      "category": "Gameplay",
+      "tags": [
+        "Gameplay"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.fewerstructures-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.fewerstructures-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.fewerstructures-v1.0.0.0/shot2.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.fewerstructures-v1.0.0.0/FewerStructures.dll",
+      "size": 13312,
+      "sha256": "F44106AE7C3C4BE9575F4A11686FE8BA1A8DA22E5BBB30E7CD7A32949DC09057",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.climbstairsfaster",
+      "name": "Climb Stairs Faster",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "You move faster on stairs.",
+      "description": "You move faster while you're on stairs. Going up and going down each have their own speed slider.\n\nThis mod switches itself off on multiplayer servers.",
+      "category": "Gameplay",
+      "tags": [
+        "Gameplay"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.climbstairsfaster-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.climbstairsfaster-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.climbstairsfaster-v1.0.0.0/shot2.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.climbstairsfaster-v1.0.0.0/ClimbStairsFaster.dll",
+      "size": 11776,
+      "sha256": "7108B27DB181AF6712EB50C9F0666A91AB02AFA2E816963CB0B1B07954BA15E3",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.itemvacuum",
+      "name": "Item Vacuum",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "A block that pulls dropped items in its sealed room inside itself.",
+      "description": "A block that pulls every dropped item in its sealed room inside itself. It starts with its own slots, and each Vacuum Module touching it or another module adds 8 more. Right click to open it, take everything or store everything, and switch it on or off.\n\nThe settings let you change the slots per module and the largest room it can work in. In creative worlds a button gives you 10 of each block. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nThis mod doesn't work on multiplayer servers or in realms.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/shot3.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/shot4.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/ItemVacuum.dll",
+      "size": 49152,
+      "sha256": "642CA580CD9D1074F0D64E605D68B1F528477275DA785FAC5638BCAB0EF81729",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
+    },
+    {
+      "id": "1mr1c1.spawnerautomation",
+      "name": "Spawner Automation",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "A dispenser for your spawners, a terminal to run them, and a block that darkens a room.",
+      "description": "Three new blocks for mob farms. The Dispenser holds your spawners. The Terminal runs them on timers. The Dark Block blacks out a sealed room.\n\nIn creative worlds a button in the settings gives you 10 of each. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nThis mod doesn't work on multiplayer servers or in realms.",
+      "category": "Tools & Utility",
+      "tags": [
+        "Tools & Utility"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot3.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot4.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot5.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/SpawnerAutomation.dll",
+      "size": 67072,
+      "sha256": "9EFAE1F4F6D530B998E1C77AAE51045C0E14BA9343309FE410F8B5E4E7650278",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.0",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-04T22:24:39.0000000Z",
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.0"
     }
   ]
 }
