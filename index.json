@@ -13,7 +13,8 @@
       "category": "Tools & Utility",
       "tags": [
         "Tools & Utility",
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -60,7 +61,9 @@
       "description": "That's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox — blocks, items, creatures, pets, world/player/event hooks, keybinds — lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
       "category": "Library/API",
       "tags": [
-        "Library/API"
+        "Library/API",
+        "Single Player",
+        "Multiplayer"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -105,7 +108,8 @@
       "category": "Tools & Utility",
       "tags": [
         "Tools & Utility",
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -152,7 +156,8 @@
       "tags": [
         "UI & HUD",
         "Quality of Life",
-        "Online Compatible"
+        "Single Player",
+        "Multiplayer"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -198,7 +203,8 @@
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
-        "Adventure & RPG"
+        "Adventure & RPG",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -244,7 +250,8 @@
       "category": "Mobs & Creatures",
       "tags": [
         "Mobs & Creatures",
-        "Pets & Mounts"
+        "Pets & Mounts",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -290,7 +297,9 @@
       "category": "Tools & Utility",
       "tags": [
         "Tools & Utility",
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player",
+        "Multiplayer"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -340,7 +349,8 @@
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
-        "Tools & Utility"
+        "Tools & Utility",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -389,7 +399,8 @@
       "category": "Quality of Life",
       "tags": [
         "Gameplay",
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -435,7 +446,8 @@
       "category": "Quality of Life",
       "tags": [
         "Gameplay",
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterfishing-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -480,7 +492,8 @@
       "description": "This mod switches itself off on multiplayer servers.",
       "category": "Gameplay",
       "tags": [
-        "Gameplay"
+        "Gameplay",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betteraim-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -525,7 +538,8 @@
       "description": "This mod switches itself off on multiplayer servers.",
       "category": "Gameplay",
       "tags": [
-        "Gameplay"
+        "Gameplay",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -571,7 +585,8 @@
       "description": "This mod switches itself off on multiplayer servers.",
       "category": "Gameplay",
       "tags": [
-        "Gameplay"
+        "Gameplay",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -617,7 +632,8 @@
       "description": "Tune your staffs and tridents with six sliders: range, attack speed, durability, damage, mana cost and mana refill. Every slider starts at 1, the game's own value, so nothing changes until you move it. Magic swords stay as they are.\n\nIn creative worlds a button in the settings gives you every staff.\n\nThis mod switches itself off on multiplayer servers.",
       "category": "Gameplay",
       "tags": [
-        "Gameplay"
+        "Gameplay",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.bettermagic-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -661,7 +677,8 @@
       "description": "This mod switches itself off on multiplayer servers.",
       "category": "Tools & Utility",
       "tags": [
-        "Tools & Utility"
+        "Tools & Utility",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.buildwand-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -708,7 +725,9 @@
       "category": "UI & HUD",
       "tags": [
         "UI & HUD",
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player",
+        "Multiplayer"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -753,7 +772,8 @@
       "description": "On servers and in realms you drop your items the normal way.",
       "category": "Quality of Life",
       "tags": [
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.gravestone-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -798,7 +818,8 @@
       "category": "Pets & Mounts",
       "tags": [
         "Pets & Mounts",
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.petrecall-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -842,7 +863,9 @@
       "description": "Fixes certain blocks flickering against each other, especially blocks seen from a distance.\n\nThis only helps if you see this flicker. If you don't, you don't need it.\n\nTested on Linux. It should work on Windows too, but that isn't confirmed.\n\nThere is one strength slider. Raise it if flicker remains. Too high and you start seeing through blocks up close.",
       "category": "Quality of Life",
       "tags": [
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player",
+        "Multiplayer"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.flickerfix-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -887,7 +910,8 @@
       "description": "All your bag slots are open from the start, and you can add extra rows on top.\n\nThe number of rows can only be changed from the main menu.\n\nThis mod switches itself off on multiplayer servers.",
       "category": "Quality of Life",
       "tags": [
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.moreslots-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -931,7 +955,9 @@
       "description": "Each of these can be switched off on its own.",
       "category": "Quality of Life",
       "tags": [
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player",
+        "Multiplayer"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -976,7 +1002,9 @@
       "description": "What you mine or kill goes straight into your bag, and your pets' kills too. If the bag is full, items drop like normal.\n\nBlocks you mine, creatures you kill, creatures your pets kill, and coins and gems each have their own switch.\n\nOn a server you only ever get your own loot. Not fully tested on servers yet.",
       "category": "Quality of Life",
       "tags": [
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player",
+        "Multiplayer"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.autopickup-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -1020,7 +1048,8 @@
       "description": "The Replicator copies any block again, like it did before the limits came in. That brings back ores, crystals, metal blocks, spawners, the Teleporter, the Safebox and the rest of the blocks the game stopped it copying.\n\nA slider sets how long the Replicator lasts. It starts at 1, the game's own value.\n\nThis mod switches itself off on multiplayer servers.",
       "category": "Tools & Utility",
       "tags": [
-        "Tools & Utility"
+        "Tools & Utility",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.ogreplicator-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -1064,7 +1093,8 @@
       "description": "Fewer villages and buildings in land you haven't explored yet. Trees and plants are left alone, and places you've already been stay as they are.\n\nA slider sets the percent of buildings that still appear. It can only be changed from the main menu.\n\nThis mod switches itself off on multiplayer servers.",
       "category": "Gameplay",
       "tags": [
-        "Gameplay"
+        "Gameplay",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.fewerstructures-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -1108,7 +1138,8 @@
       "description": "You move faster while you're on stairs. Going up and going down each have their own speed slider.\n\nThis mod switches itself off on multiplayer servers.",
       "category": "Gameplay",
       "tags": [
-        "Gameplay"
+        "Gameplay",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.climbstairsfaster-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -1152,7 +1183,8 @@
       "description": "This mod doesn't work on multiplayer servers or in realms.",
       "category": "Quality of Life",
       "tags": [
-        "Quality of Life"
+        "Quality of Life",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/icon1.png",
       "screenshots": [
@@ -1198,7 +1230,8 @@
       "description": "This mod doesn't work on multiplayer servers or in realms.",
       "category": "Tools & Utility",
       "tags": [
-        "Tools & Utility"
+        "Tools & Utility",
+        "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/icon1.png",
       "screenshots": [
