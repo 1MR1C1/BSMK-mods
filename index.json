@@ -1180,7 +1180,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
       "summary": "A block that pulls dropped items in its sealed room inside itself.",
-      "description": "A block that pulls every dropped item in its sealed room inside itself. It starts with its own slots, and each Vacuum Module touching it or another module adds 8 more. Right click to open it, take everything or store everything, and switch it on or off. If the room isn't sealed it tells you where the hole is and how big.\n\nThe settings let you change the slots per module and the largest room it can work in. In creative worlds a button gives you 10 of each block. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nThis mod doesn't work on multiplayer servers or in realms.",
+      "description": "A block that pulls every dropped item in its sealed room inside itself. It starts with its own slots, and each Vacuum Module touching it or another module adds 8 more. Right click to open it, take everything or store everything, and switch it on or off. If the room isn't sealed it tells you where the hole is and how big.\n\nThe settings let you change the slots per module and the largest room it can work in. In creative worlds a button gives you 10 of each block. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nThis mod doesn't work on multiplayer servers or in realms.\n\nHeads up: this mod will be removed from the store and folded into Block Industries, one bigger steampunk tech mod.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -1227,7 +1227,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
       "summary": "A dispenser for your spawners, a terminal to run them, and a block that darkens a room.",
-      "description": "Three new blocks for mob farms. The Dispenser holds your spawners. The Terminal runs them on timers. The Dark Block blacks out a sealed room. In the Terminal each spawner has its own settings, or switch to one set for every spawner in that dispenser. Drag the sliders or type a number.\n\nIn creative worlds a button in the settings gives you 10 of each. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nThis mod doesn't work on multiplayer servers or in realms.",
+      "description": "Three new blocks for mob farms. The Dispenser holds your spawners. The Terminal runs them on timers. The Dark Block blacks out a sealed room. In the Terminal each spawner has its own settings, or switch to one set for every spawner in that dispenser. Drag the sliders or type a number.\n\nIn creative worlds a button in the settings gives you 10 of each. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nThis mod doesn't work on multiplayer servers or in realms.\n\nHeads up: this mod will be removed from the store and folded into Block Industries, one bigger steampunk tech mod.",
       "category": "Tools & Utility",
       "tags": [
         "Tools & Utility",
