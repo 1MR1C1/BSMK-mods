@@ -1323,6 +1323,51 @@
       "createdUtc": "2026-11-08T13:57:10.0000000Z",
       "updatedUtc": "2026-11-08T14:15:24.0000000Z",
       "changelog": "- Fixed the mob log lines counting wrong\nNeeds framework 1.4.2"
+    },
+    {
+      "id": "1mr1c1.instantfurnaces",
+      "name": "Instant Furnaces",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Furnaces and cauldrons finish instantly, same fuel cost.",
+      "description": "No more waiting on furnaces. Put in your ore and fuel and the whole stack is smelted straight away.\n\nFuel costs the same as always, one piece per smelt. Cauldrons are instant too.\n\nWorks online as well. A full stack finishes in one go instead of hundreds of little steps, which also makes furnaces a lot more reliable on servers.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life",
+        "Single Player",
+        "Multiplayer"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.instantfurnaces-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.instantfurnaces-v1.0.0.0/shot1.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.instantfurnaces-v1.0.0.0/InstantFurnaces.dll",
+      "size": 11264,
+      "sha256": "4BC779880131360430EBC91B7CBD8E7EB9FDE890FFF3A96A2AEC1231CFC1E4E1",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "All rights reserved",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.4.2",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-08T14:29:40.0000000Z",
+      "updatedUtc": "2026-11-08T14:29:40.0000000Z",
+      "changelog": "First release.\nNeeds framework 1.4.2"
     }
   ]
 }
