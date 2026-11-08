@@ -1285,7 +1285,7 @@
       "name": "Server Invites",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.1.0",
+      "version": "1.0.2.0",
       "summary": "A mod for servers. Still in development.",
       "description": "A mod for playing on servers. Still in development, so things will change and there may be bugs.",
       "category": "Tools & Utility",
@@ -1297,9 +1297,9 @@
       "screenshots": [
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.1.0/shot1.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.1.0/ServerInvites.dll",
-      "size": 17920,
-      "sha256": "56139D8B968A623024ECED4AAF501E9F812649BED7E2872F21BFED7AB0347355",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.2.0/ServerInvites.dll",
+      "size": 19968,
+      "sha256": "C006A6AC47637B485D66E73556CF2B315BA47F645251CBA31DF9004AB228C9BA",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1321,8 +1321,8 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-08T13:57:10.0000000Z",
-      "updatedUtc": "2026-11-08T13:57:10.0000000Z",
-      "changelog": "- Locks set on the server now reach you\n- Join Game from the Steam friends list works without a new invite\n- Rejoins by itself after a stall, when mobs freeze and stop dropping\n- Joins again on its own if the link to the server dies\nNeeds framework 1.4.2"
+      "updatedUtc": "2026-11-08T14:01:31.0000000Z",
+      "changelog": "- Writes extra lines to the log about who runs the mobs, to track down mobs freezing after lag\n- After lag, waits 15 seconds before rejoining\nNeeds framework 1.4.2"
     }
   ]
 }
