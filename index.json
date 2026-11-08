@@ -102,7 +102,7 @@
       "name": "Character Editor",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.4.0",
+      "version": "1.0.5.0",
       "summary": "Change your stats, items, world and quests.",
       "description": "A full editor for your character and your world, for single-player.\n\n- Stats: set your level, XP, skill points and diamonds. Fill or raise your health, mana, breath and hunger, set your armour and damage, or turn on god mode.\n- World: switch between Survival, Creative, Story, Hardcore and Sandbox without losing your stuff. You can also turn on flying in any mode, set the time of day and pick the weather.\n- Inventory: add any item to your bag, crafting slots or hotbar. Fill your equipment slots and repair your gear.\n- Pets: edit your summoned pet's level, XP, health and hunger.\n- Quests: start, finish or reset any quest, with or without the reward.\n- Achievements: complete them one at a time or all at once.\n- Saves: save your whole loadout and load it back later.\n\nGood for testing a build, fixing a save that went wrong, or just playing your way.",
       "category": "Tools & Utility",
@@ -117,9 +117,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.2.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.4.0/CharacterEditor.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.charactereditor-v1.0.5.0/CharacterEditor.dll",
       "size": 74752,
-      "sha256": "77B89F5735FF8CDD914DD831A57EA9DF1CDDC19B9A4D8B078DA2001AC8BF8E1E",
+      "sha256": "0DB09943E84852BD52338BED3C5FA2788DEA572A89EBEBD3CA27E6D0607E94EE",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -141,8 +141,8 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-05T15:24:40.0000000Z",
-      "changelog": "- Talents tab hidden while empty, skills are on the Stats tab\n- Fixes the Update button that wouldn't go away\n- Control tips added\nNeeds framework 1.4.1"
+      "updatedUtc": "2026-11-08T12:01:25.0000000Z",
+      "changelog": "- Creative Flight now switches off with the mod, so a server that turns Character Editor off stops flying too\nNeeds framework 1.4.1"
     },
     {
       "id": "1mr1c1.minimap",
@@ -1098,7 +1098,7 @@
       "name": "Fewer Structures",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.1.0",
+      "version": "1.0.2.0",
       "summary": "Fewer villages and buildings in land you haven't explored.",
       "description": "Fewer villages and buildings in land you haven't explored yet. Trees and plants are left alone, and places you've already been stay as they are.\n\nA slider sets the percent of buildings that still appear. It can only be changed from the main menu.\n\nWorks on multiplayer servers too, as long as everyone on the server uses the same setting.",
       "category": "Gameplay",
@@ -1112,9 +1112,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.fewerstructures-v1.0.0.0/shot1.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.fewerstructures-v1.0.0.0/shot2.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.fewerstructures-v1.0.1.0/FewerStructures.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.fewerstructures-v1.0.2.0/FewerStructures.dll",
       "size": 13312,
-      "sha256": "B8078869BE832C829D67C56CEA5A26F9ABAF607CE86D7B3F74A3F9A27D6C09B4",
+      "sha256": "C1D811E30B3ADF424C2A4A26AF11700F87D245D70E578442F37DD596088BAA00",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1136,8 +1136,8 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-08T07:46:46.0000000Z",
-      "changelog": "- Now works on multiplayer servers, everyone on the server needs the same setting\nNeeds framework 1.4.2"
+      "updatedUtc": "2026-11-08T12:01:25.0000000Z",
+      "changelog": "- Server settings now apply after you join, before they were ignored until you left the world\nNeeds framework 1.4.2"
     },
     {
       "id": "1mr1c1.climbstairsfaster",
