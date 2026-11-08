@@ -1286,15 +1286,17 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
-      "summary": "Join a friend's server through Steam, no addresses or router setup.",
-      "description": "Join a friend's Block Story Server through Steam. No addresses, no router setup, no port forwarding.\n\nAccept their Steam invite, or right-click them in your Steam friends list and pick Join Game while their server is on, and you're in. Works even if the game is closed, Steam starts it for you.\n\nOnline games over Steam's relays can stall now and then. When that happens the mobs around you freeze and drop nothing, and the game never fixes it by itself. Server Invites spots the stall and quickly rejoins for you once the link is back, so you don't have to leave and come back. If the link dies completely it joins again on its own.\n\nOnly does something when you join a server this way. Needs the Block Story Server app on the host's PC.",
+      "summary": "A mod for servers. Still in development.",
+      "description": "A mod for playing on servers. Still in development, so things will change and there may be bugs.",
       "category": "Tools & Utility",
       "tags": [
         "Tools & Utility",
         "Multiplayer"
       ],
-      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.1.0/icon.png",
-      "screenshots": [],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.1.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.1.0/shot1.png"
+      ],
       "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.1.0/ServerInvites.dll",
       "size": 17920,
       "sha256": "56139D8B968A623024ECED4AAF501E9F812649BED7E2872F21BFED7AB0347355",
