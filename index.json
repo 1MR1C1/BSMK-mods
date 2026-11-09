@@ -915,7 +915,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
       "summary": "All your bag slots open from the start, plus extra rows.",
-      "description": "All your bag slots are open from the start, and you can add extra rows on top.\n\nThe number of rows can only be changed from the main menu.\n\nWorks on multiplayer servers too.",
+      "description": "Still works, but no longer updated. Everything from More Slots is now built into Better Inventory by BlueKitsunex777x, so grab that instead for the improved version.\n\nAll your bag slots are open from the start, and you can add extra rows on top.\n\nThe number of rows can only be changed from the main menu.\n\nWorks on multiplayer servers too.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -952,7 +952,7 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-08T07:46:46.0000000Z"
+      "updatedUtc": "2026-11-09T20:02:20.0000000Z"
     },
     {
       "id": "1mr1c1.mousecontrols",
