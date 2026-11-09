@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-09T15:11:57.0000000Z",
+  "updatedUtc": "2026-11-09T15:47:39.0000000Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
       "name": "Xray",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.3.0",
+      "version": "1.0.4.0",
       "summary": "See ores and gems through the ground.",
       "description": "Press your Xray key and stone, dirt and sand fade away, leaving only the stuff worth digging for. Ores, gems, crystals and rare blocks stay visible, so you can see where a vein is before you dig.\n\nYou choose what shows. There's a switch for every ore and gem (iron, coal, gold, cobalt, sulphur, amethyst, pyrite, devil ores and the rest), and for liquids like water, lava, acid and swamp. There are separate groups for space rocks and value blocks too. All On and All Off flip a whole group at once.\n\nDon't like everything around you going invisible? Turn up the Ground see-through slider and the ground stays faintly visible, so you can still tell where the edges are and don't walk off a cliff.",
       "category": "Tools & Utility",
@@ -24,9 +24,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/shot4.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.1.0/shot5.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.3.0/Xray.dll",
-      "size": 48128,
-      "sha256": "A052CD1DF8188078A537D0448CD0D1A5E237F7AB49094BAAB826C6BABB2BFA82",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xray-v1.0.4.0/Xray.dll",
+      "size": 50176,
+      "sha256": "D4E0AB03716A5C2A1AEF5AD3FB219F686EC0E60BB50F2A929A01D8CEBA96FC8A",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -44,12 +44,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- One common block can't use up the whole limit and hide your ores\n- Fixes the Update button that wouldn't go away\n- Control tips added\nNeeds framework 1.4.1",
+      "changelog": "- Much less lag near big lava lakes (hell) - sides of blocks that touch each other aren't drawn anymore\nNeeds framework 1.4.1",
       "minCoreVersion": "1.4.1",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-06T14:18:07.3987569Z",
-      "updatedUtc": "2026-11-05T15:24:40.0000000Z"
+      "updatedUtc": "2026-11-09T15:47:39.0000000Z"
     },
     {
       "id": "1mr1c1.blockstorycore",
@@ -57,8 +57,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.5.0.0",
-      "summary": "The framework every Mod Kit mod runs on \u2014 install it once, it updates itself.",
-      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once \u2014 after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nFor creators: everything in Core is optional\n\nUse the parts you want and skip the rest. Settings pages, keybinds, icons, control tips, items, creatures and pets are all there if you need them, and none of it shows up if you don't. The full list is in the Toolbox SDK guide in the Mod Kit.\n\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you \u2014 your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox \u2014 blocks, items, creatures, pets, world/player/event hooks, keybinds \u2014 lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
+      "summary": "The framework every Mod Kit mod runs on — install it once, it updates itself.",
+      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once — after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\n─────────────────────────────\nFor creators: everything in Core is optional\n\nUse the parts you want and skip the rest. Settings pages, keybinds, icons, control tips, items, creatures and pets are all there if you need them, and none of it shows up if you don't. The full list is in the Toolbox SDK guide in the Mod Kit.\n\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you — your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox — blocks, items, creatures, pets, world/player/event hooks, keybinds — lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
       "category": "Library/API",
       "tags": [
         "Library/API",
