@@ -1376,7 +1376,7 @@
       "authorId": "BlueDemonx911x",
       "version": "1.0.0.0",
       "summary": "Increases inventory size",
-      "description": "You can increase both the rows and the columns, extra rows unlock like normal, every 10 levels after level 120\nThere is a toggle to unlock all rows in your inventory from the start\n\nColumns - min: 5      | max: 10\nRows       - min: 12    | max: 50\n\nCredits: (BSMK) MR C - helped alot, and sent me parts of the code",
+      "description": "You can increase both the rows and the columns, extra rows unlock like normal, every 10 levels after level 120\nThere is a toggle to unlock all rows in your inventory from the start\n\nColumns - min: 5      | max: 10\nRows       - min: 12    | max: 50\n\nMore Slots by MR C is now merged into Better Inventory, all its features are included and improved here",
       "category": "Single Player",
       "tags": [
         "Single Player",
@@ -1409,7 +1409,7 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "More Slots by MR C is now merged into Better Inventory, all its features are included and improved here",
+      "changelog": "New toggle to unlock all inventory rows from the start",
       "minCoreVersion": "1.4.2",
       "conflicts": [],
       "capabilities": [],
