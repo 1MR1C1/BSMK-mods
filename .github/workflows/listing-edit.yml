@@ -1,0 +1,34 @@
+# Lets an approved mod author change their own store listing (text, pictures, tags, links)
+# without waiting on us. The launcher opens an issue titled "Listing edit: <mod id>"; this checks
+# the issue was opened by the mod's own GitHub account, filters the text, writes index.json and
+# posts what changed to #mod-submissions. New mod files never go through here, they still get reviewed.
+name: Listing edit
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+# one at a time, so two edits landing together can't overwrite each other in index.json
+concurrency:
+  group: store-index
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: startsWith(github.event.issue.title, 'Listing edit:') && (github.event.action == 'opened' || github.event.label.name == 'approved')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node .github/listing-edit.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCORD_WEBHOOK: ${{ secrets.MODSUBMIT_WEBHOOK }}
