@@ -1,0 +1,33 @@
+# A new version of a mod already on the store, sent from the launcher by its own author. The launcher
+# opens an issue titled "Mod update: <mod id>"; this checks the author, scans the new file and puts it
+# live, or holds it for us if the scan finds something. Brand-new mods never come through here.
+name: Mod update
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+# one at a time, so two edits landing together can't overwrite each other in index.json
+concurrency:
+  group: store-index
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: startsWith(github.event.issue.title, 'Mod update:') && (github.event.action == 'opened' || github.event.label.name == 'approved')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node .github/mod-update.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCORD_WEBHOOK: ${{ secrets.MODSUBMIT_WEBHOOK }}
