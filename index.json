@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-10T15:03:58.773Z",
+  "updatedUtc": "2026-11-10T15:17:51.686Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1422,7 +1422,7 @@
       "name": "Bigger Safebox",
       "author": "BlueKitsunex777x",
       "authorId": "BlueDemonx911x",
-      "version": "1.0.0.0",
+      "version": "1.0.1.0",
       "summary": "Safeboxes get 6x6 slots",
       "description": "Safeboxes get 6x6 slots\nChanges from the main menu only\nBefore turning it off, take items out of the bottom slots: a safebox with something past slot 16 won't open without this mod",
       "category": "Single Player",
@@ -1438,9 +1438,9 @@
         "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/shot2.png",
         "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/BiggerSafebox.dll",
-      "size": 15360,
-      "sha256": "EAC6CA376538D14A14CB730FF5D2B3E7A56985284805031E65E13502E3626543",
+      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.1.0/BiggerSafebox.dll",
+      "size": 23040,
+      "sha256": "2943BA995E1E694A547117A3EBC0B25709348A640AD8176CEE84B826A4A6F912",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1457,11 +1457,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.0.7",
+      "minCoreVersion": "1.0.9",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-10T12:25:45.8332217Z",
-      "updatedUtc": "2026-11-10T15:03:58.773Z"
+      "updatedUtc": "2026-11-10T15:17:51.686Z",
+      "changelog": "- Now works on Multiplayer servers"
     },
     {
       "id": "bluedemonx911x.bigchest",
