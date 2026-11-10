@@ -17,7 +17,7 @@ const ownerApproved = event.action === "labeled" && event.label?.name === "appro
 // only what changes how a listing LOOKS. the mod file, version, download link, fingerprint and
 // earned stats are left alone, so a hijacked edit can never swap what people actually install.
 const editable = ["name", "summary", "description", "tags", "category", "iconUrl", "screenshots", "videoUrl",
-  "sourceUrl", "supportUrl", "donateUrl", "license", "deprecated", "gameVersions", "minGameVersion", "maxGameVersion"];
+  "sourceUrl", "supportUrl", "donateUrl", "license", "deprecated", "featured", "gameVersions", "minGameVersion", "maxGameVersion"];
 
 // same word list the launcher uses on comments (CommentFilter.cs). Block Story is mostly kids,
 // so it errs on the side of holding something back for a human look
@@ -85,8 +85,8 @@ function check(current, wanted) {
       if (value.some(u => !pictureOk(u, authorId, oldPics))) { problems.push("a screenshot isn't from your BSMK-mods-uploads repo"); continue; }
     } else if (key === "iconUrl") {
       if (value != null && !pictureOk(value, authorId, oldPics)) { problems.push("the icon isn't from your BSMK-mods-uploads repo"); continue; }
-    } else if (key === "deprecated") {
-      if (typeof value !== "boolean") { problems.push("deprecated must be yes/no"); continue; }
+    } else if (key === "deprecated" || key === "featured") {
+      if (typeof value !== "boolean") { problems.push(`${key} must be yes/no`); continue; }
     } else {
       if (!linkOk(value)) { problems.push(`${key} must be a plain https link`); continue; }
       if (value === "") value = null;
