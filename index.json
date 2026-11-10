@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-10T14:03:25.6765739Z",
+  "updatedUtc": "2026-11-10T15:03:58.773Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1445,7 +1445,7 @@
       "rating": 0,
       "ratingCount": 0,
       "gameVersions": [
-        "14.5.4"
+        "14.x"
       ],
       "platforms": [
         "win",
@@ -1461,7 +1461,7 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-10T12:25:45.8332217Z",
-      "updatedUtc": "2026-11-10T12:25:45.8332217Z"
+      "updatedUtc": "2026-11-10T15:03:58.773Z"
     },
     {
       "id": "bluedemonx911x.bigchest",
