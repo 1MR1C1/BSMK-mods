@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-09T20:08:14.4625298Z",
+  "updatedUtc": "2026-11-10T08:05:43.2857890Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -9,10 +9,10 @@
       "authorId": "1MR1C1",
       "version": "1.0.5.0",
       "summary": "See ores and gems through the ground.",
-      "description": "Press your Xray key and stone, dirt and sand fade away, leaving only the stuff worth digging for. Ores, gems, crystals and rare blocks stay visible, so you can see where a vein is before you dig.\n\nYou choose what shows. There's a switch for every ore and gem (iron, coal, gold, cobalt, sulphur, amethyst, pyrite, devil ores and the rest), and for liquids like water, lava, acid and swamp. There are separate groups for space rocks and value blocks too. All On and All Off flip a whole group at once.\n\nDon't like everything around you going invisible? Turn up the Ground see-through slider and the ground stays faintly visible, so you can still tell where the edges are and don't walk off a cliff.",
-      "category": "Tools & Utility",
+      "description": "Press your Xray key and stone, dirt and sand fade away, leaving only the stuff worth digging for. Ores, gems, crystals and rare blocks stay visible, so you can see where a vein is before you dig.\n\nYou choose what shows. There\u0027s a switch for every ore and gem (iron, coal, gold, cobalt, sulphur, amethyst, pyrite, devil ores and the rest), and for liquids like water, lava, acid and swamp. There are separate groups for space rocks and value blocks too. All On and All Off flip a whole group at once.\n\nDon\u0027t like everything around you going invisible? Turn up the Ground see-through slider and the ground stays faintly visible, so you can still tell where the edges are and don\u0027t walk off a cliff.",
+      "category": "Tools \u0026 Utility",
       "tags": [
-        "Tools & Utility",
+        "Tools \u0026 Utility",
         "Quality of Life",
         "Single Player"
       ],
@@ -44,7 +44,7 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Ores in hell now show their real look instead of another block's texture\n- Less stutter with lots of lava around: finding and drawing the highlight now runs on your other CPU cores\nNeeds framework 1.0.5",
+      "changelog": "- Ores in hell now show their real look instead of another block\u0027s texture\n- Less stutter with lots of lava around: finding and drawing the highlight now runs on your other CPU cores\nNeeds framework 1.0.5",
       "minCoreVersion": "1.0.5",
       "conflicts": [],
       "capabilities": [],
@@ -57,8 +57,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.8.0",
-      "summary": "The framework every Mod Kit mod runs on — install it once, it updates itself.",
-      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once — after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\n─────────────────────────────\nFor creators: everything in Core is optional\n\nUse the parts you want and skip the rest. Settings pages, keybinds, icons, control tips, items, creatures and pets are all there if you need them, and none of it shows up if you don't. The full list is in the Toolbox SDK guide in the Mod Kit.\n\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you — your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox — blocks, items, creatures, pets, world/player/event hooks, keybinds — lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
+      "summary": "The framework every Mod Kit mod runs on \u2014 install it once, it updates itself.",
+      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don\u0027t rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \u0022Mods\u0022 button to the game\u0027s main menu so you can see and manage what\u0027s running.\n\nIf a mod says it \u0022needs Core,\u0022 this is it. You install it once \u2014 after that it updates on its own through the Mod Kit whenever there\u0027s a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nFor creators: everything in Core is optional\n\nUse the parts you want and skip the rest. Settings pages, keybinds, icons, control tips, items, creatures and pets are all there if you need them, and none of it shows up if you don\u0027t. The full list is in the Toolbox SDK guide in the Mod Kit.\n\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you \u2014 your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you\u0027re coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game\u0027s BepInEx/plugins folder once Core is installed), and in your plugin\u0027s Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \u0022My Mod\u0022,\n        Description = \u0022What my mod does.\u0022,\n        GetEnabled  = () =\u003E _enabled,        // your mod\u0027s current on/off state\n        SetEnabled  = on =\u003E _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () =\u003E { /* open your settings screen */ }\n    });\n\nThat\u0027s the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox \u2014 blocks, items, creatures, pets, world/player/event hooks, keybinds \u2014 lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
       "category": "Library/API",
       "tags": [
         "Library/API",
@@ -90,7 +90,7 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Settings Profiles page: save every mod setting, switch and key as a named profile and swap between them\n- Mod keys no longer fire while you're typing in one of the game's own text boxes\n- Settings pages no longer cut off their last rows, and hover tips sit in the right place\n- Tip popups can close themselves the moment they stop applying",
+      "changelog": "- Settings Profiles page: save every mod setting, switch and key as a named profile and swap between them\n- Mod keys no longer fire while you\u0027re typing in one of the game\u0027s own text boxes\n- Settings pages no longer cut off their last rows, and hover tips sit in the right place\n- Tip popups can close themselves the moment they stop applying",
       "minCoreVersion": "",
       "conflicts": [],
       "capabilities": [],
@@ -104,10 +104,10 @@
       "authorId": "1MR1C1",
       "version": "1.0.5.0",
       "summary": "Change your stats, items, world and quests.",
-      "description": "A full editor for your character and your world, for single-player.\n\n- Stats: set your level, XP, skill points and diamonds. Fill or raise your health, mana, breath and hunger, set your armour and damage, or turn on god mode.\n- World: switch between Survival, Creative, Story, Hardcore and Sandbox without losing your stuff. You can also turn on flying in any mode, set the time of day and pick the weather.\n- Inventory: add any item to your bag, crafting slots or hotbar. Fill your equipment slots and repair your gear.\n- Pets: edit your summoned pet's level, XP, health and hunger.\n- Quests: start, finish or reset any quest, with or without the reward.\n- Achievements: complete them one at a time or all at once.\n- Saves: save your whole loadout and load it back later.\n\nGood for testing a build, fixing a save that went wrong, or just playing your way.",
-      "category": "Tools & Utility",
+      "description": "A full editor for your character and your world, for single-player.\n\n- Stats: set your level, XP, skill points and diamonds. Fill or raise your health, mana, breath and hunger, set your armour and damage, or turn on god mode.\n- World: switch between Survival, Creative, Story, Hardcore and Sandbox without losing your stuff. You can also turn on flying in any mode, set the time of day and pick the weather.\n- Inventory: add any item to your bag, crafting slots or hotbar. Fill your equipment slots and repair your gear.\n- Pets: edit your summoned pet\u0027s level, XP, health and hunger.\n- Quests: start, finish or reset any quest, with or without the reward.\n- Achievements: complete them one at a time or all at once.\n- Saves: save your whole loadout and load it back later.\n\nGood for testing a build, fixing a save that went wrong, or just playing your way.",
+      "category": "Tools \u0026 Utility",
       "tags": [
-        "Tools & Utility",
+        "Tools \u0026 Utility",
         "Quality of Life",
         "Single Player"
       ],
@@ -151,10 +151,10 @@
       "authorId": "1MR1C1",
       "version": "1.0.6.0",
       "summary": "A minimap, a full world map and waypoints.",
-      "description": "A round minimap in the corner of your screen shows the land around you, with mobs, animals and NPCs marked with their names. It can stay pointing north or turn with you. You can zoom it, make it bigger or show your coordinates above it. N, E, S and W sit on the ring and on the world map, and can be switched off.\n\nOpen the full world map for the big picture. It remembers everywhere you've been, so the map fills in as you explore. Drag it around, zoom in and out, or switch between the surface and cave view.\n\nWaypoints let you mark your base, a good mine or anywhere else you want to find again. Pick a name, colour and icon, and it shows on both maps with how far away it is. Right-click the world map to drop one right there. When you die, a waypoint goes where it happened, so you can go get your stuff back.\n\nEvery world keeps its own map and waypoints. Realms and online servers get their own too, so they never draw over each other.",
-      "category": "UI & HUD",
+      "description": "A round minimap in the corner of your screen shows the land around you, with mobs, animals and NPCs marked with their names. It can stay pointing north or turn with you. You can zoom it, make it bigger or show your coordinates above it. N, E, S and W sit on the ring and on the world map, and can be switched off.\n\nOpen the full world map for the big picture. It remembers everywhere you\u0027ve been, so the map fills in as you explore. Drag it around, zoom in and out, or switch between the surface and cave view.\n\nWaypoints let you mark your base, a good mine or anywhere else you want to find again. Pick a name, colour and icon, and it shows on both maps with how far away it is. Right-click the world map to drop one right there. When you die, a waypoint goes where it happened, so you can go get your stuff back.\n\nEvery world keeps its own map and waypoints. Realms and online servers get their own too, so they never draw over each other.",
+      "category": "UI \u0026 HUD",
       "tags": [
-        "UI & HUD",
+        "UI \u0026 HUD",
         "Quality of Life",
         "Single Player",
         "Multiplayer"
@@ -185,7 +185,7 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- The map keys no longer fire while you're typing a name (teleporters, pets, signs)\nNeeds framework 1.0.6",
+      "changelog": "- The map keys no longer fire while you\u0027re typing a name (teleporters, pets, signs)\nNeeds framework 1.0.6",
       "minCoreVersion": "1.0.6",
       "conflicts": [],
       "capabilities": [],
@@ -199,11 +199,11 @@
       "authorId": "1MR1C1",
       "version": "1.0.2.0",
       "summary": "Talk to any NPC from anywhere.",
-      "description": "Press the NPC key for a list of every NPC in the game. Click Talk and their normal quest window opens, as if you'd walked up to them. Take new quests or hand in finished ones without the long walk back.\n\nThe number next to each name shows how many quests that NPC has for you, so you can see who's worth visiting.\n\nNPCs are switched off in Creative mode, so the menu only works in the other modes.",
+      "description": "Press the NPC key for a list of every NPC in the game. Click Talk and their normal quest window opens, as if you\u0027d walked up to them. Take new quests or hand in finished ones without the long walk back.\n\nThe number next to each name shows how many quests that NPC has for you, so you can see who\u0027s worth visiting.\n\nNPCs are switched off in Creative mode, so the menu only works in the other modes.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
-        "Adventure & RPG",
+        "Adventure \u0026 RPG",
         "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.npcmenu-v1.0.0.0/icon1.png",
@@ -232,7 +232,7 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Character stays still while the menu is open\n- Fixes the Update button that wouldn't go away\n- Control tips added\nNeeds framework 1.4.1",
+      "changelog": "- Character stays still while the menu is open\n- Fixes the Update button that wouldn\u0027t go away\n- Control tips added\nNeeds framework 1.4.1",
       "minCoreVersion": "1.0.5",
       "conflicts": [],
       "capabilities": [],
@@ -247,10 +247,10 @@
       "version": "1.0.2.0",
       "summary": "A new creature you can fight, catch and ride.",
       "description": "Xenor is a big new alien creature that lives in the space biomes. It levels up as you go further out, hits hard, spits acid, and drops meat, acid, bone, graviton and sometimes dark matter.\n\nYou can get your own Xenor in two ways:\n- Catch it: catch a wild one with a soul catcher to get its spawner. Then craft the Xenor Soul from the spawner, Spider Fangs, a Dragon Heart, Dragonscale and Bones.\n- Buy it: buy the Xenor Soul with diamonds.\n\nHold the soul and your Xenor appears as a pet. It follows you, fights for you, levels up and has its own inventory. You can name it, and you can climb on and ride it.",
-      "category": "Mobs & Creatures",
+      "category": "Mobs \u0026 Creatures",
       "tags": [
-        "Mobs & Creatures",
-        "Pets & Mounts",
+        "Mobs \u0026 Creatures",
+        "Pets \u0026 Mounts",
         "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.xenor-v1.0.0.0/icon1.png",
@@ -279,7 +279,7 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Fixes the Update button that wouldn't go away\nNeeds framework 1.4.0",
+      "changelog": "- Fixes the Update button that wouldn\u0027t go away\nNeeds framework 1.4.0",
       "minCoreVersion": "1.0.4",
       "conflicts": [],
       "capabilities": [],
@@ -293,10 +293,10 @@
       "authorId": "1MR1C1",
       "version": "1.0.6.0",
       "summary": "Break a whole ore vein in one hit.",
-      "description": "Hit one block of ore and every connected block of the same kind breaks with it. Everything goes straight into your inventory, and you still get your XP and your normal drop chances for each block.\n\nIt isn't only for ore. Switch the dig shape to dig a pillar up or down, or cut a staircase up or down. Choose how many blocks a single hit can take and how deep the shapes go.\n\nYour tool wears per block like normal mining, or you can turn that off. Protect my tool stops it just before your pick breaks, so you never lose a good one halfway through a vein.\n\nPress the Vein Miner key to turn it on or off whenever you like.",
-      "category": "Tools & Utility",
+      "description": "Hit one block of ore and every connected block of the same kind breaks with it. Everything goes straight into your inventory, and you still get your XP and your normal drop chances for each block.\n\nIt isn\u0027t only for ore. Switch the dig shape to dig a pillar up or down, or cut a staircase up or down. Choose how many blocks a single hit can take and how deep the shapes go.\n\nYour tool wears per block like normal mining, or you can turn that off. Protect my tool stops it just before your pick breaks, so you never lose a good one halfway through a vein.\n\nPress the Vein Miner key to turn it on or off whenever you like.",
+      "category": "Tools \u0026 Utility",
       "tags": [
-        "Tools & Utility",
+        "Tools \u0026 Utility",
         "Quality of Life",
         "Single Player",
         "Multiplayer"
@@ -339,64 +339,13 @@
       "updatedUtc": "2026-11-05T15:24:40.0000000Z"
     },
     {
-      "id": "1mr1c1.craftfrominventory",
-      "name": "Craft From Inventory",
-      "author": "BSMK",
-      "authorId": "1MR1C1",
-      "version": "1.0.4.0",
-      "summary": "A recipe panel by the crafting grid that pulls from your bag and nearby chests.",
-      "description": "Crafting without the back-and-forth. Craft From Inventory puts a recipe panel right next to your crafting grid, in your inventory and at the crafting table. Find what you want by category or search, click it, and the ingredients drop straight into the grid. It pulls from your bag and from any chests nearby, so you don't have to go fetch stuff first.\n\nWant a lot? Ctrl-click loads 10 crafts, Shift-click loads 100, and Alt-click adds one more each time with a running count. The same keys work on the crafted item to make that many in one go. Changed your mind? Clear sends everything back to the chest it came from.\n\nShort on parts? If you have the materials for them it offers to make them first, as many as the materials stretch to. Furnace recipes still need a furnace, so those aren't offered.\n\nQuick stack is in too. Press one key and everything in your bag goes onto matching stacks in nearby chests, without opening them. Your hotbar and tools stay put.\n\nOnly shows recipes you've unlocked, so it won't spoil your progress. You can peek at locked ones if you want. Chest range is a slider from 4 to 64 blocks. Single player only.",
-      "category": "Quality of Life",
-      "tags": [
-        "Quality of Life",
-        "Tools & Utility",
-        "Single Player",
-        "Multiplayer"
-      ],
-      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/icon1.png",
-      "screenshots": [
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot1.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot2.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot3.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot4.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot5.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot6.png"
-      ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.4.0/CraftFromInventory.dll",
-      "size": 107008,
-      "sha256": "BF91F7D2C6B8CF719E5920F3F07CD07DEA35B79BB043F0BCF698CB10D55F98D8",
-      "downloads": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "gameVersions": [
-        "14.x"
-      ],
-      "platforms": [
-        "win",
-        "linux"
-      ],
-      "dependencies": [],
-      "license": "All rights reserved",
-      "supportUrl": "https://discord.gg/haTEJB8NXE",
-      "verified": true,
-      "flagged": false,
-      "deprecated": false,
-      "featured": false,
-      "changelog": "- Creative mode: every recipe shows as makeable and you get the item free, furnace and cauldron recipes too\nNeeds framework 1.4.2",
-      "minCoreVersion": "1.0.6",
-      "conflicts": [],
-      "capabilities": [],
-      "createdUtc": "2026-10-29T21:47:29.7397570Z",
-      "updatedUtc": "2026-11-08T07:49:24.0000000Z"
-    },
-    {
       "id": "1mr1c1.soultools",
       "name": "Soul Tools",
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.2.0",
       "summary": "Spawners spawn on every click and the soul catcher locks on from any distance.",
-      "description": "Two fixes for things that feel random in the base game.\n\nSure-fire spawners: left click a spawner and it spawns one creature, every single click. Mob caps, a crowd around it or a shaky mouse no longer eat your clicks. The spawner's own timer keeps running like normal, this only adds the ones you ask for.\n\nLock-on soul catcher: aim at a creature and click once. The catch locks on and keeps charging by itself, at any range, even if you let go or walk off. Click again or put the staff away to stop. Mana works like normal.\n\nBoth parts have their own switch in the settings. Single player only.",
+      "description": "Two fixes for things that feel random in the base game.\n\nSure-fire spawners: left click a spawner and it spawns one creature, every single click. Mob caps, a crowd around it or a shaky mouse no longer eat your clicks. The spawner\u0027s own timer keeps running like normal, this only adds the ones you ask for.\n\nLock-on soul catcher: aim at a creature and click once. The catch locks on and keeps charging by itself, at any range, even if you let go or walk off. Click again or put the staff away to stop. Mana works like normal.\n\nBoth parts have their own switch in the settings. Single player only.",
       "category": "Quality of Life",
       "tags": [
         "Gameplay",
@@ -429,7 +378,7 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Fixes the Update button that wouldn't go away\n- Control tips added\nNeeds framework 1.4.1",
+      "changelog": "- Fixes the Update button that wouldn\u0027t go away\n- Control tips added\nNeeds framework 1.4.1",
       "minCoreVersion": "1.0.5",
       "conflicts": [],
       "capabilities": [],
@@ -490,7 +439,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.3.0",
       "summary": "Lock on to a target and bend your shots to it.",
-      "description": "Aim help for bows, guns, the rocket launcher and magic. Set a lock key and a next target key in the settings. Press the lock key and it grabs what you aim near, or the closest creature in front of you, and red corners mark your target. After a kill it moves on to the closest one by itself. A path line shows where your arrow will go, and your shots can curve in to the locked target. Looking through a scope, it only picks what's inside the scope.\n\nEvery weapon type has its own switch. You can also set how strong the aim is, how fast shots curve, whether the arrow path shows, and whether animals and NPCs count as targets. It locks in front of you, or switch on Lock on all around you for 360.\n\nWorks on multiplayer servers too.",
+      "description": "Aim help for bows, guns, the rocket launcher and magic. Set a lock key and a next target key in the settings. Press the lock key and it grabs what you aim near, or the closest creature in front of you, and red corners mark your target. After a kill it moves on to the closest one by itself. A path line shows where your arrow will go, and your shots can curve in to the locked target. Looking through a scope, it only picks what\u0027s inside the scope.\n\nEvery weapon type has its own switch. You can also set how strong the aim is, how fast shots curve, whether the arrow path shows, and whether animals and NPCs count as targets. It locks in front of you, or switch on Lock on all around you for 360.\n\nWorks on multiplayer servers too.",
       "category": "Gameplay",
       "tags": [
         "Gameplay",
@@ -536,8 +485,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.3.0",
-      "summary": "Faster bows, arrows that pierce, and upgrades up to +5.",
-      "description": "Hold to draw and let go to shoot, with no cooldown. The bow stays drawn for as long as you hold. Arrows pass through enemies, you zoom in while drawing, and a full draw can land a critical hit. You can get your arrows back too.\n\nUpgrade your bow at the crafting table, from +1 up to +5. Each level adds damage, arrow speed, a faster draw and one more enemy pierced. From +3 it fires 3 arrows. At +5 that is 125% more damage, 75% more arrow speed and a 60% faster draw.\n\nDraw time, piercing, zoom, critical hits, multi-shot and arrows recovered are all in the settings.\n\nWorks on multiplayer servers too.",
+      "summary": "Faster bows, arrows that pierce, and upgrades up to \u002B5.",
+      "description": "Hold to draw and let go to shoot, with no cooldown. The bow stays drawn for as long as you hold. Arrows pass through enemies, you zoom in while drawing, and a full draw can land a critical hit. You can get your arrows back too.\n\nUpgrade your bow at the crafting table, from \u002B1 up to \u002B5. Each level adds damage, arrow speed, a faster draw and one more enemy pierced. From \u002B3 it fires 3 arrows. At \u002B5 that is 125% more damage, 75% more arrow speed and a 60% faster draw.\n\nDraw time, piercing, zoom, critical hits, multi-shot and arrows recovered are all in the settings.\n\nWorks on multiplayer servers too.",
       "category": "Gameplay",
       "tags": [
         "Gameplay",
@@ -585,7 +534,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.3.0",
       "summary": "A bolt action rifle, four new bullets and sliders for your guns.",
-      "description": "Adds a bolt action rifle that hits as far as you can see and harder than the hand gun, with shots that go through 3 more enemies. Hold right click to look through the scope, and use the mouse wheel for 3 zoom levels.\n\nFour new bullets fit every gun that shoots Bullets:\n- Incendiary sets what it hits on fire for 4 seconds, harder guns burn harder\n- Hollow-Point does 50% more damage\n- Explosive makes a small blast on top of the bullet's damage, hurts nearby creatures and doesn't break blocks\n- Armour-Piercing goes through 2 more enemies\n\nPut a bullet in the ammo slot from the Equipment HUD mod to pick which one you shoot.\n\nSliders set damage, fire rate, range, spread and recoil. Each one starts at 1, the game's own value. Rockets no longer damage the world.\n\nWorks on multiplayer servers too.",
+      "description": "Adds a bolt action rifle that hits as far as you can see and harder than the hand gun, with shots that go through 3 more enemies. Hold right click to look through the scope, and use the mouse wheel for 3 zoom levels.\n\nFour new bullets fit every gun that shoots Bullets:\n- Incendiary sets what it hits on fire for 4 seconds, harder guns burn harder\n- Hollow-Point does 50% more damage\n- Explosive makes a small blast on top of the bullet\u0027s damage, hurts nearby creatures and doesn\u0027t break blocks\n- Armour-Piercing goes through 2 more enemies\n\nPut a bullet in the ammo slot from the Equipment HUD mod to pick which one you shoot.\n\nSliders set damage, fire rate, range, spread and recoil. Each one starts at 1, the game\u0027s own value. Rockets no longer damage the world.\n\nWorks on multiplayer servers too.",
       "category": "Gameplay",
       "tags": [
         "Gameplay",
@@ -633,7 +582,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
       "summary": "Sliders for your staffs and tridents.",
-      "description": "Tune your staffs and tridents with six sliders: range, attack speed, durability, damage, mana cost and mana refill. Every slider starts at 1, the game's own value, so nothing changes until you move it. Magic swords stay as they are.\n\nIn creative worlds a button in the settings gives you every staff.\n\nWorks on multiplayer servers too.",
+      "description": "Tune your staffs and tridents with six sliders: range, attack speed, durability, damage, mana cost and mana refill. Every slider starts at 1, the game\u0027s own value, so nothing changes until you move it. Magic swords stay as they are.\n\nIn creative worlds a button in the settings gives you every staff.\n\nWorks on multiplayer servers too.",
       "category": "Gameplay",
       "tags": [
         "Gameplay",
@@ -678,11 +627,11 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.2.0",
-      "summary": "Build in big pieces, then undo if you don't like it.",
-      "description": "Hold the wand to build in big pieces: extend a surface, draw lines, walls, floors and boxes, make spheres, fill holes, and swap blocks between two points. A yellow outline shows what will be built before you commit.\n\nRight click builds, left click cancels and the middle button picks the block you're looking at. There are keys for the next mode and for undo, and you can change both. You can also set the most blocks placed at once and how far Fill Hole reaches.\n\nCraft the wand from a Gold Bar and two Sticks. In creative worlds a button in the settings gives you one.\n\nWorks on multiplayer servers too.",
-      "category": "Tools & Utility",
+      "summary": "Build in big pieces, then undo if you don\u0027t like it.",
+      "description": "Hold the wand to build in big pieces: extend a surface, draw lines, walls, floors and boxes, make spheres, fill holes, and swap blocks between two points. A yellow outline shows what will be built before you commit.\n\nRight click builds, left click cancels and the middle button picks the block you\u0027re looking at. There are keys for the next mode and for undo, and you can change both. You can also set the most blocks placed at once and how far Fill Hole reaches.\n\nCraft the wand from a Gold Bar and two Sticks. In creative worlds a button in the settings gives you one.\n\nWorks on multiplayer servers too.",
+      "category": "Tools \u0026 Utility",
       "tags": [
-        "Tools & Utility",
+        "Tools \u0026 Utility",
         "Single Player",
         "Multiplayer"
       ],
@@ -726,11 +675,11 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.2.0",
-      "summary": "See your gear's durability and get real slots for ammo, torch, potions and food.",
-      "description": "Shows your worn gear and its durability above the hotbar. It also adds real slots for ammo, a torch that lights without you holding it, health potions, mana potions and food.\n\nDrop any ammo on the ammo slot and it all stays inside, with a +1 or +2 on the slot showing how many other types are in there. Lift one out and the next comes up. Point at the slot with a window open to see what's inside: left click brings one to the front, right click sends it to your bag. The next ammo key only cycles what fits your weapon, and the slot swaps by itself when you change weapon.\n\nThere are keys for the torch and for changing ammo, and optional keys for using a potion or eating. Auto health potion, auto mana potion and auto food can each be switched on or off.\n\nEverything works on multiplayer servers too.",
-      "category": "UI & HUD",
+      "summary": "See your gear\u0027s durability and get real slots for ammo, torch, potions and food.",
+      "description": "Shows your worn gear and its durability above the hotbar. It also adds real slots for ammo, a torch that lights without you holding it, health potions, mana potions and food.\n\nDrop any ammo on the ammo slot and it all stays inside, with a \u002B1 or \u002B2 on the slot showing how many other types are in there. Lift one out and the next comes up. Point at the slot with a window open to see what\u0027s inside: left click brings one to the front, right click sends it to your bag. The next ammo key only cycles what fits your weapon, and the slot swaps by itself when you change weapon.\n\nThere are keys for the torch and for changing ammo, and optional keys for using a potion or eating. Auto health potion, auto mana potion and auto food can each be switched on or off.\n\nEverything works on multiplayer servers too.",
+      "category": "UI \u0026 HUD",
       "tags": [
-        "UI & HUD",
+        "UI \u0026 HUD",
         "Quality of Life",
         "Single Player",
         "Multiplayer"
@@ -807,7 +756,7 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Now works on multiplayer servers. The grave's list is kept on the PC of the player who died\nNeeds framework 1.4.2",
+      "changelog": "- Now works on multiplayer servers. The grave\u0027s list is kept on the PC of the player who died\nNeeds framework 1.4.2",
       "minCoreVersion": "1.0.6",
       "conflicts": [],
       "capabilities": [],
@@ -821,10 +770,10 @@
       "authorId": "1MR1C1",
       "version": "1.0.2.0",
       "summary": "One key summons all your pets, or sends them all back.",
-      "description": "Press one key to summon every pet in your bag, and press it again to send them all back. Dead pets are skipped so you don't spend diamonds.\n\nYou can change the key and set the most pets you can have out at once.\n\nWorks on multiplayer servers too.",
-      "category": "Pets & Mounts",
+      "description": "Press one key to summon every pet in your bag, and press it again to send them all back. Dead pets are skipped so you don\u0027t spend diamonds.\n\nYou can change the key and set the most pets you can have out at once.\n\nWorks on multiplayer servers too.",
+      "category": "Pets \u0026 Mounts",
       "tags": [
-        "Pets & Mounts",
+        "Pets \u0026 Mounts",
         "Quality of Life",
         "Single Player",
         "Multiplayer"
@@ -868,7 +817,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.0.0",
       "summary": "Fixes certain blocks flickering against each other.",
-      "description": "Fixes certain blocks flickering against each other, especially blocks seen from a distance.\n\nThis only helps if you see this flicker. If you don't, you don't need it.\n\nTested on Linux. It should work on Windows too, but that isn't confirmed.\n\nThere is one strength slider. Raise it if flicker remains. Too high and you start seeing through blocks up close.",
+      "description": "Fixes certain blocks flickering against each other, especially blocks seen from a distance.\n\nThis only helps if you see this flicker. If you don\u0027t, you don\u0027t need it.\n\nTested on Linux. It should work on Windows too, but that isn\u0027t confirmed.\n\nThere is one strength slider. Raise it if flicker remains. Too high and you start seeing through blocks up close.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -961,7 +910,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.3.0",
       "summary": "Minecraft style inventory controls, and hold right click to keep placing blocks.",
-      "description": "Every inventory and chest works with the mouse the way you'd expect from Minecraft.\n\nPicking up and putting down\nLeft click picks up a stack and left click puts it down. Right click takes half, then places one at a time. Let go outside a window and nothing lands on the ground, it stays in your hand. Left click outside a window and it goes back where it came from. Right click outside a window throws one on the ground, with shift the whole stack. Armor, rings and other gear pick up and drag like anything else, they don't put themselves on when you click them.\n\nItem info\nPick up an item and left click the i button to read about it. It goes back where it came from.\n\nSharing a stack out\nHold a stack, press and drag over slots. Left drag shares it evenly and whatever's left stays in your hand. Right drag places one in each slot, go over them again to add one more.\n\nGathering\nDouble click an item, or shift click one while you're holding it, and every stack of it in the open windows comes to your hand. Tools stack too, but two worn stacks won't go together, that's the game's rule.\n\nSending across\nShift click sends a stack from bag to chest and back, or bag to hotbar when no chest is open. Stacks fill in order from the first slot. With no chest open, shift clicking gear puts it on if that spot is free. Keep holding and drag to send every slot you pass over. Shift double click sends every stack of that item.\n\nShift and mouse wheel\nHold shift over a stack, wheel down sends one across and wheel up brings one back. The plain wheel still scrolls the bag.\n\nNumber keys\nWith a window open, point at an item and press 1 to 0. It goes to that hotbar slot and whatever was there swaps back.\n\nDrop key\nSet your own key in the settings. It drops one of what you're pointing at with a window open, or what's in your hand when there's no window. Hold ctrl to drop the whole stack. Things the game asks about before dropping are left alone.\n\nOut in the world\nHold right click to keep placing blocks instead of clicking for each one, and set how many blocks per second. Summons and vehicles still take a single click.\n\nEach of these can be switched off on its own.",
+      "description": "Every inventory and chest works with the mouse the way you\u0027d expect from Minecraft.\n\nPicking up and putting down\nLeft click picks up a stack and left click puts it down. Right click takes half, then places one at a time. Let go outside a window and nothing lands on the ground, it stays in your hand. Left click outside a window and it goes back where it came from. Right click outside a window throws one on the ground, with shift the whole stack. Armor, rings and other gear pick up and drag like anything else, they don\u0027t put themselves on when you click them.\n\nItem info\nPick up an item and left click the i button to read about it. It goes back where it came from.\n\nSharing a stack out\nHold a stack, press and drag over slots. Left drag shares it evenly and whatever\u0027s left stays in your hand. Right drag places one in each slot, go over them again to add one more.\n\nGathering\nDouble click an item, or shift click one while you\u0027re holding it, and every stack of it in the open windows comes to your hand. Tools stack too, but two worn stacks won\u0027t go together, that\u0027s the game\u0027s rule.\n\nSending across\nShift click sends a stack from bag to chest and back, or bag to hotbar when no chest is open. Stacks fill in order from the first slot. With no chest open, shift clicking gear puts it on if that spot is free. Keep holding and drag to send every slot you pass over. Shift double click sends every stack of that item.\n\nShift and mouse wheel\nHold shift over a stack, wheel down sends one across and wheel up brings one back. The plain wheel still scrolls the bag.\n\nNumber keys\nWith a window open, point at an item and press 1 to 0. It goes to that hotbar slot and whatever was there swaps back.\n\nDrop key\nSet your own key in the settings. It drops one of what you\u0027re pointing at with a window open, or what\u0027s in your hand when there\u0027s no window. Hold ctrl to drop the whole stack. Things the game asks about before dropping are left alone.\n\nOut in the world\nHold right click to keep placing blocks instead of clicking for each one, and set how many blocks per second. Summons and vehicles still take a single click.\n\nEach of these can be switched off on its own.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -994,7 +943,7 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Pet inventory now works like a chest: shift click sends between your bag and the pet's bag\nNeeds framework 1.0.6",
+      "changelog": "- Pet inventory now works like a chest: shift click sends between your bag and the pet\u0027s bag\nNeeds framework 1.0.6",
       "minCoreVersion": "1.0.6",
       "conflicts": [],
       "capabilities": [],
@@ -1008,7 +957,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.0.0",
       "summary": "What you mine or kill goes straight into your bag.",
-      "description": "What you mine or kill goes straight into your bag, and your pets' kills too. If the bag is full, items drop like normal.\n\nBlocks you mine, creatures you kill, creatures your pets kill, and coins and gems each have their own switch.\n\nOn a server you only ever get your own loot. Not fully tested on servers yet.",
+      "description": "What you mine or kill goes straight into your bag, and your pets\u0027 kills too. If the bag is full, items drop like normal.\n\nBlocks you mine, creatures you kill, creatures your pets kill, and coins and gems each have their own switch.\n\nOn a server you only ever get your own loot. Not fully tested on servers yet.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -1054,10 +1003,10 @@
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
       "summary": "The Replicator copies any block again.",
-      "description": "The Replicator copies any block again, like it did before the limits came in. That brings back ores, crystals, metal blocks, spawners, the Teleporter, the Safebox and the rest of the blocks the game stopped it copying.\n\nA slider sets how long the Replicator lasts. It starts at 1, the game's own value.\n\nWorks on multiplayer servers too.",
-      "category": "Tools & Utility",
+      "description": "The Replicator copies any block again, like it did before the limits came in. That brings back ores, crystals, metal blocks, spawners, the Teleporter, the Safebox and the rest of the blocks the game stopped it copying.\n\nA slider sets how long the Replicator lasts. It starts at 1, the game\u0027s own value.\n\nWorks on multiplayer servers too.",
+      "category": "Tools \u0026 Utility",
       "tags": [
-        "Tools & Utility",
+        "Tools \u0026 Utility",
         "Single Player",
         "Multiplayer"
       ],
@@ -1099,8 +1048,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.2.0",
-      "summary": "Fewer villages and buildings in land you haven't explored.",
-      "description": "Fewer villages and buildings in land you haven't explored yet. Trees and plants are left alone, and places you've already been stay as they are.\n\nA slider sets the percent of buildings that still appear. It can only be changed from the main menu.\n\nWorks on multiplayer servers too, as long as everyone on the server uses the same setting.",
+      "summary": "Fewer villages and buildings in land you haven\u0027t explored.",
+      "description": "Fewer villages and buildings in land you haven\u0027t explored yet. Trees and plants are left alone, and places you\u0027ve already been stay as they are.\n\nA slider sets the percent of buildings that still appear. It can only be changed from the main menu.\n\nWorks on multiplayer servers too, as long as everyone on the server uses the same setting.",
       "category": "Gameplay",
       "tags": [
         "Gameplay",
@@ -1146,7 +1095,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
       "summary": "You move faster on stairs.",
-      "description": "You move faster while you're on stairs. Going up and going down each have their own speed slider.\n\nWorks on multiplayer servers too.",
+      "description": "You move faster while you\u0027re on stairs. Going up and going down each have their own speed slider.\n\nWorks on multiplayer servers too.",
       "category": "Gameplay",
       "tags": [
         "Gameplay",
@@ -1192,7 +1141,7 @@
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
       "summary": "A block that pulls dropped items in its sealed room inside itself.",
-      "description": "A block that pulls every dropped item in its sealed room inside itself. It starts with its own slots, and each Vacuum Module touching it or another module adds 8 more. Right click to open it, take everything or store everything, and switch it on or off. If the room isn't sealed it tells you where the hole is and how big.\n\nThe settings let you change the slots per module and the largest room it can work in. In creative worlds a button gives you 10 of each block. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nThis mod doesn't work on multiplayer servers or in realms.\n\nHeads up: this mod will be removed from the store and folded into Block Industries, one bigger steampunk tech mod.",
+      "description": "A block that pulls every dropped item in its sealed room inside itself. It starts with its own slots, and each Vacuum Module touching it or another module adds 8 more. Right click to open it, take everything or store everything, and switch it on or off. If the room isn\u0027t sealed it tells you where the hole is and how big.\n\nThe settings let you change the slots per module and the largest room it can work in. In creative worlds a button gives you 10 of each block. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nThis mod doesn\u0027t work on multiplayer servers or in realms.\n\nHeads up: this mod will be removed from the store and folded into Block Industries, one bigger steampunk tech mod.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -1239,10 +1188,10 @@
       "authorId": "1MR1C1",
       "version": "1.0.1.0",
       "summary": "A dispenser for your spawners, a terminal to run them, and a block that darkens a room.",
-      "description": "Three new blocks for mob farms. The Dispenser holds your spawners. The Terminal runs them on timers. The Dark Block blacks out a sealed room. In the Terminal each spawner has its own settings, or switch to one set for every spawner in that dispenser. Drag the sliders or type a number.\n\nIn creative worlds a button in the settings gives you 10 of each. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nThis mod doesn't work on multiplayer servers or in realms.\n\nHeads up: this mod will be removed from the store and folded into Block Industries, one bigger steampunk tech mod.",
-      "category": "Tools & Utility",
+      "description": "Three new blocks for mob farms. The Dispenser holds your spawners. The Terminal runs them on timers. The Dark Block blacks out a sealed room. In the Terminal each spawner has its own settings, or switch to one set for every spawner in that dispenser. Drag the sliders or type a number.\n\nIn creative worlds a button in the settings gives you 10 of each. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nThis mod doesn\u0027t work on multiplayer servers or in realms.\n\nHeads up: this mod will be removed from the store and folded into Block Industries, one bigger steampunk tech mod.",
+      "category": "Tools \u0026 Utility",
       "tags": [
-        "Tools & Utility",
+        "Tools \u0026 Utility",
         "Single Player"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/icon1.png",
@@ -1288,9 +1237,9 @@
       "version": "1.0.3.0",
       "summary": "A mod for servers. Still in development.",
       "description": "A mod for playing on servers. Still in development, so things will change and there may be bugs.",
-      "category": "Tools & Utility",
+      "category": "Tools \u0026 Utility",
       "tags": [
-        "Tools & Utility",
+        "Tools \u0026 Utility",
         "Multiplayer"
       ],
       "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.1.0/icon1.png",
@@ -1380,7 +1329,7 @@
       "category": "Single Player",
       "tags": [
         "Single Player",
-        "UI & HUD",
+        "UI \u0026 HUD",
         "Storage"
       ],
       "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/icon1.png",
@@ -1415,6 +1364,57 @@
       "capabilities": [],
       "createdUtc": "2026-11-09T13:40:06.0525484Z",
       "updatedUtc": "2026-11-09T20:06:24.4974391Z"
+    },
+    {
+      "id": "1mr1c1.craftfrominventory",
+      "name": "Craft From Inventory",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.4.0",
+      "summary": "A recipe panel by the crafting grid that pulls from your bag and nearby chests.",
+      "description": "Crafting without the back-and-forth. Craft From Inventory puts a recipe panel right next to your crafting grid, in your inventory and at the crafting table. Find what you want by category or search, click it, and the ingredients drop straight into the grid. It pulls from your bag and from any chests nearby, so you don\u0027t have to go fetch stuff first.\n\nWant a lot? Ctrl-click loads 10 crafts, Shift-click loads 100, and Alt-click adds one more each time with a running count. The same keys work on the crafted item to make that many in one go. Changed your mind? Clear sends everything back to the chest it came from.\n\nShort on parts? If you have the materials for them it offers to make them first, as many as the materials stretch to. Furnace recipes still need a furnace, so those aren\u0027t offered.\n\nQuick stack is in too. Press one key and everything in your bag goes onto matching stacks in nearby chests, without opening them. Your hotbar and tools stay put.\n\nOnly shows recipes you\u0027ve unlocked, so it won\u0027t spoil your progress. You can peek at locked ones if you want. Chest range is a slider from 4 to 64 blocks. Single player only.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life",
+        "Tools \u0026 Utility",
+        "Single Player",
+        "Multiplayer"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot1.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot2.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot3.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot4.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot5.png",
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot6.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.4.0/CraftFromInventory.dll",
+      "size": 107008,
+      "sha256": "BF91F7D2C6B8CF719E5920F3F07CD07DEA35B79BB043F0BCF698CB10D55F98D8",
+      "downloads": 37,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "All rights reserved",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": true,
+      "changelog": "- Creative mode: every recipe shows as makeable and you get the item free, furnace and cauldron recipes too\nNeeds framework 1.4.2",
+      "minCoreVersion": "1.0.6",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-10-29T21:47:29.7397570Z",
+      "updatedUtc": "2026-11-08T07:49:24.0000000Z"
     }
   ]
 }
