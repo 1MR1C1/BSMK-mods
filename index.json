@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-10T14:03:19.0066037Z",
+  "updatedUtc": "2026-11-10T14:03:25.6765739Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1462,6 +1462,54 @@
       "capabilities": [],
       "createdUtc": "2026-11-10T12:25:45.8332217Z",
       "updatedUtc": "2026-11-10T12:25:45.8332217Z"
+    },
+    {
+      "id": "bluedemonx911x.bigchest",
+      "name": "Big Chest",
+      "author": "BlueKitsunex777x",
+      "authorId": "BlueDemonx911x",
+      "version": "1.0.0.0",
+      "summary": "A Big Chest with 64 slots",
+      "description": "A Big Chest with 64 slots. Put two side by side and they become one chest with 128.\n\nCredits: Mr C - For the code and assets",
+      "category": "Single Player",
+      "tags": [
+        "Single Player",
+        "Multiplayer",
+        "UI \u0026 HUD",
+        "Items \u0026 Blocks",
+        "Storage"
+      ],
+      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot1.png",
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot2.png",
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot3.png",
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot4.png"
+      ],
+      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/BigChest.dll",
+      "size": 50688,
+      "sha256": "1C9927FE3F7AD6D53D0C24B7360FBFCEC2D26DB592FFF63AA976D5A2FADB26E5",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "verified": false,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.0.7",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-10T14:01:09.3595579Z",
+      "updatedUtc": "2026-11-10T14:01:09.3595579Z"
     }
   ]
 }
