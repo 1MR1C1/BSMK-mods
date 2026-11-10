@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-10T08:05:43.2857890Z",
+  "updatedUtc": "2026-11-10T12:12:13.5267777Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1319,53 +1319,6 @@
       "updatedUtc": "2026-11-08T14:29:40.0000000Z"
     },
     {
-      "id": "bluedemonx911x.betterinventory",
-      "name": "Better Inventory",
-      "author": "BlueKitsunex777x",
-      "authorId": "BlueDemonx911x",
-      "version": "1.0.0.0",
-      "summary": "Increases inventory size",
-      "description": "You can increase both the rows and the columns, extra rows unlock like normal, every 10 levels after level 120\nThere is a toggle to unlock all rows in your inventory from the start\n\nColumns - min: 5      | max: 10\nRows       - min: 12    | max: 50\n\nMore Slots by MR C is now merged into Better Inventory, all its features are included and improved here",
-      "category": "Single Player",
-      "tags": [
-        "Single Player",
-        "UI \u0026 HUD",
-        "Storage"
-      ],
-      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/icon1.png",
-      "screenshots": [
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot1.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot2.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot3.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot4.png"
-      ],
-      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/BetterInventory.dll",
-      "size": 15872,
-      "sha256": "7E57E11847FC3A6A21882074A94F2AC4C6FEE0118749A44FE394C3DA848F8278",
-      "downloads": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "gameVersions": [
-        "14.x"
-      ],
-      "platforms": [
-        "win",
-        "linux"
-      ],
-      "dependencies": [],
-      "license": "MIT",
-      "verified": false,
-      "flagged": false,
-      "deprecated": false,
-      "featured": false,
-      "changelog": "New toggle to unlock all inventory rows from the start",
-      "minCoreVersion": "1.0.6",
-      "conflicts": [],
-      "capabilities": [],
-      "createdUtc": "2026-11-09T13:40:06.0525484Z",
-      "updatedUtc": "2026-11-09T20:06:24.4974391Z"
-    },
-    {
       "id": "1mr1c1.craftfrominventory",
       "name": "Craft From Inventory",
       "author": "BSMK",
@@ -1415,6 +1368,54 @@
       "capabilities": [],
       "createdUtc": "2026-10-29T21:47:29.7397570Z",
       "updatedUtc": "2026-11-08T07:49:24.0000000Z"
+    },
+    {
+      "id": "bluedemonx911x.betterinventory",
+      "name": "Better Inventory",
+      "author": "BlueKitsunex777x",
+      "authorId": "BlueDemonx911x",
+      "version": "1.1.1.0",
+      "summary": "Increases inventory size",
+      "description": "You can increase both the rows and the columns, extra rows unlock like normal, every 10 levels after level 120\nThere is a toggle to unlock all rows in your inventory from the start\n\nColumns - min: 5      | max: 10\nRows       - min: 12    | max: 50\n\nMore Slots by MR C is now merged into Better Inventory, all its features are included and improved here",
+      "category": "Single Player",
+      "tags": [
+        "Single Player",
+        "Multiplayer",
+        "UI \u0026 HUD",
+        "Storage"
+      ],
+      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot1.png",
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot2.png",
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot3.png",
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot4.png"
+      ],
+      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.1.1.0/BetterInventory.dll",
+      "size": 15872,
+      "sha256": "FF7A121F037627FA561FEE747DEF1021BA3967D04474FAF7D09733C69FC15731",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "verified": false,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "changelog": "Test build for Multiplayer",
+      "minCoreVersion": "1.0.7",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-09T13:40:06.0525484Z",
+      "updatedUtc": "2026-11-10T12:10:46.3568314Z"
     }
   ]
 }
