@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-10T12:12:13.5267777Z",
+  "updatedUtc": "2026-11-10T14:03:19.0066037Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1416,6 +1416,52 @@
       "capabilities": [],
       "createdUtc": "2026-11-09T13:40:06.0525484Z",
       "updatedUtc": "2026-11-10T12:10:46.3568314Z"
+    },
+    {
+      "id": "bluedemonx911x.biggersafebox",
+      "name": "Bigger Safebox",
+      "author": "BlueKitsunex777x",
+      "authorId": "BlueDemonx911x",
+      "version": "1.0.0.0",
+      "summary": "Safeboxes get 6x6 slots",
+      "description": "Safeboxes get 6x6 slots\nChanges from the main menu only\nBefore turning it off, take items out of the bottom slots: a safebox with something past slot 16 won\u0027t open without this mod",
+      "category": "Single Player",
+      "tags": [
+        "Single Player",
+        "Multiplayer",
+        "UI \u0026 HUD",
+        "Storage"
+      ],
+      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/shot1.png",
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/shot2.png",
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/shot3.png"
+      ],
+      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/BiggerSafebox.dll",
+      "size": 15360,
+      "sha256": "EAC6CA376538D14A14CB730FF5D2B3E7A56985284805031E65E13502E3626543",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.5.4"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "verified": false,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.0.7",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-10T12:25:45.8332217Z",
+      "updatedUtc": "2026-11-10T12:25:45.8332217Z"
     }
   ]
 }
