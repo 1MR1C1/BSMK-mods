@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-10T15:17:51.686Z",
+  "updatedUtc": "2026-11-10T15:19:43.640Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1469,7 +1469,7 @@
       "name": "Big Chest",
       "author": "BlueKitsunex777x",
       "authorId": "BlueDemonx911x",
-      "version": "1.0.0.0",
+      "version": "1.0.1.0",
       "summary": "A Big Chest with 64 slots",
       "description": "A Big Chest with 64 slots. Put two side by side and they become one chest with 128.\n\nCredits: Mr C - For the code and assets",
       "category": "Single Player",
@@ -1487,9 +1487,9 @@
         "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot3.png",
         "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot4.png"
       ],
-      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/BigChest.dll",
-      "size": 50688,
-      "sha256": "1C9927FE3F7AD6D53D0C24B7360FBFCEC2D26DB592FFF63AA976D5A2FADB26E5",
+      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.1.0/BigChest.dll",
+      "size": 57344,
+      "sha256": "4F9FF35D4511A5CF12563E36733ABB4104A5EAC5978966C9E0D4D8DBB07DB53E",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1506,11 +1506,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.0.7",
+      "minCoreVersion": "1.0.9",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-10T14:01:09.3595579Z",
-      "updatedUtc": "2026-11-10T14:01:09.3595579Z"
+      "updatedUtc": "2026-11-10T15:19:43.640Z",
+      "changelog": "- Now works on Multiplayer servers"
     }
   ]
 }
