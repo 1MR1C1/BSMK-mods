@@ -149,7 +149,7 @@
       "name": "Minimap",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.7.0",
+      "version": "1.0.8.0",
       "summary": "A minimap, a full world map and waypoints.",
       "description": "A round minimap in the corner of your screen shows the land around you, with mobs, animals and NPCs marked with their names. It can stay pointing north or turn with you. You can zoom it, make it bigger or show your coordinates above it. N, E, S and W sit on the ring and on the world map, and can be switched off.\n\nOpen the full world map for the big picture. It remembers everywhere you've been, so the map fills in as you explore. Drag it around, zoom in and out, or switch between the surface and cave view.\n\nWaypoints let you mark your base, a good mine or anywhere else you want to find again. Pick a name, colour and icon, and it shows on both maps with how far away it is. Right-click the world map to drop one right there. When you die, a waypoint goes where it happened, so you can go get your stuff back.\n\nEvery world keeps its own map and waypoints. Realms and online servers get their own too, so they never draw over each other.",
       "category": "UI & HUD",
@@ -165,9 +165,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.7.0/Minimap.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.8.0/Minimap.dll",
       "size": 88576,
-      "sha256": "39365F60452CE8E7D527CB89C1544794DA3D36DCD45EC7FED074CBC11A5A4D30",
+      "sha256": "21C938B86A45875464D60CFCAF0D00A9315147B9340C25AD971AC098803D3BC8",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -185,12 +185,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Other players on a server now show on the map as blue dots\nNeeds framework 1.0.6",
+      "changelog": "- Fixed: two worlds on the same server shared one map and one set of waypoints. Each server world now gets its own\nNeeds framework 1.0.6",
       "minCoreVersion": "1.0.6",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-10T18:56:18.0000000Z"
+      "updatedUtc": "2026-11-10T19:19:31.0000000Z"
     },
     {
       "id": "1mr1c1.npcmenu",
