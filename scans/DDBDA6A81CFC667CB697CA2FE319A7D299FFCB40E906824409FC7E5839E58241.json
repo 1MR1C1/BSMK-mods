@@ -1,0 +1,17 @@
+{
+  "sha256": "DDBDA6A81CFC667CB697CA2FE319A7D299FFCB40E906824409FC7E5839E58241",
+  "scannedUtc": "2026-11-11T22:26:18.548Z",
+  "clam": {
+    "ran": true,
+    "found": []
+  },
+  "vt": {
+    "ran": true,
+    "malicious": 0,
+    "suspicious": 0,
+    "total": 71,
+    "flagged": []
+  },
+  "verdict": "clean",
+  "url": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.6.0/VeinMiner.dll"
+}
