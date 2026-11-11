@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-10T15:19:43.640Z",
+  "updatedUtc": "2026-11-11T14:23:23.265Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1434,11 +1434,11 @@
         "UI & HUD",
         "Storage"
       ],
-      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/icon1.png",
+      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/icon-20261111142302-1.png",
       "screenshots": [
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/shot1.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/shot2.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.0.0/shot3.png"
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-1.png",
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-2.png",
+        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-3.png"
       ],
       "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.1.0/BiggerSafebox.dll",
       "size": 23040,
@@ -1463,7 +1463,7 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-10T12:25:45.8332217Z",
-      "updatedUtc": "2026-11-10T15:17:51.686Z",
+      "updatedUtc": "2026-11-11T14:23:23.265Z",
       "changelog": "- Now works on Multiplayer servers"
     },
     {
