@@ -6,6 +6,7 @@
 //   (downloads, writes nothing, posts nothing)
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { scanFile, saveScan, describe } from "./virus-scan.mjs";
 
 const dry = process.argv[2] === "--dry";
 const repo = process.env.GITHUB_REPOSITORY || "1MR1C1/BSMK-mods";
@@ -143,6 +144,11 @@ async function main() {
   if (pulled && !ownerApproved)
     return refuse(pulled.sha256?.length ? "that exact file was pulled from the store. Send a fixed version."
       : "this mod has been switched off by the store team. Ask on the Discord.");
+  // a virus hit holds the update even for a trusted author; the scan is saved for BSMK Admin to show
+  const virus = await scanFile(bytes, sha);
+  if (!dry) await saveScan(virus).catch(e => console.error(e));
+  const virusLines = describe(virus);
+  if (dry) console.log("[virus]", virus.verdict, virusLines.join(" | "));
   const trusted = ((await readList("trusted.json", { Users: [] })).Users || []).some(u => String(u).toLowerCase() === opener.toLowerCase());
 
   for (let attempt = 0; attempt < 5; attempt++) {
@@ -163,8 +169,10 @@ async function main() {
     const waved = found.filter(f => trusted && !f.serious).map(f => "code " + f.text);
     for (const key of ["name", "summary", "description", "changelog"])
       if (typeof wanted[key] === "string" && explicit.test(wanted[key])) held.push(`${key} tripped the word filter`);
+    if (virus.verdict === "infected" || virus.verdict === "suspicious") held.push(`virus scan: ${virusLines.join(" / ")}`);
     const head = [`by ${opener}${trusted ? " (trusted)" : ""}`, `v${current.version} → v${wanted.version}`, ...(wanted.changelog ? [`changes: ${String(wanted.changelog).slice(0, 300)}`] : []),
-      ...waved.map(w => `ℹ let through for a trusted author: ${w}`)];
+      ...waved.map(w => `ℹ let through for a trusted author: ${w}`),
+      ...(virus.verdict === "not scanned" ? ["ℹ virus scan didn't run: " + virusLines.join(" / ")] : [])];
     if (held.length && !ownerApproved) {
       await say("Thanks! This update is waiting for a quick look from the store team before it goes live.", false, ["held"]);
       await discord(`Mod update HELD — ${current.name}`, [...head, ...held.map(h => "⚠ " + h), `Download: ${wanted.downloadUrl}`,
