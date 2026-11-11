@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-11T17:07:47.0000000Z",
+  "updatedUtc": "2026-11-11T17:07:55.0000000Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1187,9 +1187,9 @@
       "name": "Spawner Automation",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.2.0",
+      "version": "1.0.3.0",
       "summary": "A dispenser for your spawners, a terminal to run them, and a block that darkens a room.",
-      "description": "Three new blocks for mob farms. The Dispenser holds your spawners. The Terminal runs them on timers. The Dark Block blacks out a sealed room. In the Terminal each spawner has its own settings, or switch to one set for every spawner in that dispenser. Drag the sliders or type a number.\n\nIn creative worlds a button in the settings gives you 10 of each. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nWorks on multiplayer servers too: your machines and what's in them are kept on your own PC, so other players can't open them. Doesn't work in realms.",
+      "description": "Three new blocks for mob farms. The Dispenser holds your spawners. The Terminal runs them on timers. The Dark Block blacks out a sealed room. In the Terminal each spawner has its own settings, or switch to one set for every spawner in that dispenser. Drag the sliders or type a number.\n\nIn creative worlds a button in the settings gives you 10 of each. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nWorks on multiplayer servers too. On a Block Story Server everyone shares the machines and what's in them. On other servers your machines are kept on your own PC. Doesn't work in realms.",
       "category": "Tools & Utility",
       "tags": [
         "Tools & Utility",
@@ -1204,9 +1204,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot4.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot5.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.2.0/SpawnerAutomation.dll",
-      "size": 126464,
-      "sha256": "41D5771F66504EE103CDF602099076A01936547AA261BEC75E698BA239F404AA",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.3.0/SpawnerAutomation.dll",
+      "size": 134656,
+      "sha256": "824C244F90B3E828B730E4D03D2DF6D6C8C328F7D341A7195E4482660C1D6F19",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1224,12 +1224,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Now works on multiplayer servers. Your machines and what's in them are yours: kept on your PC\nNeeds framework 1.0.11",
+      "changelog": "- On a Block Story Server the machines are shared: everyone sees them and can use them. Machines you placed before move onto the server the first time you join\nNeeds framework 1.0.11",
       "minCoreVersion": "1.0.11",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-11T13:25:59.0000000Z"
+      "updatedUtc": "2026-11-11T17:07:55.0000000Z"
     },
     {
       "id": "1mr1c1.serverinvites",
