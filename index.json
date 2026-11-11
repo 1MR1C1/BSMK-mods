@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-11T14:23:23.265Z",
+  "updatedUtc": "2026-11-11T14:29:08.585Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1482,7 +1482,7 @@
         "Items & Blocks",
         "Storage"
       ],
-      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/icon1.png",
+      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-listing/icon-20261111142851-1.png",
       "screenshots": [
         "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot1.png",
         "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot2.png",
@@ -1512,7 +1512,7 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-10T14:01:09.3595579Z",
-      "updatedUtc": "2026-11-10T15:19:43.640Z",
+      "updatedUtc": "2026-11-11T14:29:08.585Z",
       "changelog": "- Now works on Multiplayer servers"
     }
   ]
