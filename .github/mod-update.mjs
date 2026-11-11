@@ -2,7 +2,8 @@
 // already on the store goes live by itself if it comes from the mod's own author and the scan below
 // finds nothing worrying. Anything that trips the scan is held for one of us. Brand-new mods never
 // come through here, they still get a full read by hand (tools/Approve).
-// Dry run on a PC: node mod-update.mjs --dry <event.json> <index.json>  (downloads, writes nothing, posts nothing)
+// Dry run on a PC: node mod-update.mjs --dry <event.json> <index.json> [trusted.json] [killed.json]
+//   (downloads, writes nothing, posts nothing)
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 
@@ -25,6 +26,9 @@ const explicit = /\b(porn|pornhub|xxx|nsfw|sex|sexual|nude|nudes|naked|boobs|tit
 // plain zero-ended word inside the file, so an exact-word match finds them without decompiling.
 // it won't stop someone determined to hide things, it's there to catch the obvious, and the author
 // already passed a full check by hand on their first mod.
+// trusted authors only get held for the first two, the rest is normal for some mods (update checks,
+// settings in the registry) and they've earned the benefit of the doubt
+const alwaysHold = new Set(["starts other programs", "loads hidden code"]);
 const watched = {
   "goes on the internet": ["WebClient", "HttpClient", "HttpWebRequest", "WebRequest", "UnityWebRequest", "Socket", "TcpClient", "UdpClient", "TcpListener", "Dns", "Ping", "SmtpClient"],
   "starts other programs": ["Process", "ProcessStartInfo"],
@@ -44,6 +48,20 @@ function readRequest(body) {
   const a = body.indexOf("<!--BSMK"), b = body.indexOf("BSMK-->");
   if (a < 0 || b <= a) return null;
   try { return JSON.parse(body.slice(a + 8, b).trim()); } catch { return null; }
+}
+
+// small owner-kept lists next to index.json: trusted.json = authors whose updates skip the hold unless
+// the scan finds something red, killed.json = mod files the store team pulled (kill switch / roll back)
+async function readList(file, fallback) {
+  try {
+    if (dry) {
+      const path = file === "trusted.json" ? process.argv[5] : process.argv[6];
+      return path ? JSON.parse(readFileSync(path, "utf8")) : fallback;
+    }
+    const r = await gh(`/repos/${repo}/contents/${file}`);
+    if (!r.ok) return fallback;
+    return JSON.parse(Buffer.from((await r.json()).content, "base64").toString("utf8"));
+  } catch { return fallback; }
 }
 
 async function readIndex() {
@@ -68,10 +86,10 @@ function scan(bytes) {
   const found = [];
   for (const [what, names] of Object.entries(watched)) {
     const hits = names.filter(n => words.has(n));
-    if (hits.length) found.push(`${what} (${hits.join(", ")})`);
+    if (hits.length) found.push({ text: `${what} (${hits.join(", ")})`, serious: alwaysHold.has(what) });
   }
   // deleting a file is fine on its own (configs), deleting whole folders isn't
-  if (words.has("Directory") && words.has("Delete")) found.push("can delete folders (Directory.Delete)");
+  if (words.has("Directory") && words.has("Delete")) found.push({ text: "can delete folders (Directory.Delete)", serious: false });
   return found;
 }
 
@@ -118,6 +136,15 @@ async function main() {
   if (sha !== String(wanted.sha256 || "").toUpperCase())
     return refuse("the mod file doesn't match what the launcher sent. Send it again.");
 
+  // a file the store team pulled never comes back through an update, even under a new version number
+  const killed = (await readList("killed.json", { Mods: [] })).Mods || [];
+  const pulled = killed.find(k => String(k.id).toLowerCase() === String(wanted.id).toLowerCase() &&
+    (!k.sha256?.length || k.sha256.some(h => String(h).toUpperCase() === sha)));
+  if (pulled && !ownerApproved)
+    return refuse(pulled.sha256?.length ? "that exact file was pulled from the store. Send a fixed version."
+      : "this mod has been switched off by the store team. Ask on the Discord.");
+  const trusted = ((await readList("trusted.json", { Users: [] })).Users || []).some(u => String(u).toLowerCase() === opener.toLowerCase());
+
   for (let attempt = 0; attempt < 5; attempt++) {
     const { sha: indexSha, catalog } = await readIndex();
     const current = catalog.mods.find(m => m.id.toLowerCase() === String(wanted.id).toLowerCase());
@@ -131,10 +158,13 @@ async function main() {
     if (!newer(wanted.version, current.version))
       return refuse(`the version has to go up (store has v${current.version}, this is v${wanted.version}), otherwise players never get told there's an update.`);
 
-    const held = scan(bytes).map(s => "code " + s);
+    const found = scan(bytes);
+    const held = found.filter(f => !trusted || f.serious).map(f => "code " + f.text);
+    const waved = found.filter(f => trusted && !f.serious).map(f => "code " + f.text);
     for (const key of ["name", "summary", "description", "changelog"])
       if (typeof wanted[key] === "string" && explicit.test(wanted[key])) held.push(`${key} tripped the word filter`);
-    const head = [`by ${opener}`, `v${current.version} → v${wanted.version}`, ...(wanted.changelog ? [`changes: ${String(wanted.changelog).slice(0, 300)}`] : [])];
+    const head = [`by ${opener}${trusted ? " (trusted)" : ""}`, `v${current.version} → v${wanted.version}`, ...(wanted.changelog ? [`changes: ${String(wanted.changelog).slice(0, 300)}`] : []),
+      ...waved.map(w => `ℹ let through for a trusted author: ${w}`)];
     if (held.length && !ownerApproved) {
       await say("Thanks! This update is waiting for a quick look from the store team before it goes live.", false, ["held"]);
       await discord(`Mod update HELD — ${current.name}`, [...head, ...held.map(h => "⚠ " + h), `Download: ${wanted.downloadUrl}`,
