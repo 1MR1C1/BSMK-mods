@@ -1,0 +1,42 @@
+# Virus scan of one mod file, started by BSMK Admin for brand-new mods waiting in its inbox (updates are
+# scanned inside mod-update.yml). Only someone with write access to the store can start it.
+# The result is saved on the "virus-scans" branch, see virus-scan.mjs.
+name: Virus scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Mod file (GitHub release download link)
+        required: true
+      sha256:
+        description: SHA256 the file should have
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # if the virus list won't download the scan still runs on VirusTotal alone and says ClamAV didn't
+      - name: ClamAV
+        continue-on-error: true
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y clamav > /dev/null
+          sudo systemctl stop clamav-freshclam || true
+          sudo freshclam --quiet
+      - run: node .github/virus-scan.mjs
+        env:
+          SCAN_URL: ${{ inputs.url }}
+          SCAN_SHA: ${{ inputs.sha256 }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VT_API_KEY: ${{ secrets.VT_API_KEY }}
