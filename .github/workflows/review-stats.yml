@@ -2,6 +2,8 @@
 # carrying a hidden BSMK-RATING:<1-5> marker (the launcher writes it). Whenever one is posted, edited or
 # deleted, this recounts that mod and writes rating + ratingCount into index.json, so every player sees the
 # same score without opening the mod. Run it by hand to recount every mod at once.
+# Reviews listed in hidden-comments.json (hidden by the review robot or the owner) don't count. The review
+# robot and the admin app start a full recount whenever they hide or show one.
 name: Review stats
 
 on:
@@ -29,10 +31,16 @@ jobs:
             const { owner, repo } = context.repo;
             const marker = /BSMK-RATING:(\d)/;
 
+            let hidden = new Set();
+            try {
+              const h = await github.rest.repos.getContent({ owner, repo, path: 'hidden-comments.json' });
+              hidden = new Set((JSON.parse(Buffer.from(h.data.content, 'base64').toString('utf8')).Comments || []).map(e => e.id));
+            } catch {}
+
             // same rule as the mod page in the launcher: every comment with a star marker is one rating
             async function score(issueNumber) {
               const comments = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number: issueNumber, per_page: 100 });
-              const stars = comments.map(c => marker.exec(c.body || '')).filter(Boolean).map(m => Number(m[1]));
+              const stars = comments.filter(c => !hidden.has(c.id)).map(c => marker.exec(c.body || '')).filter(Boolean).map(m => Number(m[1]));
               const average = stars.length ? Math.round(stars.reduce((a, b) => a + b, 0) / stars.length * 10) / 10 : 0;
               return { rating: average, ratingCount: stars.length };
             }
