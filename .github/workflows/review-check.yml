@@ -1,0 +1,32 @@
+# Every new or edited review/comment on a mod ("[reviews] <mod id>" issues) gets a quick check. Bad ones
+# are hidden from players straight away; see review-check.mjs for the rules.
+name: Review check
+
+on:
+  issue_comment:
+    types: [created, edited]
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+# one at a time, so two reviews landing together can't overwrite each other in hidden-comments.json
+concurrency:
+  group: hidden-comments
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: startsWith(github.event.issue.title, '[reviews] ')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node .github/review-check.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
