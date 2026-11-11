@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-11T16:40:14.0000000Z",
+  "updatedUtc": "2026-11-11T17:07:47.0000000Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1139,9 +1139,9 @@
       "name": "Item Vacuum",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.2.0",
+      "version": "1.0.3.0",
       "summary": "A block that pulls dropped items in its sealed room inside itself.",
-      "description": "A block that pulls every dropped item in its sealed room inside itself. It starts with its own slots, and each Vacuum Module touching it or another module adds 8 more. Right click to open it, take everything or store everything, and switch it on or off. If the room isn't sealed it tells you where the hole is and how big.\n\nThe settings let you change the slots per module and the largest room it can work in. In creative worlds a button gives you 10 of each block. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nWorks on multiplayer servers too: your machines and what's in them are kept on your own PC, so other players can't open them. Doesn't work in realms.",
+      "description": "A block that pulls every dropped item in its sealed room inside itself. It starts with its own slots, and each Vacuum Module touching it or another module adds 8 more. Right click to open it, take everything or store everything, and switch it on or off. If the room isn't sealed it tells you where the hole is and how big.\n\nThe settings let you change the slots per module and the largest room it can work in. In creative worlds a button gives you 10 of each block. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nWorks on multiplayer servers too. On a Block Story Server everyone shares the machines and what's in them. On other servers your machines are kept on your own PC. Doesn't work in realms.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -1155,9 +1155,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/shot3.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/shot4.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.2.0/ItemVacuum.dll",
-      "size": 60416,
-      "sha256": "F19E99B6742AAB7C4C410A287733810F4F235E72255C0451CB9755A8C7B7AEC2",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.3.0/ItemVacuum.dll",
+      "size": 69120,
+      "sha256": "2B38E7A99ABC68AB5BF0F9B0BF6876EB402D64A3F44FA050E0F7FE91D5334AB7",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1175,12 +1175,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Now works on multiplayer servers. Your vacuums and what's in them are yours: kept on your PC\nNeeds framework 1.0.11",
+      "changelog": "- On a Block Story Server the machines are shared: everyone sees them and can use them. Machines you placed before move onto the server the first time you join\nNeeds framework 1.0.11",
       "minCoreVersion": "1.0.11",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-11T13:25:59.0000000Z"
+      "updatedUtc": "2026-11-11T17:07:47.0000000Z"
     },
     {
       "id": "1mr1c1.spawnerautomation",
