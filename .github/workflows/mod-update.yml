@@ -27,7 +27,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      # see virus-scan.yml, same thing
+      - name: ClamAV
+        continue-on-error: true
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y clamav > /dev/null
+          sudo systemctl stop clamav-freshclam || true
+          sudo freshclam --quiet
       - run: node .github/mod-update.mjs
         env:
+          VT_API_KEY: ${{ secrets.VT_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_WEBHOOK: ${{ secrets.MODSUBMIT_WEBHOOK }}
