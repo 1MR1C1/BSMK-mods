@@ -1325,7 +1325,7 @@
       "name": "Craft From Inventory",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.5.0",
+      "version": "1.0.6.0",
       "summary": "A recipe panel by the crafting grid that pulls from your bag and nearby chests.",
       "description": "Crafting without the back-and-forth. Craft From Inventory puts a recipe panel right next to your crafting grid, in your inventory and at the crafting table. Find what you want by category or search, click it, and the ingredients drop straight into the grid. It pulls from your bag and from any chests nearby, so you don't have to go fetch stuff first.\n\nWant a lot? Ctrl-click loads 10 crafts, Shift-click loads 100, and Alt-click adds one more each time with a running count. The same keys work on the crafted item to make that many in one go. Changed your mind? Clear sends everything back to the chest it came from.\n\nShort on parts? If you have the materials for them it offers to make them first, as many as the materials stretch to. Furnace recipes still need a furnace, so those aren't offered.\n\nQuick stack is in too. Press one key and everything in your bag goes onto matching stacks in nearby chests, without opening them. Your hotbar and tools stay put.\n\nOnly shows recipes you've unlocked, so it won't spoil your progress. You can peek at locked ones if you want. Chest range is a slider from 4 to 64 blocks. Single player only.",
       "category": "Quality of Life",
@@ -1344,9 +1344,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot5.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot6.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.5.0/CraftFromInventory.dll",
-      "size": 107520,
-      "sha256": "2C101D026C2725F53580AC1BF21C9907533FEE7373F0E637CBAA4A794AF407C9",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.6.0/CraftFromInventory.dll",
+      "size": 108544,
+      "sha256": "79B0EA18FDA4B79E8AA0B7A0FCF4B971753D19C5EA7A110A17C3340444E91676",
       "downloads": 37,
       "rating": 0,
       "ratingCount": 0,
@@ -1364,12 +1364,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": true,
-      "changelog": "- Tab no longer jumps into the search box, for players who use Tab as their inventory key\nNeeds framework 1.0.6",
+      "changelog": "- Quick stack works on servers without opening the crafting window first. It finds the chests around you and waits a moment for the server to say what's in them\nNeeds framework 1.0.6",
       "minCoreVersion": "1.0.6",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-29T21:47:29.7397570Z",
-      "updatedUtc": "2026-11-10T18:54:12.0000000Z"
+      "updatedUtc": "2026-11-11T15:07:05.0000000Z"
     },
     {
       "id": "bluedemonx911x.betterinventory",
