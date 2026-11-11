@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-11T20:54:23.0000000Z",
+  "updatedUtc": "2026-11-11T21:24:00Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -57,8 +57,8 @@
       "author": "BSMK",
       "authorId": "1MR1C1",
       "version": "1.0.13.0",
-      "summary": "The framework every Mod Kit mod runs on — install it once, it updates itself.",
-      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once — after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\n─────────────────────────────\nFor creators: everything in Core is optional\n\nUse the parts you want and skip the rest. Settings pages, keybinds, icons, control tips, items, creatures and pets are all there if you need them, and none of it shows up if you don't. The full list is in the Toolbox SDK guide in the Mod Kit.\n\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you — your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox — blocks, items, creatures, pets, world/player/event hooks, keybinds — lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
+      "summary": "The framework every Mod Kit mod runs on \u2014 install it once, it updates itself.",
+      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once \u2014 after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nFor creators: everything in Core is optional\n\nUse the parts you want and skip the rest. Settings pages, keybinds, icons, control tips, items, creatures and pets are all there if you need them, and none of it shows up if you don't. The full list is in the Toolbox SDK guide in the Mod Kit.\n\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you \u2014 your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox \u2014 blocks, items, creatures, pets, world/player/event hooks, keybinds \u2014 lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
       "category": "Library/API",
       "tags": [
         "Library/API",
@@ -1135,103 +1135,6 @@
       "updatedUtc": "2026-11-08T07:46:46.0000000Z"
     },
     {
-      "id": "1mr1c1.itemvacuum",
-      "name": "Item Vacuum",
-      "author": "BSMK",
-      "authorId": "1MR1C1",
-      "version": "1.0.3.0",
-      "summary": "A block that pulls dropped items in its sealed room inside itself.",
-      "description": "A block that pulls every dropped item in its sealed room inside itself. It starts with its own slots, and each Vacuum Module touching it or another module adds 8 more. Right click to open it, take everything or store everything, and switch it on or off. If the room isn't sealed it tells you where the hole is and how big.\n\nThe settings let you change the slots per module and the largest room it can work in. In creative worlds a button gives you 10 of each block. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nWorks on multiplayer servers too. On a Block Story Server everyone shares the machines and what's in them. On other servers your machines are kept on your own PC. Doesn't work in realms.",
-      "category": "Quality of Life",
-      "tags": [
-        "Quality of Life",
-        "Single Player",
-        "Multiplayer"
-      ],
-      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/icon2.png",
-      "screenshots": [
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/shot1.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/shot2.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/shot3.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.0.0/shot4.png"
-      ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.itemvacuum-v1.0.3.0/ItemVacuum.dll",
-      "size": 69120,
-      "sha256": "2B38E7A99ABC68AB5BF0F9B0BF6876EB402D64A3F44FA050E0F7FE91D5334AB7",
-      "downloads": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "gameVersions": [
-        "14.x"
-      ],
-      "platforms": [
-        "win",
-        "linux"
-      ],
-      "dependencies": [],
-      "license": "All rights reserved",
-      "supportUrl": "https://discord.gg/haTEJB8NXE",
-      "verified": true,
-      "flagged": false,
-      "deprecated": false,
-      "featured": false,
-      "changelog": "- On a Block Story Server the machines are shared: everyone sees them and can use them. Machines you placed before move onto the server the first time you join\nNeeds framework 1.0.11",
-      "minCoreVersion": "1.0.11",
-      "conflicts": [],
-      "capabilities": [],
-      "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-11T17:07:47.0000000Z"
-    },
-    {
-      "id": "1mr1c1.spawnerautomation",
-      "name": "Spawner Automation",
-      "author": "BSMK",
-      "authorId": "1MR1C1",
-      "version": "1.0.3.0",
-      "summary": "A dispenser for your spawners, a terminal to run them, and a block that darkens a room.",
-      "description": "Three new blocks for mob farms. The Dispenser holds your spawners. The Terminal runs them on timers. The Dark Block blacks out a sealed room. In the Terminal each spawner has its own settings, or switch to one set for every spawner in that dispenser. Drag the sliders or type a number.\n\nIn creative worlds a button in the settings gives you 10 of each. Otherwise craft them. The recipes are listed in the Craft From Inventory mod.\n\nWorks on multiplayer servers too. On a Block Story Server everyone shares the machines and what's in them. On other servers your machines are kept on your own PC. Doesn't work in realms.",
-      "category": "Tools & Utility",
-      "tags": [
-        "Tools & Utility",
-        "Single Player",
-        "Multiplayer"
-      ],
-      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/icon2.png",
-      "screenshots": [
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot1.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot2.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot3.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot4.png",
-        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.0.0/shot5.png"
-      ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.spawnerautomation-v1.0.3.0/SpawnerAutomation.dll",
-      "size": 134656,
-      "sha256": "824C244F90B3E828B730E4D03D2DF6D6C8C328F7D341A7195E4482660C1D6F19",
-      "downloads": 0,
-      "rating": 0,
-      "ratingCount": 0,
-      "gameVersions": [
-        "14.x"
-      ],
-      "platforms": [
-        "win",
-        "linux"
-      ],
-      "dependencies": [],
-      "license": "All rights reserved",
-      "supportUrl": "https://discord.gg/haTEJB8NXE",
-      "verified": true,
-      "flagged": false,
-      "deprecated": false,
-      "featured": false,
-      "changelog": "- On a Block Story Server the machines are shared: everyone sees them and can use them. Machines you placed before move onto the server the first time you join\nNeeds framework 1.0.11",
-      "minCoreVersion": "1.0.11",
-      "conflicts": [],
-      "capabilities": [],
-      "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-11T17:07:55.0000000Z"
-    },
-    {
       "id": "1mr1c1.serverinvites",
       "name": "Server Invites",
       "author": "BSMK",
@@ -1477,7 +1380,6 @@
       "category": "Single Player",
       "tags": [
         "Single Player",
-        "Multiplayer",
         "UI & HUD",
         "Items & Blocks",
         "Storage"
