@@ -1467,7 +1467,7 @@
       "name": "Sneak",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.0.0",
+      "version": "1.0.1.0",
       "summary": "Hold Shift to sneak, and never walk off an edge.",
       "description": "Hold Shift to sneak. You walk slowly and you can't fall off the edge of a block, so building on cliffs, towers and bridges is safe.\n\nPick any key you like, or switch the key between hold and toggle. Sneak speed, stopping at edges and the lowered view each have their own setting.\n\nWorks on multiplayer servers too.",
       "category": "Quality of Life",
@@ -1480,9 +1480,9 @@
       "screenshots": [
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.sneak-v1.0.0.0/shot2.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.sneak-v1.0.0.0/Sneak.dll",
-      "size": 29184,
-      "sha256": "C663C94FF1D21DC47A5950A726DD4D668C1134E1EB120DC3AEE9818CFAF1013A",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.sneak-v1.0.1.0/Sneak.dll",
+      "size": 76288,
+      "sha256": "F74D2FC7F13F25121F01FF52155942592AB03EC73D3E13C450F2649CCC7A4B0A",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1500,12 +1500,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- First version: hold Shift to sneak, you won't fall off edges\nNeeds framework 1.0.13",
+      "changelog": "- Fixed: you could still fall off at the outside corner of a block while sneaking\nNeeds framework 1.0.13",
       "minCoreVersion": "1.0.13",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-12T13:17:46.0000000Z",
-      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
+      "updatedUtc": "2026-11-12T14:54:52.0000000Z"
     }
   ]
 }
