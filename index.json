@@ -56,9 +56,9 @@
       "name": "Block Story Core",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.13.0",
-      "summary": "The framework every Mod Kit mod runs on \u2014 install it once, it updates itself.",
-      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once \u2014 after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nFor creators: everything in Core is optional\n\nUse the parts you want and skip the rest. Settings pages, keybinds, icons, control tips, items, creatures and pets are all there if you need them, and none of it shows up if you don't. The full list is in the Toolbox SDK guide in the Mod Kit.\n\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you \u2014 your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox \u2014 blocks, items, creatures, pets, world/player/event hooks, keybinds \u2014 lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
+      "version": "1.0.14.0",
+      "summary": "The framework every Mod Kit mod runs on — install it once, it updates itself.",
+      "description": "Block Story Core is the engine room behind every mod in the Mod Kit. It loads your mods when the game starts and gives them a shared toolbox, so creators don't rebuild the basics every time: adding blocks and items, making custom creatures and pets with their own models, hooking into the world, the player and game events, and binding keys. It also adds the \"Mods\" button to the game's main menu so you can see and manage what's running.\n\nIf a mod says it \"needs Core,\" this is it. You install it once — after that it updates on its own through the Mod Kit whenever there's a new version. On its own it changes nothing about how the game plays; it just makes the other mods work.\n\n─────────────────────────────\nFor creators: everything in Core is optional\n\nUse the parts you want and skip the rest. Settings pages, keybinds, icons, control tips, items, creatures and pets are all there if you need them, and none of it shows up if you don't. The full list is in the Toolbox SDK guide in the Mod Kit.\n\nFor creators: adding your mod to the Mods menu\n\nIf you build with the Mod Kit, this is already done for you — your mod shows up in the in-game Mods button, with its own on/off switch, automatically.\n\nIf you're coding a mod without the Kit, it takes one step. Reference BlockStoryCore.dll (it sits in your game's BepInEx/plugins folder once Core is installed), and in your plugin's Awake() register with the toolbox:\n\n    using BlockStoryCore;\n\n    ModRegistry.Register(new ModInfo\n    {\n        Name        = \"My Mod\",\n        Description = \"What my mod does.\",\n        GetEnabled  = () => _enabled,        // your mod's current on/off state\n        SetEnabled  = on => _enabled = on,   // flip your mod on/off\n        HasConfig   = true,                  // false if your mod has no settings\n        OpenConfig  = () => { /* open your settings screen */ }\n    });\n\nThat's the whole hook. Core draws the row, the ON/OFF switch, and (if HasConfig) a Config button, and the menu scrolls to fit any number of mods. The rest of the toolbox — blocks, items, creatures, pets, world/player/event hooks, keybinds — lives in the same BlockStoryCore namespace; see the toolbox docs for those.",
       "category": "Library/API",
       "tags": [
         "Library/API",
@@ -70,9 +70,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.4.1.0/shot1.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.4.1.0/shot2.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.0.13.0/BlockStoryCore.dll",
-      "size": 573440,
-      "sha256": "E7F2CF0F0C16426282421782440F67C19F387FABED84B58C101A1AD3BA8A2F15",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.blockstorycore-v1.0.14.0/BlockStoryCore.dll",
+      "size": 574976,
+      "sha256": "C5FA6B65F529B51B882755BAD8EE9F9A34846C3DC5949CFFC8B8B5817E15DD84",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -90,12 +90,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "Server spawns back to the game's own rules. The server's creature number still applies; the peasant slider works per player like normal.",
+      "changelog": "- Small fixes behind the scenes",
       "minCoreVersion": "",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:02:23.255141Z",
-      "updatedUtc": "2026-11-11T20:54:23.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
     },
     {
       "id": "1mr1c1.charactereditor",
@@ -291,7 +291,7 @@
       "name": "Vein Miner",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.6.0",
+      "version": "1.0.7.0",
       "summary": "Break a whole ore vein in one hit.",
       "description": "Hit one block of ore and every connected block of the same kind breaks with it. Everything goes straight into your inventory, and you still get your XP and your normal drop chances for each block.\n\nIt isn't only for ore. Switch the dig shape to dig a pillar up or down, or cut a staircase up or down. Choose how many blocks a single hit can take and how deep the shapes go.\n\nYour tool wears per block like normal mining, or you can turn that off. Protect my tool stops it just before your pick breaks, so you never lose a good one halfway through a vein.\n\nPress the Vein Miner key to turn it on or off whenever you like.",
       "category": "Tools & Utility",
@@ -311,9 +311,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot6.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot7.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.6.0/VeinMiner.dll",
-      "size": 57344,
-      "sha256": "DDBDA6A81CFC667CB697CA2FE319A7D299FFCB40E906824409FC7E5839E58241",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.7.0/VeinMiner.dll",
+      "size": 56832,
+      "sha256": "81B13523994AB0967DDAA42AF482665DAD0089C84B5DEA0DBD580C7CBA60B826",
       "downloads": 0,
       "rating": 5,
       "ratingCount": 1,
@@ -331,12 +331,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Control tips added\nNeeds framework 1.4.1",
+      "changelog": "- Tidier log file, no change in game\nNeeds framework 1.0.5",
       "minCoreVersion": "1.0.5",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-05T15:24:40.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
     },
     {
       "id": "1mr1c1.soultools",
@@ -484,7 +484,7 @@
       "name": "Better Bows",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.4.0",
+      "version": "1.0.5.0",
       "summary": "Faster bows, arrows that pierce, and upgrades up to +5.",
       "description": "Hold to draw and let go to shoot, with no cooldown. The bow stays drawn for as long as you hold. Arrows pass through enemies, you zoom in while drawing, and a full draw can land a critical hit. You can get your arrows back too.\n\nUpgrade your bow at the crafting table, from +1 up to +5. Each level adds damage, arrow speed, a faster draw and one more enemy pierced. From +3 it fires 3 arrows. At +5 that is 125% more damage, 75% more arrow speed and a 60% faster draw.\n\nDraw time, piercing, zoom, critical hits, multi-shot and arrows recovered are all in the settings.\n\nWorks on multiplayer servers too.",
       "category": "Gameplay",
@@ -500,9 +500,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.0.0/shot3.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.0.0/shot4.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.4.0/BetterBows.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterbows-v1.0.5.0/BetterBows.dll",
       "size": 54272,
-      "sha256": "1DA2DB12B4A7AAB32309369AD23C174326DE8C7B9C4B939C9AE157F6733EE445",
+      "sha256": "16CEC0A1EFA0C57A943C51AE581CF924B8EA2E771A404D13EF11F227CB6A6214",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -520,19 +520,19 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Upgraded bows last 10 times longer\n- New Bow durability slider for every bow, the normal one too (1 = normal)\nNeeds framework 1.0.11",
+      "changelog": "- Upgraded bows really hit harder now. The extra damage used to leave out your bow skill, so it was tiny, and a sleeping creature ignored it completely\nNeeds framework 1.0.11",
       "minCoreVersion": "1.0.11",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-11T13:25:59.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
     },
     {
       "id": "1mr1c1.betterguns",
       "name": "Better Guns",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.4.0",
+      "version": "1.0.5.0",
       "summary": "A bolt action rifle, four new bullets and sliders for your guns.",
       "description": "Adds a bolt action rifle that hits as far as you can see and harder than the hand gun, with shots that go through 3 more enemies. Hold right click to look through the scope, and use the mouse wheel for 3 zoom levels.\n\nFour new bullets fit every gun that shoots Bullets:\n- Incendiary sets what it hits on fire for 4 seconds, harder guns burn harder\n- Hollow-Point does 50% more damage\n- Explosive makes a small blast on top of the bullet's damage, hurts nearby creatures and doesn't break blocks\n- Armour-Piercing goes through 2 more enemies\n\nPut a bullet in the ammo slot from the Equipment HUD mod to pick which one you shoot.\n\nSliders set damage, fire rate, range, spread and recoil. Each one starts at 1, the game's own value. Rockets no longer damage the world.\n\nWorks on multiplayer servers too.",
       "category": "Gameplay",
@@ -548,9 +548,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/shot3.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/shot4.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.4.0/BetterGuns.dll",
-      "size": 174080,
-      "sha256": "F7DCC4C59D1EADC2E4A44FD123F6825C839B12508F1ACAA28D7FC842120A0FD9",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.5.0/BetterGuns.dll",
+      "size": 174592,
+      "sha256": "677A520A224057DCFC9F63E8F15D3491AA7A56771BD1BD88171B815EBDF74F59",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -568,12 +568,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- The bolt action rifle hits twice as hard\nNeeds framework 1.0.11",
+      "changelog": "- The bolt action rifle hits 5 times as hard as the hand gun, gun skill included\n- It lasts 10 times longer\n- Much dearer to craft: 10 Iron Block, 6 Unobtainium Bar, 2 Electrite, 20 GunPowder, 16 Plank, 4 Glass\nNeeds framework 1.0.11",
       "minCoreVersion": "1.0.11",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-11T13:25:59.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
     },
     {
       "id": "1mr1c1.bettermagic",
@@ -908,9 +908,9 @@
       "name": "Mouse Controls",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.4.0",
-      "summary": "Minecraft style inventory controls, and hold right click to keep placing blocks.",
-      "description": "Every inventory and chest works with the mouse the way you'd expect from Minecraft.\n\nPicking up and putting down\nLeft click picks up a stack and left click puts it down. Right click takes half, then places one at a time. Let go outside a window and nothing lands on the ground, it stays in your hand. Left click outside a window and it goes back where it came from. Right click outside a window throws one on the ground, with shift the whole stack. Armor, rings and other gear pick up and drag like anything else, they don't put themselves on when you click them.\n\nItem info\nPick up an item and left click the i button to read about it. It goes back where it came from.\n\nSharing a stack out\nHold a stack, press and drag over slots. Left drag shares it evenly and whatever's left stays in your hand. Right drag places one in each slot, go over them again to add one more.\n\nGathering\nDouble click an item, or shift click one while you're holding it, and every stack of it in the open windows comes to your hand. Tools stack too, but two worn stacks won't go together, that's the game's rule.\n\nSending across\nShift click sends a stack from bag to chest and back, or bag to hotbar when no chest is open. Stacks fill in order from the first slot. With no chest open, shift clicking gear puts it on if that spot is free. Keep holding and drag to send every slot you pass over. Shift double click sends every stack of that item.\n\nShift and mouse wheel\nHold shift over a stack, wheel down sends one across and wheel up brings one back. The plain wheel still scrolls the bag.\n\nNumber keys\nWith a window open, point at an item and press 1 to 0. It goes to that hotbar slot and whatever was there swaps back.\n\nDrop key\nSet your own key in the settings. It drops one of what you're pointing at with a window open, or what's in your hand when there's no window. Hold ctrl to drop the whole stack. Things the game asks about before dropping are left alone.\n\nOut in the world\nHold right click to keep placing blocks instead of clicking for each one, and set how many blocks per second. Summons and vehicles still take a single click.\n\nEach of these can be switched off on its own.",
+      "version": "1.0.5.0",
+      "summary": "Minecraft style inventory controls, sorting, Take all and Store all, and hold right click to keep placing blocks.",
+      "description": "Every inventory and chest works with the mouse the way you'd expect from Minecraft.\n\nPicking up and putting down\nLeft click picks up a stack and left click puts it down. Right click takes half, then places one at a time. Let go outside a window and nothing lands on the ground, it stays in your hand. Left click outside a window and it goes back where it came from. Right click outside a window throws one on the ground, with shift the whole stack. Armor, rings and other gear pick up and drag like anything else, they don't put themselves on when you click them.\n\nItem info\nPick up an item and left click the i button to read about it. It goes back where it came from.\n\nSharing a stack out\nHold a stack, press and drag over slots. Left drag shares it evenly and whatever's left stays in your hand. Right drag places one in each slot, go over them again to add one more.\n\nGathering\nDouble click an item, or shift click one while you're holding it, and every stack of it in the open windows comes to your hand. Tools stack too, but two worn stacks won't go together, that's the game's rule.\n\nSending across\nShift click sends a stack from bag to chest and back, or bag to hotbar when no chest is open. Stacks fill in order from the first slot. With no chest open, shift clicking gear puts it on if that spot is free. Keep holding and drag to send every slot you pass over. Shift double click sends every stack of that item.\n\nShift and mouse wheel\nHold shift over a stack, wheel down sends one across and wheel up brings one back. The plain wheel still scrolls the bag, even with an item on the mouse.\n\nNumber keys\nWith a window open, point at an item and press 1 to 0. It goes to that hotbar slot and whatever was there swaps back.\n\nSorting\nEvery bag and chest has a small Sort button on top. The button next to it picks how: Type groups blocks, tools, food and so on, A-Z goes by name, and Amount puts the biggest stacks first. Stacks of the same thing join up as they sort. You can set a key to sort whatever you're pointing at, and a key to switch the sort type.\n\nChests\nTake all empties the chest into your bag. Store all empties your bag into the chest, your hotbar stays as it is. Top up only sends things the chest already has.\n\nLocked slots\nPoint at a bag or hotbar slot and press your lock key. A gold frame shows it's locked, and sorting, Store all and Top up leave it alone. Press again to unlock.\n\nDrop key\nSet your own key in the settings. It drops one of what you're pointing at with a window open, or what's in your hand when there's no window. Hold ctrl to drop the whole stack. Things the game asks about before dropping are left alone.\n\nOut in the world\nHold right click to keep placing blocks instead of clicking for each one, and set how many blocks per second. Summons and vehicles still take a single click, and this part is off on servers.\n\nEach of these can be switched off on its own.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -923,9 +923,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.1.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.1.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.4.0/MouseControls.dll",
-      "size": 50688,
-      "sha256": "2C62BC20A24948E8060B137137DBC8BCE18B26C2B65F448D44368364BC7EF559",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.5.0/MouseControls.dll",
+      "size": 65024,
+      "sha256": "5849ADB0A6CDC367861DC317BA2EDF64E69C4EDDFFF50B986CA7A164994915D6",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -943,12 +943,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Fixed: clicking the i button with an item also opened the game's help box\nNeeds framework 1.0.11",
+      "changelog": "- New: Sort button on every bag and chest, sort by type, A-Z or amount, with keys for both\n- New: Take all, Store all and Top up buttons on chests\n- New: lock bag and hotbar slots so sorting and storing leave them alone\n- Fixed: the bag wouldn't scroll while an item was on the mouse\nNeeds framework 1.0.11",
       "minCoreVersion": "1.0.11",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-11T13:25:59.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
     },
     {
       "id": "1mr1c1.autopickup",
@@ -1139,7 +1139,7 @@
       "name": "Server Invites",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.3.0",
+      "version": "1.0.4.0",
       "summary": "A mod for servers. Still in development.",
       "description": "A mod for playing on servers. Still in development, so things will change and there may be bugs.",
       "category": "Tools & Utility",
@@ -1151,9 +1151,9 @@
       "screenshots": [
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.1.0/shot1.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.3.0/ServerInvites.dll",
-      "size": 19968,
-      "sha256": "99AE46D77F0CA51F8CF79C1EE9CDF267FB7174C70F395CA1487A454ED084FCCD",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.serverinvites-v1.0.4.0/ServerInvites.dll",
+      "size": 39936,
+      "sha256": "0A1462FC476F56C576338D1E74CF70D56B09DCE52409CAC6CD46085170BA79FA",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1171,12 +1171,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Fixed the mob log lines counting wrong\nNeeds framework 1.4.2",
+      "changelog": "- Tidier log file, no change in game\nNeeds framework 1.0.6",
       "minCoreVersion": "1.0.6",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-08T13:57:10.0000000Z",
-      "updatedUtc": "2026-11-08T14:15:24.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
     },
     {
       "id": "1mr1c1.instantfurnaces",
@@ -1461,6 +1461,51 @@
       "capabilities": [],
       "createdUtc": "2026-11-11T13:46:25.6485652Z",
       "updatedUtc": "2026-11-11T14:30:18.167Z"
+    },
+    {
+      "id": "1mr1c1.sneak",
+      "name": "Sneak",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Hold Shift to sneak, and never walk off an edge.",
+      "description": "Hold Shift to sneak. You walk slowly and you can't fall off the edge of a block, so building on cliffs, towers and bridges is safe.\n\nPick any key you like, or switch the key between hold and toggle. Sneak speed, stopping at edges and the lowered view each have their own setting.\n\nWorks on multiplayer servers too.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life",
+        "Single Player",
+        "Multiplayer"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.sneak-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.sneak-v1.0.0.0/shot1.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.sneak-v1.0.0.0/Sneak.dll",
+      "size": 29184,
+      "sha256": "C663C94FF1D21DC47A5950A726DD4D668C1134E1EB120DC3AEE9818CFAF1013A",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "All rights reserved",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "changelog": "- First version: hold Shift to sneak, you won't fall off edges\nNeeds framework 1.0.13",
+      "minCoreVersion": "1.0.13",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-12T13:17:46.0000000Z",
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
     }
   ]
 }
