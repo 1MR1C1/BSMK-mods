@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-12T23:26:13.399Z",
+  "updatedUtc": "2026-11-12T23:51:14.953Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1490,7 +1490,7 @@
         "UI & HUD",
         "Storage"
       ],
-      "iconUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-listing/icon-20261112232559-1.png",
+      "iconUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/icon1.png",
       "screenshots": [
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot1.png",
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot2.png",
@@ -1515,13 +1515,13 @@
       "verified": false,
       "flagged": false,
       "deprecated": false,
-      "featured": false,
+      "featured": true,
       "changelog": "- Fixed layout",
       "minCoreVersion": "1.0.9",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-09T13:40:06.0525484Z",
-      "updatedUtc": "2026-11-12T23:26:13.399Z",
+      "updatedUtc": "2026-11-12T23:51:14.953Z",
       "countFrom": {
         "1.1.2.0": 6,
         "1.1.1.0": 6,
