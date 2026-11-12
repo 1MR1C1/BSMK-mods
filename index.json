@@ -1278,7 +1278,7 @@
       "id": "bluedemonx911x.betterinventory",
       "name": "Better Inventory",
       "author": "BlueKitsunex777x",
-      "authorId": "BlueDemonx911x",
+      "authorId": "BlueKitsunex777x",
       "version": "1.1.2.0",
       "summary": "Increases inventory size",
       "description": "You can increase both the rows and the columns, extra rows unlock like normal, every 10 levels after level 120\nThere is a toggle to unlock all rows in your inventory from the start\n\nColumns - min: 5      | max: 10\nRows       - min: 12    | max: 50\n\nMore Slots by MR C is now merged into Better Inventory, all its features are included and improved here",
@@ -1289,14 +1289,14 @@
         "UI & HUD",
         "Storage"
       ],
-      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/icon1.png",
+      "iconUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/icon1.png",
       "screenshots": [
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot1.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot2.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot3.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot4.png"
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot1.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot2.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot3.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot4.png"
       ],
-      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.1.2.0/BetterInventory.dll",
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.1.2.0/BetterInventory.dll",
       "size": 17408,
       "sha256": "496947C50A88CEA13FB1EBD6DBA5990B9F26359821635133F127704DF53B43ED",
       "downloads": 0,
@@ -1326,7 +1326,7 @@
       "id": "bluedemonx911x.biggersafebox",
       "name": "Bigger Safebox",
       "author": "BlueKitsunex777x",
-      "authorId": "BlueDemonx911x",
+      "authorId": "BlueKitsunex777x",
       "version": "1.0.1.0",
       "summary": "Safeboxes get 6x6 slots",
       "description": "Safeboxes get 6x6 slots\nChanges from the main menu only\nBefore turning it off, take items out of the bottom slots: a safebox with something past slot 16 won't open without this mod",
@@ -1337,13 +1337,13 @@
         "UI & HUD",
         "Storage"
       ],
-      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/icon-20261111142302-1.png",
+      "iconUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/icon-20261111142302-1.png",
       "screenshots": [
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-1.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-2.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-3.png"
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-1.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-2.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-3.png"
       ],
-      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.1.0/BiggerSafebox.dll",
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.1.0/BiggerSafebox.dll",
       "size": 23040,
       "sha256": "2943BA995E1E694A547117A3EBC0B25709348A640AD8176CEE84B826A4A6F912",
       "downloads": 0,
@@ -1373,7 +1373,7 @@
       "id": "bluedemonx911x.bigchest",
       "name": "Big Chest",
       "author": "BlueKitsunex777x",
-      "authorId": "BlueDemonx911x",
+      "authorId": "BlueKitsunex777x",
       "version": "1.0.1.0",
       "summary": "A Big Chest with 64 slots",
       "description": "A Big Chest with 64 slots. Put two side by side and they become one chest with 128.\n\nCredits: Mr C - For the code and assets",
@@ -1384,14 +1384,14 @@
         "Items & Blocks",
         "Storage"
       ],
-      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-listing/icon-20261111142851-1.png",
+      "iconUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-listing/icon-20261111142851-1.png",
       "screenshots": [
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot1.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot2.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot3.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot4.png"
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot1.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot2.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot3.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot4.png"
       ],
-      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.1.0/BigChest.dll",
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.1.0/BigChest.dll",
       "size": 57344,
       "sha256": "4F9FF35D4511A5CF12563E36733ABB4104A5EAC5978966C9E0D4D8DBB07DB53E",
       "downloads": 0,
@@ -1421,7 +1421,7 @@
       "id": "bluedemonx911x.sharkfix",
       "name": "Shark Fix",
       "author": "BlueKitsunex777x",
-      "authorId": "BlueDemonx911x",
+      "authorId": "BlueKitsunex777x",
       "version": "1.0.0.0",
       "summary": "Fixes sharks",
       "description": "Makes the collider of the shark smaller\n\nCredits: Mr C - For alot of code",
@@ -1432,13 +1432,13 @@
         "Mobs & Creatures",
         "Quality of Life"
       ],
-      "iconUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/icon1.png",
+      "iconUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/icon1.png",
       "screenshots": [
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/shot1.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/shot2.png",
-        "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/shot3.png"
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/shot1.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/shot2.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/BlueDemonx911x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/SharkFixes.dll",
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/SharkFixes.dll",
       "size": 7168,
       "sha256": "249A2EA822452DBD27CD25909E85E7A7723655234A7BAEA2F002B299C352EEF9",
       "downloads": 0,
