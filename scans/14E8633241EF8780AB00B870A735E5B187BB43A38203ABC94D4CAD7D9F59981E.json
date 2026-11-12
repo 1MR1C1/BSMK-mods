@@ -1,0 +1,17 @@
+{
+  "sha256": "14E8633241EF8780AB00B870A735E5B187BB43A38203ABC94D4CAD7D9F59981E",
+  "scannedUtc": "2026-11-12T22:03:16.361Z",
+  "clam": {
+    "ran": true,
+    "found": []
+  },
+  "vt": {
+    "ran": true,
+    "malicious": 0,
+    "suspicious": 0,
+    "total": 70,
+    "flagged": []
+  },
+  "verdict": "clean",
+  "url": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluekitsunex777x.stepassist-v1.0.0.0/StepAssist.dll"
+}
