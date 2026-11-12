@@ -908,7 +908,7 @@
       "name": "Mouse Controls",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.5.0",
+      "version": "1.0.6.0",
       "summary": "Minecraft style inventory controls, sorting, Take all and Store all, and hold right click to keep placing blocks.",
       "description": "Every inventory and chest works with the mouse the way you'd expect from Minecraft.\n\nPicking up and putting down\nLeft click picks up a stack and left click puts it down. Right click takes half, then places one at a time. Let go outside a window and nothing lands on the ground, it stays in your hand. Left click outside a window and it goes back where it came from. Right click outside a window throws one on the ground, with shift the whole stack. Armor, rings and other gear pick up and drag like anything else, they don't put themselves on when you click them.\n\nItem info\nPick up an item and left click the i button to read about it. It goes back where it came from.\n\nSharing a stack out\nHold a stack, press and drag over slots. Left drag shares it evenly and whatever's left stays in your hand. Right drag places one in each slot, go over them again to add one more.\n\nGathering\nDouble click an item, or shift click one while you're holding it, and every stack of it in the open windows comes to your hand. Tools stack too, but two worn stacks won't go together, that's the game's rule.\n\nSending across\nShift click sends a stack from bag to chest and back, or bag to hotbar when no chest is open. Stacks fill in order from the first slot. With no chest open, shift clicking gear puts it on if that spot is free. Keep holding and drag to send every slot you pass over. Shift double click sends every stack of that item.\n\nShift and mouse wheel\nHold shift over a stack, wheel down sends one across and wheel up brings one back. The plain wheel still scrolls the bag, even with an item on the mouse.\n\nNumber keys\nWith a window open, point at an item and press 1 to 0. It goes to that hotbar slot and whatever was there swaps back.\n\nSorting\nEvery bag and chest has a small Sort button on top. The button next to it picks how: Type groups blocks, tools, food and so on, A-Z goes by name, and Amount puts the biggest stacks first. Stacks of the same thing join up as they sort. You can set a key to sort whatever you're pointing at, and a key to switch the sort type.\n\nChests\nTake all empties the chest into your bag. Store all empties your bag into the chest, your hotbar stays as it is. Top up only sends things the chest already has.\n\nLocked slots\nPoint at a bag or hotbar slot and press your lock key. A gold frame shows it's locked, and sorting, Store all and Top up leave it alone. Press again to unlock.\n\nDrop key\nSet your own key in the settings. It drops one of what you're pointing at with a window open, or what's in your hand when there's no window. Hold ctrl to drop the whole stack. Things the game asks about before dropping are left alone.\n\nOut in the world\nHold right click to keep placing blocks instead of clicking for each one, and set how many blocks per second. Summons and vehicles still take a single click, and this part is off on servers.\n\nEach of these can be switched off on its own.",
       "category": "Quality of Life",
@@ -923,9 +923,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.1.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.1.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.5.0/MouseControls.dll",
-      "size": 65024,
-      "sha256": "5849ADB0A6CDC367861DC317BA2EDF64E69C4EDDFFF50B986CA7A164994915D6",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.mousecontrols-v1.0.6.0/MouseControls.dll",
+      "size": 65536,
+      "sha256": "80E43599441ACF86A5811202158955E9BC3D051B949013FC00234DF61A3D1542",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -943,12 +943,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- New: Sort button on every bag and chest, sort by type, A-Z or amount, with keys for both\n- New: Take all, Store all and Top up buttons on chests\n- New: lock bag and hotbar slots so sorting and storing leave them alone\n- Fixed: the bag wouldn't scroll while an item was on the mouse\nNeeds framework 1.0.11",
+      "changelog": "- Fixed: chest and bag buttons now sit in one tidy line above the window, not across the chest name or over the recipe book\nNeeds framework 1.0.11",
       "minCoreVersion": "1.0.11",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
+      "updatedUtc": "2026-11-12T15:52:33.0000000Z"
     },
     {
       "id": "1mr1c1.autopickup",
