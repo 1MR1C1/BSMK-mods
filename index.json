@@ -49,7 +49,16 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-06T14:18:07.3987569Z",
-      "updatedUtc": "2026-11-09T22:26:31.0000000Z"
+      "updatedUtc": "2026-11-09T22:26:31.0000000Z",
+      "countFrom": {
+        "1.0.5.0": 6,
+        "1.0.4.0": 3,
+        "1.0.3.0": 6,
+        "1.0.2.0": 6,
+        "1.0.1.0": 6,
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.blockstorycore",
@@ -95,7 +104,25 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:02:23.255141Z",
-      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z",
+      "countFrom": {
+        "1.0.14.0": 6,
+        "1.0.13.0": 6,
+        "1.0.12.0": 3,
+        "1.0.9.0": 6,
+        "1.0.11.0": 5,
+        "1.0.10.0": 6,
+        "1.5.0.0": 6,
+        "1.0.8.0": 6,
+        "1.4.2.0": 6,
+        "1.4.1.0": 6,
+        "1.4.0.0": 4,
+        "1.3.0.0": 6,
+        "1.2.0.0": 6,
+        "1.1.0.0": 6,
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.charactereditor",
@@ -142,7 +169,17 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-10T18:54:12.0000000Z"
+      "updatedUtc": "2026-11-10T18:54:12.0000000Z",
+      "countFrom": {
+        "1.0.6.0": 4,
+        "1.0.5.0": 3,
+        "1.0.4.0": 6,
+        "1.0.3.0": 6,
+        "1.0.2.0": 6,
+        "1.0.1.0": 6,
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.minimap",
@@ -190,7 +227,21 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-11T16:40:14.0000000Z"
+      "updatedUtc": "2026-11-11T16:40:14.0000000Z",
+      "countFrom": {
+        "1.0.10.0": 6,
+        "1.0.9.0": 3,
+        "1.0.8.0": 6,
+        "1.0.7.0": 2,
+        "1.0.6.0": 6,
+        "1.0.5.0": 6,
+        "1.0.4.0": 6,
+        "1.0.3.0": 6,
+        "1.0.2.0": 6,
+        "1.0.1.0": 4,
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.npcmenu",
@@ -237,7 +288,14 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-11T13:25:59.0000000Z"
+      "updatedUtc": "2026-11-11T13:25:59.0000000Z",
+      "countFrom": {
+        "1.0.3.0": 5,
+        "1.0.2.0": 6,
+        "1.0.1.0": 5,
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.xenor",
@@ -284,7 +342,13 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-05T15:24:40.0000000Z"
+      "updatedUtc": "2026-11-05T15:24:40.0000000Z",
+      "countFrom": {
+        "1.0.2.0": 6,
+        "1.0.1.0": 5,
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.veinminer",
@@ -336,7 +400,18 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z",
+      "countFrom": {
+        "1.0.7.0": 6,
+        "1.0.6.0": 6,
+        "1.0.5.0": 6,
+        "1.0.4.0": 2,
+        "1.0.3.0": 2,
+        "1.0.2.0": 6,
+        "1.0.1.0": 6,
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.soultools",
@@ -383,7 +458,14 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-30T17:34:37.0000000Z",
-      "updatedUtc": "2026-11-11T13:25:59.0000000Z"
+      "updatedUtc": "2026-11-11T13:25:59.0000000Z",
+      "countFrom": {
+        "1.0.3.0": 6,
+        "1.0.2.0": 6,
+        "1.0.1.0": 6,
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.betterfishing",
@@ -430,7 +512,11 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-30T17:34:37.0000000Z",
-      "updatedUtc": "2026-10-30T17:34:37.0000000Z"
+      "updatedUtc": "2026-10-30T17:34:37.0000000Z",
+      "countFrom": {
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.betteraim",
@@ -477,7 +563,14 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-09T22:26:31.0000000Z"
+      "updatedUtc": "2026-11-09T22:26:31.0000000Z",
+      "countFrom": {
+        "1.0.3.0": 6,
+        "1.0.2.0": 6,
+        "1.0.1.0": 6,
+        "1.0.0.0": 3
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.betterbows",
@@ -525,7 +618,16 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z",
+      "countFrom": {
+        "1.0.5.0": 6,
+        "1.0.4.0": 4,
+        "1.0.3.0": 6,
+        "1.0.2.0": 6,
+        "1.0.1.0": 6,
+        "1.0.0.0": 3
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.betterguns",
@@ -573,7 +675,16 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z",
+      "countFrom": {
+        "1.0.5.0": 6,
+        "1.0.4.0": 4,
+        "1.0.3.0": 6,
+        "1.0.2.0": 6,
+        "1.0.1.0": 6,
+        "1.0.0.0": 3
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.bettermagic",
@@ -619,7 +730,12 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-08T07:46:46.0000000Z"
+      "updatedUtc": "2026-11-08T07:46:46.0000000Z",
+      "countFrom": {
+        "1.0.1.0": 6,
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.buildwand",
@@ -667,7 +783,13 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-08T07:46:46.0000000Z"
+      "updatedUtc": "2026-11-08T07:46:46.0000000Z",
+      "countFrom": {
+        "1.0.2.0": 6,
+        "1.0.1.0": 5,
+        "1.0.0.0": 3
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.equipmenthud",
@@ -715,7 +837,13 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-08T07:46:46.0000000Z"
+      "updatedUtc": "2026-11-08T07:46:46.0000000Z",
+      "countFrom": {
+        "1.0.2.0": 6,
+        "1.0.1.0": 6,
+        "1.0.0.0": 3
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.gravestone",
@@ -761,7 +889,13 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-08T07:46:46.0000000Z"
+      "updatedUtc": "2026-11-08T07:46:46.0000000Z",
+      "countFrom": {
+        "1.0.2.0": 6,
+        "1.0.1.0": 5,
+        "1.0.0.0": 3
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.petrecall",
@@ -808,7 +942,13 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-08T07:46:46.0000000Z"
+      "updatedUtc": "2026-11-08T07:46:46.0000000Z",
+      "countFrom": {
+        "1.0.2.0": 6,
+        "1.0.1.0": 5,
+        "1.0.0.0": 3
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.flickerfix",
@@ -855,7 +995,11 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-04T22:24:39.0000000Z"
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "countFrom": {
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.moreslots",
@@ -901,7 +1045,12 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-09T20:02:20.0000000Z"
+      "updatedUtc": "2026-11-09T20:02:20.0000000Z",
+      "countFrom": {
+        "1.0.1.0": 6,
+        "1.0.0.0": 5
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.mousecontrols",
@@ -948,7 +1097,17 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-12T15:52:33.0000000Z"
+      "updatedUtc": "2026-11-12T15:52:33.0000000Z",
+      "countFrom": {
+        "1.0.6.0": 2,
+        "1.0.5.0": 3,
+        "1.0.4.0": 4,
+        "1.0.3.0": 6,
+        "1.0.2.0": 6,
+        "1.0.1.0": 5,
+        "1.0.0.0": 3
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.autopickup",
@@ -994,7 +1153,11 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-04T22:24:39.0000000Z"
+      "updatedUtc": "2026-11-04T22:24:39.0000000Z",
+      "countFrom": {
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.ogreplicator",
@@ -1040,7 +1203,12 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-08T07:46:46.0000000Z"
+      "updatedUtc": "2026-11-08T07:46:46.0000000Z",
+      "countFrom": {
+        "1.0.1.0": 5,
+        "1.0.0.0": 2
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.fewerstructures",
@@ -1086,7 +1254,13 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-08T12:01:25.0000000Z"
+      "updatedUtc": "2026-11-08T12:01:25.0000000Z",
+      "countFrom": {
+        "1.0.2.0": 6,
+        "1.0.1.0": 6,
+        "1.0.0.0": 5
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.climbstairsfaster",
@@ -1132,7 +1306,12 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-08T07:46:46.0000000Z"
+      "updatedUtc": "2026-11-08T07:46:46.0000000Z",
+      "countFrom": {
+        "1.0.1.0": 6,
+        "1.0.0.0": 4
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.serverinvites",
@@ -1176,7 +1355,14 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-08T13:57:10.0000000Z",
-      "updatedUtc": "2026-11-12T13:17:46.0000000Z"
+      "updatedUtc": "2026-11-12T13:17:46.0000000Z",
+      "countFrom": {
+        "1.0.4.0": 2,
+        "1.0.3.0": 6,
+        "1.0.2.0": 2,
+        "1.0.1.0": 2
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.instantfurnaces",
@@ -1221,7 +1407,11 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-08T14:29:40.0000000Z",
-      "updatedUtc": "2026-11-08T14:29:40.0000000Z"
+      "updatedUtc": "2026-11-08T14:29:40.0000000Z",
+      "countFrom": {
+        "1.0.0.0": 6
+      },
+      "authorNum": 294251978
     },
     {
       "id": "1mr1c1.craftfrominventory",
@@ -1272,7 +1462,18 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-29T21:47:29.7397570Z",
-      "updatedUtc": "2026-11-11T18:22:51.0000000Z"
+      "updatedUtc": "2026-11-11T18:22:51.0000000Z",
+      "countFrom": {
+        "1.0.7.0": 5,
+        "1.0.6.0": 4,
+        "1.0.5.0": 6,
+        "1.0.4.0": 6,
+        "1.0.3.0": 6,
+        "1.0.2.0": 4,
+        "1.0.1.0": 6,
+        "1.0.0.0": 3
+      },
+      "authorNum": 294251978
     },
     {
       "id": "bluedemonx911x.betterinventory",
@@ -1320,7 +1521,13 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-09T13:40:06.0525484Z",
-      "updatedUtc": "2026-11-11T17:41:10.606Z"
+      "updatedUtc": "2026-11-11T17:41:10.606Z",
+      "countFrom": {
+        "1.1.2.0": 6,
+        "1.1.1.0": 6,
+        "1.0.0.0": 6
+      },
+      "authorNum": 84632135
     },
     {
       "id": "bluedemonx911x.biggersafebox",
@@ -1367,7 +1574,12 @@
       "capabilities": [],
       "createdUtc": "2026-11-10T12:25:45.8332217Z",
       "updatedUtc": "2026-11-11T14:23:23.265Z",
-      "changelog": "- Now works on Multiplayer servers"
+      "changelog": "- Now works on Multiplayer servers",
+      "countFrom": {
+        "1.0.1.0": 6,
+        "1.0.0.0": 6
+      },
+      "authorNum": 84632135
     },
     {
       "id": "bluedemonx911x.bigchest",
@@ -1415,7 +1627,12 @@
       "capabilities": [],
       "createdUtc": "2026-11-10T14:01:09.3595579Z",
       "updatedUtc": "2026-11-11T14:29:08.585Z",
-      "changelog": "- Now works on Multiplayer servers"
+      "changelog": "- Now works on Multiplayer servers",
+      "countFrom": {
+        "1.0.1.0": 6,
+        "1.0.0.0": 6
+      },
+      "authorNum": 84632135
     },
     {
       "id": "bluedemonx911x.sharkfix",
@@ -1460,7 +1677,11 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-11T13:46:25.6485652Z",
-      "updatedUtc": "2026-11-11T14:30:18.167Z"
+      "updatedUtc": "2026-11-11T14:30:18.167Z",
+      "countFrom": {
+        "1.0.0.0": 6
+      },
+      "authorNum": 84632135
     },
     {
       "id": "1mr1c1.sneak",
@@ -1505,7 +1726,12 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-12T13:17:46.0000000Z",
-      "updatedUtc": "2026-11-12T14:54:52.0000000Z"
+      "updatedUtc": "2026-11-12T14:54:52.0000000Z",
+      "countFrom": {
+        "1.0.1.0": 4,
+        "1.0.0.0": 4
+      },
+      "authorNum": 294251978
     },
     {
       "id": "bluekitsunex777x.stepassist",
@@ -1550,7 +1776,11 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-12T22:01:23.0499570Z",
-      "updatedUtc": "2026-11-12T22:07:58.470Z"
+      "updatedUtc": "2026-11-12T22:07:58.470Z",
+      "countFrom": {
+        "1.0.0.0": 5
+      },
+      "authorNum": 84632135
     }
   ]
 }

@@ -1,0 +1,32 @@
+# Once a day: anyone who renamed their GitHub gets their mods (and their place on the trusted or banned
+# lists) moved to the new name, and mods that don't know their author's account number yet get it.
+# Nobody has to ask, and nobody loses a mod over a rename.
+name: Author renames
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# shares the lock with the other robots, they all write index.json
+concurrency:
+  group: store-index
+  cancel-in-progress: false
+
+jobs:
+  follow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node .github/author-renames.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCORD_WEBHOOK: ${{ secrets.MODSUBMIT_WEBHOOK }}

@@ -7,6 +7,7 @@
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { scanFile, saveScan, describe } from "./virus-scan.mjs";
+import { owns, followRename, liveCount } from "./authors.mjs";
 
 const dry = process.argv[2] === "--dry";
 const repo = process.env.GITHUB_REPOSITORY || "1MR1C1/BSMK-mods";
@@ -17,6 +18,7 @@ const api = "https://api.github.com";
 const event = JSON.parse(readFileSync(dry ? process.argv[3] : process.env.GITHUB_EVENT_PATH, "utf8"));
 const issue = event.issue;
 const opener = issue.user.login;
+const openerNum = issue.user.id;
 // a label can only be added by someone with write access to the store, so "approved" means one of us
 const ownerApproved = event.action === "labeled" && event.label?.name === "approved";
 
@@ -149,6 +151,7 @@ async function main() {
   if (!dry) await saveScan(virus).catch(e => console.error(e));
   const virusLines = describe(virus);
   if (dry) console.log("[virus]", virus.verdict, virusLines.join(" | "));
+  const startCount = dry ? 0 : await liveCount(wanted.downloadUrl, token);
   const trusted = ((await readList("trusted.json", { Users: [] })).Users || []).some(u => String(u).toLowerCase() === opener.toLowerCase());
 
   for (let attempt = 0; attempt < 5; attempt++) {
@@ -156,7 +159,8 @@ async function main() {
     const current = catalog.mods.find(m => m.id.toLowerCase() === String(wanted.id).toLowerCase());
     if (!current)
       return refuse(`there's no mod \`${wanted.id}\` on the store yet. New mods are reviewed by hand, send it from the Upload page.`);
-    if (!current.authorId || current.authorId.toLowerCase() !== opener.toLowerCase()) {
+    const renamed = followRename(catalog, opener, openerNum);
+    if (!owns(current, opener, openerNum)) {
       await say(`Only the mod's own author (${current.authorId}) can update it.`, true, ["rejected"]);
       await discord(`Mod update REFUSED — ${current.name}`, [`${opener} tried to update a mod owned by ${current.authorId}.`]);
       return;
@@ -181,7 +185,8 @@ async function main() {
     }
 
     // the update can change what the mod is, but never who owns it or what it has earned
-    const keep = { id: current.id, authorId: current.authorId, createdUtc: current.createdUtc, downloads: current.downloads,
+    const keep = { id: current.id, authorId: current.authorId, authorNum: current.authorNum || openerNum,
+      countFrom: { ...(current.countFrom || {}), [wanted.version]: startCount }, createdUtc: current.createdUtc, downloads: current.downloads,
       rating: current.rating, ratingCount: current.ratingCount, verified: current.verified, featured: current.featured,
       flagged: current.flagged };
     const updated = { ...current, ...wanted, ...keep };
@@ -204,7 +209,8 @@ async function main() {
       if (!put.ok) throw new Error("couldn't write index.json: " + put.status + " " + await put.text());
     }
     await say(`Done, v${wanted.version} is live. It can take a few minutes to show in everyone's launcher.`, true, ["applied"]);
-    await discord(`Mod update live — ${current.name}`, [...head, ...(ownerApproved ? ["(approved by hand)"] : [])]);
+    await discord(`Mod update live — ${current.name}`, [...head, ...(ownerApproved ? ["(approved by hand)"] : []),
+      ...(renamed.length ? [`ℹ ${opener} renamed their GitHub, moved ${renamed.length} mod(s) to the new name`] : [])]);
     return;
   }
   throw new Error("index.json kept changing under us, gave up after 5 tries");

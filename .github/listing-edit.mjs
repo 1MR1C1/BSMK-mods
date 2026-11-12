@@ -1,6 +1,7 @@
 // Runs inside GitHub Actions on the store repo (see listing-edit.yml). Also runnable on a PC for a
 // dry run: node listing-edit.mjs --dry <event.json> <index.json>  (reads files, writes nothing, posts nothing)
 import { readFileSync } from "node:fs";
+import { owns, followRename } from "./authors.mjs";
 
 const dry = process.argv[2] === "--dry";
 const repo = process.env.GITHUB_REPOSITORY || "1MR1C1/BSMK-mods";
@@ -11,6 +12,7 @@ const api = "https://api.github.com";
 const event = JSON.parse(readFileSync(dry ? process.argv[3] : process.env.GITHUB_EVENT_PATH, "utf8"));
 const issue = event.issue;
 const opener = issue.user.login;
+const openerNum = issue.user.id;
 // a label can only be added by someone with write access to the store, so "approved" means one of us
 const ownerApproved = event.action === "labeled" && event.label?.name === "approved";
 
@@ -144,7 +146,8 @@ async function main() {
       await say(`There's no mod \`${wanted.id}\` on the store yet. New mods are sent for review from the launcher's Upload page.`, true, ["rejected"]);
       return;
     }
-    if (!current.authorId || current.authorId.toLowerCase() !== opener.toLowerCase()) {
+    followRename(catalog, opener, openerNum);
+    if (!owns(current, opener, openerNum)) {
       await say(`Only the mod's own author (${current.authorId}) can edit this listing.`, true, ["rejected"]);
       await discord(`Listing edit REFUSED — ${current.name}`, [`${opener} tried to edit a listing owned by ${current.authorId}.`]);
       return;
@@ -170,6 +173,7 @@ async function main() {
 
     const summary = describe(current, changes);
     Object.assign(current, changes);
+    current.authorNum ||= openerNum;
     current.updatedUtc = new Date().toISOString();
     catalog.updatedUtc = current.updatedUtc;
     if (dry) {
