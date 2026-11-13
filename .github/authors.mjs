@@ -31,3 +31,16 @@ export async function liveCount(downloadUrl, token) {
     return asset ? asset.download_count : 0;
   } catch { return 0; }
 }
+
+// banned.json next to index.json, kept by hand. the number is what counts, a ban has to survive a rename
+// too. a missing or broken list bans nobody
+export async function isBanned(repo, token, login, num) {
+  try {
+    const r = await fetch(`https://api.github.com/repos/${repo}/contents/banned.json`, {
+      headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json", "User-Agent": "bsmk-store" },
+    });
+    if (!r.ok) return false;
+    const list = JSON.parse(Buffer.from((await r.json()).content, "base64").toString("utf8")).Users || [];
+    return list.some(u => (u.num && Number(u.num) === Number(num)) || String(u.login || "").toLowerCase() === String(login).toLowerCase());
+  } catch { return false; }
+}
