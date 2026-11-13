@@ -8,6 +8,7 @@
 // hidden-comments.json on the store only keeps ids and the rule hit, never the text: the repo is public.
 // Dry run on a PC: node review-check.mjs --dry <event.json> [hidden-comments.json] [account age in days]
 import { readFileSync } from "node:fs";
+import { isBanned } from "./authors.mjs";
 
 const dry = process.argv[2] === "--dry";
 const repo = process.env.GITHUB_REPOSITORY || "1MR1C1/BSMK-mods";
@@ -107,7 +108,8 @@ async function main() {
   const login = comment.user.login;
   if (login.toLowerCase() === owner.toLowerCase() || comment.user.type === "Bot") return;
 
-  const verdict = judge(comment.body || "", await accountAgeDays(login));
+  const verdict = !dry && await isBanned(repo, token, login, comment.user.id)
+    ? { sure: true, rule: "banned account" } : judge(comment.body || "", await accountAgeDays(login));
   if (!verdict) { console.log("fine:", comment.id); return; }
 
   await editHidden(list => {
