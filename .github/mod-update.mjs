@@ -7,7 +7,7 @@
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { scanFile, saveScan, describe } from "./virus-scan.mjs";
-import { owns, followRename, liveCount } from "./authors.mjs";
+import { owns, followRename, liveCount, isBanned } from "./authors.mjs";
 
 const dry = process.argv[2] === "--dry";
 const repo = process.env.GITHUB_REPOSITORY || "1MR1C1/BSMK-mods";
@@ -121,6 +121,10 @@ async function main() {
   const wanted = readRequest(issue.body || "");
   if (!wanted || !wanted.id) {
     await say("Couldn't read this update. Please send it again from the BSMK Launcher.", true, ["rejected"]);
+    return;
+  }
+  if (!dry && await isBanned(repo, token, opener, openerNum)) {
+    await say("This account can't send updates to the BSMK store.", true, ["rejected"]);
     return;
   }
 
