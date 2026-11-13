@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-12T23:54:35.639Z",
+  "updatedUtc": "2026-11-13T08:57:16.565Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1480,7 +1480,7 @@
       "name": "Better Inventory",
       "author": "BlueKitsunex777x",
       "authorId": "BlueKitsunex777x",
-      "version": "1.1.2.0",
+      "version": "1.1.3.0",
       "summary": "Increases inventory size",
       "description": "You can increase both the rows and the columns, extra rows unlock like normal, every 10 levels after level 120\nThere is a toggle to unlock all rows in your inventory from the start\n\nColumns - min: 5      | max: 10\nRows       - min: 12    | max: 50\n\nMore Slots by MR C is now merged into Better Inventory, all its features are included and improved here",
       "category": "Single Player",
@@ -1497,9 +1497,9 @@
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot3.png",
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.0.0.0/shot4.png"
       ],
-      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.1.2.0/BetterInventory.dll",
-      "size": 17408,
-      "sha256": "496947C50A88CEA13FB1EBD6DBA5990B9F26359821635133F127704DF53B43ED",
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.betterinventory-v1.1.3.0/BetterInventory.dll",
+      "size": 420352,
+      "sha256": "AE1E4C1C30E52A8B0C61874EBF8BF7E7441DFEF91F646F37DBE47452EDDBDD1E",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1516,16 +1516,17 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Fixed layout",
-      "minCoreVersion": "1.0.9",
+      "changelog": "- Fixed scrolling",
+      "minCoreVersion": "1.0.14",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-09T13:40:06.0525484Z",
-      "updatedUtc": "2026-11-12T23:54:35.639Z",
+      "updatedUtc": "2026-11-13T08:57:16.565Z",
       "countFrom": {
         "1.1.2.0": 6,
         "1.1.1.0": 6,
-        "1.0.0.0": 6
+        "1.0.0.0": 6,
+        "1.1.3.0": 0
       },
       "authorNum": 84632135
     },
