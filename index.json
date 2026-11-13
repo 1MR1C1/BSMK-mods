@@ -1788,7 +1788,7 @@
       "name": "Multiplayer Fixes",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.1.0",
+      "version": "1.0.2.0",
       "summary": "Fair spawns, no doubled NPCs and unfrozen creatures online.",
       "description": "Fixes for the game's own online play. Nothing changes in single player.\n\nFair spawns\nEvery player's game spawns creatures around itself, so friends standing together used to get double and creatures piled up. Now a spot belongs to whoever is nearest, and only their game spawns there. Nothing spawns within 24 blocks of any player, so creatures don't pop in right beside you.\n\nNo doubled NPCs\nNPCs from boats, houses and camps only spawn from the nearest player's game, and there's a limit on how many of the same NPC or peasant can be around (2 to start, you can change it).\n\nUnfreeze creatures\nA creature that stops getting updates is fetched fresh from the server instead of standing frozen. Creatures the server hands you but your game never got are cleared, so they don't freeze for your friends.\n\nServer creature number\nOn a Block Story Server, the world's \"Most creatures around players\" setting really works, instead of the game's fixed limit.\n\nWater fills holes\nOnline the game switches water off, so digging next to the sea leaves a hole of air in it. On a Block Story Server the hole fills back in like single player.\n\nEach part can be switched off on its own. Everyone on the server should have it for it to work best.",
       "category": "Quality of Life",
@@ -1800,9 +1800,9 @@
       "screenshots": [
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.0.0/shot1.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.1.0/MultiplayerFixes.dll",
-      "size": 34816,
-      "sha256": "72D6AE13CE0BACAD5AD8F2344461714477E7DB9DD1D010C0E40631509CD9F462",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.2.0/MultiplayerFixes.dll",
+      "size": 35328,
+      "sha256": "9F448EEA71A22DD4B04B7BDC6863AB87568BD04562A216608EFE24CCC8E0C037",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1820,12 +1820,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- No more doubled NPCs: only the nearest player spawns them, and a limit per NPC type (2 to start)\n- Frozen creatures get fetched fresh from the server\n- Creatures your game never got are cleared instead of freezing for your friends\n- Fixed creatures from other players sometimes never showing up\nNeeds framework 1.0.15",
+      "changelog": "- Creatures keep walking when they pass from your game to a friend's and back, instead of stopping and standing still every few seconds when you play close together\nNeeds framework 1.0.15",
       "minCoreVersion": "1.0.15",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-13T10:37:32.0000000Z",
-      "updatedUtc": "2026-11-13T14:47:43.0000000Z",
+      "updatedUtc": "2026-11-13T15:24:40.0000000Z",
       "countFrom": {
         "1.0.1.0": 6,
         "1.0.0.0": 4
