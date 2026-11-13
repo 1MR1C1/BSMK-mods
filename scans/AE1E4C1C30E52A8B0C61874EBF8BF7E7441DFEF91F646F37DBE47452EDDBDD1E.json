@@ -1,0 +1,16 @@
+{
+  "sha256": "AE1E4C1C30E52A8B0C61874EBF8BF7E7441DFEF91F646F37DBE47452EDDBDD1E",
+  "scannedUtc": "2026-11-13T08:57:14.705Z",
+  "clam": {
+    "ran": true,
+    "found": []
+  },
+  "vt": {
+    "ran": true,
+    "malicious": 0,
+    "suspicious": 0,
+    "total": 70,
+    "flagged": []
+  },
+  "verdict": "clean"
+}
