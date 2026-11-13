@@ -2,12 +2,13 @@
 // already on the store goes live by itself if it comes from the mod's own author and the scan below
 // finds nothing worrying. Anything that trips the scan is held for one of us. Brand-new mods never
 // come through here, they still get a full read by hand (tools/Approve).
-// Dry run on a PC: node mod-update.mjs --dry <event.json> <index.json> [trusted.json] [killed.json]
+// Dry run on a PC: node mod-update.mjs --dry <event.json> <index.json> [trusted.json] [killed.json] [bsmk-check.json]
 //   (downloads, writes nothing, posts nothing)
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { scanFile, saveScan, describe } from "./virus-scan.mjs";
 import { owns, followRename, liveCount, isBanned } from "./authors.mjs";
+import { hasCheck, required, raiseMinCore, howTo } from "./bsmk-check.mjs";
 
 const dry = process.argv[2] === "--dry";
 const repo = process.env.GITHUB_REPOSITORY || "1MR1C1/BSMK-mods";
@@ -58,7 +59,7 @@ function readRequest(body) {
 async function readList(file, fallback) {
   try {
     if (dry) {
-      const path = file === "trusted.json" ? process.argv[5] : process.argv[6];
+      const path = { "trusted.json": process.argv[5], "killed.json": process.argv[6], "bsmk-check.json": process.argv[7] }[file];
       return path ? JSON.parse(readFileSync(path, "utf8")) : fallback;
     }
     const r = await gh(`/repos/${repo}/contents/${file}`);
@@ -156,6 +157,9 @@ async function main() {
   const virusLines = describe(virus);
   if (dry) console.log("[virus]", virus.verdict, virusLines.join(" | "));
   const startCount = dry ? 0 : await liveCount(wanted.downloadUrl, token);
+  const checkSettings = await readList("bsmk-check.json", {});
+  const checked = hasCheck(bytes);
+  if (!checked && required(checkSettings)) return refuse("from now on every BSMK mod has to " + howTo);
   const trusted = ((await readList("trusted.json", { Users: [] })).Users || []).some(u => String(u).toLowerCase() === opener.toLowerCase());
 
   for (let attempt = 0; attempt < 5; attempt++) {
@@ -180,7 +184,8 @@ async function main() {
     if (virus.verdict === "infected" || virus.verdict === "suspicious") held.push(`virus scan: ${virusLines.join(" / ")}`);
     const head = [`by ${opener}${trusted ? " (trusted)" : ""}`, `v${current.version} → v${wanted.version}`, ...(wanted.changelog ? [`changes: ${String(wanted.changelog).slice(0, 300)}`] : []),
       ...waved.map(w => `ℹ let through for a trusted author: ${w}`),
-      ...(virus.verdict === "not scanned" ? ["ℹ virus scan didn't run: " + virusLines.join(" / ")] : [])];
+      ...(virus.verdict === "not scanned" ? ["ℹ virus scan didn't run: " + virusLines.join(" / ")] : []),
+      ...(checked ? [] : [`ℹ no BSMK check yet${checkSettings.requiredFrom ? ` (needed from ${checkSettings.requiredFrom})` : ""}`])];
     if (held.length && !ownerApproved) {
       await say("Thanks! This update is waiting for a quick look from the store team before it goes live.", false, ["held"]);
       await discord(`Mod update HELD — ${current.name}`, [...head, ...held.map(h => "⚠ " + h), `Download: ${wanted.downloadUrl}`,
@@ -196,6 +201,7 @@ async function main() {
     const updated = { ...current, ...wanted, ...keep };
     if (!Array.isArray(wanted.screenshots) || wanted.screenshots.length === 0) updated.screenshots = current.screenshots;
     if (!wanted.iconUrl) updated.iconUrl = current.iconUrl;
+    if (checked) raiseMinCore(updated, checkSettings, newer);
     updated.updatedUtc = new Date().toISOString();
     catalog.mods[catalog.mods.indexOf(current)] = updated;
     catalog.updatedUtc = updated.updatedUtc;
@@ -212,7 +218,8 @@ async function main() {
       if (put.status === 409) continue;
       if (!put.ok) throw new Error("couldn't write index.json: " + put.status + " " + await put.text());
     }
-    await say(`Done, v${wanted.version} is live. It can take a few minutes to show in everyone's launcher.`, true, ["applied"]);
+    await say(`Done, v${wanted.version} is live. It can take a few minutes to show in everyone's launcher.` +
+      (checked ? "" : `\n\nHeads up: ${checkSettings.requiredFrom ? `from ${checkSettings.requiredFrom}` : "soon"} the store needs every mod to ${howTo}`), true, ["applied"]);
     await discord(`Mod update live — ${current.name}`, [...head, ...(ownerApproved ? ["(approved by hand)"] : []),
       ...(renamed.length ? [`ℹ ${opener} renamed their GitHub, moved ${renamed.length} mod(s) to the new name`] : [])]);
     return;
