@@ -1,7 +1,7 @@
 // Runs inside GitHub Actions on the store repo (see listing-edit.yml). Also runnable on a PC for a
 // dry run: node listing-edit.mjs --dry <event.json> <index.json>  (reads files, writes nothing, posts nothing)
 import { readFileSync } from "node:fs";
-import { owns, followRename } from "./authors.mjs";
+import { owns, followRename, isBanned } from "./authors.mjs";
 
 const dry = process.argv[2] === "--dry";
 const repo = process.env.GITHUB_REPOSITORY || "1MR1C1/BSMK-mods";
@@ -136,6 +136,10 @@ async function main() {
   const wanted = readRequest(issue.body || "");
   if (!wanted || !wanted.id) {
     await say("Couldn't read this listing edit. Please send it again from the BSMK Launcher.", true, ["rejected"]);
+    return;
+  }
+  if (!dry && await isBanned(repo, token, opener, openerNum)) {
+    await say("This account can't edit listings on the BSMK store.", true, ["rejected"]);
     return;
   }
 
