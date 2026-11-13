@@ -1782,6 +1782,55 @@
         "1.0.0.0": 5
       },
       "authorNum": 84632135
+    },
+    {
+      "id": "1mr1c1.multiplayerfixes",
+      "name": "Multiplayer Fixes",
+      "author": "BSMK",
+      "authorId": "1MR1C1",
+      "version": "1.0.0.0",
+      "summary": "Fair creature spawns and other fixes for playing online.",
+      "description": "Fixes for the game's own online play. Nothing changes in single player.\n\nFair spawns\nEvery player's game spawns creatures around itself, so friends standing together used to get double and creatures piled up. Now a spot belongs to whoever is nearest, and only their game spawns there. Nothing spawns within 24 blocks of any player, so creatures don't pop in right beside you.\n\nServer creature number\nOn a Block Story Server, the world's \"Most creatures around players\" setting really works, instead of the game's fixed limit.\n\nWater fills holes\nOnline the game switches water off, so digging next to the sea leaves a hole of air in it. On a Block Story Server the hole fills back in like single player.\n\nFrozen creatures\nWhile we hunt down why creatures sometimes freeze online, this writes a short note to the game log when one near you stops moving. It comes out again once that's fixed.\n\nEach part can be switched off on its own. Everyone on the server should have it for spawns to be fair.",
+      "category": "Quality of Life",
+      "tags": [
+        "Quality of Life",
+        "Multiplayer"
+      ],
+      "iconUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.0.0/shot1.png"
+      ],
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.0.0/MultiplayerFixes.dll",
+      "size": 28160,
+      "sha256": "C2D6D97103C45143623A29DB5F14F2991608816B4EA580CEF46889525D75DF6B",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "All rights reserved",
+      "supportUrl": "https://discord.gg/haTEJB8NXE",
+      "verified": true,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "changelog": "- First release: fair creature spawns online, the server's creature number, and water filling holes on Block Story Servers (moved here from Core)\nNeeds framework 1.0.15",
+      "minCoreVersion": "1.0.15",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-13T10:37:32.0000000Z",
+      "updatedUtc": "2026-11-13T10:37:32.0000000Z",
+      "countFrom": {
+        "1.0.1.0": 6,
+        "1.0.0.0": 4
+      },
+      "authorNum": 294251978
     }
   ]
 }
