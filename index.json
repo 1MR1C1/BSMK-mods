@@ -1788,9 +1788,9 @@
       "name": "Multiplayer Fixes",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.4.0",
+      "version": "1.0.5.0",
       "summary": "Fair spawns, no doubled NPCs and unfrozen creatures online.",
-      "description": "Fixes for the game's own online play. Nothing changes in single player.\n\nFair spawns\nEvery player's game spawns creatures around itself, so friends standing together used to get double and creatures piled up. Now a spot belongs to whoever is nearest, and only their game spawns there. Nothing spawns within 24 blocks of any player, so creatures don't pop in right beside you.\n\nNo doubled NPCs\nNPCs from boats, houses and camps only spawn from the nearest player's game, and there's a limit on how many of the same NPC or peasant can be around (2 to start, you can change it).\n\nUnfreeze creatures\nA creature that stops getting updates is fetched fresh from the server instead of standing frozen. Creatures the server hands you but your game never got are cleared, so they don't freeze for your friends.\n\nServer creature number\nOn a Block Story Server, the world's \"Most creatures around players\" setting really works, instead of the game's fixed limit.\n\nWater fills holes\nOnline the game switches water off, so digging next to the sea leaves a hole of air in it. On a Block Story Server the hole fills back in like single player.\n\nEach part can be switched off on its own. Everyone on the server should have it for it to work best.",
+      "description": "Fixes for the game's own online play. Nothing changes in single player.\n\nFair spawns\nEvery player's game spawns creatures around itself, so friends standing together used to get double and creatures piled up. Now a spot belongs to whoever is nearest, and only their game spawns there. Nothing spawns within 24 blocks of any player, so creatures don't pop in right beside you.\n\nNo doubled NPCs\nNPCs from boats, houses and camps only spawn from the nearest player's game, and there's a limit on how many of the same NPC or peasant can be around (2 to start, you can change it).\n\nUnfreeze creatures\nA creature that stops getting updates is fetched fresh from the server instead of standing frozen. Creatures the server hands you but your game never got are cleared, so they don't freeze for your friends.\n\nServer creature number\nOn a Block Story Server, the world's \"Most creatures around players\" setting really works, instead of the game's fixed limit.\n\nWater fills holes\nOnline the game switches water off, so digging next to the sea leaves a hole of air in it. On a Block Story Server the hole fills back in like single player.\n\nCharacter saves stay whole\nThe game cuts off any character bigger than 60,000 bytes when sending it to a server, so a big bag (lots of unlocked slots) left a broken save that wouldn't load next time. Empty bag slots are now left out of what gets sent, so the save stays small and whole.\n\nEach part can be switched off on its own. Everyone on the server should have it for it to work best.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -1800,9 +1800,9 @@
       "screenshots": [
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.0.0/shot1.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.4.0/MultiplayerFixes.dll",
-      "size": 43520,
-      "sha256": "E103E17F30A79766F05E6413E3D0493442B7F31F9C2EBC22D88EA73070F3BA59",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.5.0/MultiplayerFixes.dll",
+      "size": 45056,
+      "sha256": "2102CF6CE73255A4340C13DBA189C50811AC91D32533677EEDB21B8094DCE9A2",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1820,12 +1820,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Only runs with the real BSMK Core (1.0.16 or newer). Copies of Core and other loaders can't run it, so what you get is always the real thing. Nothing else changed\nNeeds framework 1.0.16",
+      "changelog": "- Fixes broken character saves on servers with big bags: the game cut saves off at 60,000 bytes, empty bag slots are now left out so they stay small\nNeeds framework 1.0.16",
       "minCoreVersion": "1.0.16",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-13T10:37:32.0000000Z",
-      "updatedUtc": "2026-11-13T20:43:43.0000000Z",
+      "updatedUtc": "2026-11-14T14:50:42.0000000Z",
       "countFrom": {
         "1.0.1.0": 6,
         "1.0.0.0": 4
