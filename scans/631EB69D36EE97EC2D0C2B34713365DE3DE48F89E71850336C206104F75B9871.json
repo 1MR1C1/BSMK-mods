@@ -1,0 +1,17 @@
+{
+  "sha256": "631EB69D36EE97EC2D0C2B34713365DE3DE48F89E71850336C206104F75B9871",
+  "scannedUtc": "2026-11-14T12:44:29.332Z",
+  "clam": {
+    "ran": true,
+    "found": []
+  },
+  "vt": {
+    "ran": true,
+    "malicious": 0,
+    "suspicious": 0,
+    "total": 59,
+    "flagged": []
+  },
+  "verdict": "clean",
+  "url": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluekitsunex777x.npcimprovements-v1.0.0.0/NpcImprovements.dll"
+}
