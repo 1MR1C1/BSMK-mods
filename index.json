@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-13T08:57:16.565Z",
+  "updatedUtc": "2026-11-14T12:39:47.391Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1831,6 +1831,56 @@
         "1.0.0.0": 4
       },
       "authorNum": 294251978
+    },
+    {
+      "id": "bluekitsunex777x.npcimprovements",
+      "name": "Npc Improvements",
+      "author": "BlueKitsunex777x",
+      "authorId": "BlueKitsunex777x",
+      "authorNum": 84632135,
+      "version": "1.0.0.0",
+      "summary": "Improves Npcs",
+      "description": "- Toggle to set ability to do damage to Npcs",
+      "category": "Single Player",
+      "tags": [
+        "Single Player",
+        "Multiplayer",
+        "Combat",
+        "Quality of Life",
+        "NPCs"
+      ],
+      "iconUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluekitsunex777x.npcimprovements-v1.0.0.0/icon1.png",
+      "screenshots": [
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluekitsunex777x.npcimprovements-v1.0.0.0/shot1.png",
+        "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluekitsunex777x.npcimprovements-v1.0.0.0/shot2.png"
+      ],
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluekitsunex777x.npcimprovements-v1.0.0.0/NpcImprovements.dll",
+      "size": 7680,
+      "sha256": "631EB69D36EE97EC2D0C2B34713365DE3DE48F89E71850336C206104F75B9871",
+      "downloads": 0,
+      "rating": 0,
+      "ratingCount": 0,
+      "gameVersions": [
+        "14.x"
+      ],
+      "platforms": [
+        "win",
+        "linux"
+      ],
+      "dependencies": [],
+      "license": "MIT",
+      "verified": false,
+      "flagged": false,
+      "deprecated": false,
+      "featured": false,
+      "minCoreVersion": "1.0.15",
+      "conflicts": [],
+      "capabilities": [],
+      "createdUtc": "2026-11-14T12:39:20.0589229Z",
+      "updatedUtc": "2026-11-14T12:39:47.391Z",
+      "countFrom": {
+        "1.0.0.0": 0
+      }
     }
   ]
 }
