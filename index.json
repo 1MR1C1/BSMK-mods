@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-16T18:18:11.311Z",
+  "updatedUtc": "2026-11-16T18:56:26.157Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1889,14 +1889,15 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-14T12:39:20.0589229Z",
-      "updatedUtc": "2026-11-16T18:18:11.311Z",
+      "updatedUtc": "2026-11-16T18:56:26.157Z",
       "countFrom": {
         "1.0.0.0": 0
       },
       "changelog": "- Added: Keybind to toggle ability to damage Npcs",
       "changelogs": {
         "1.0.0.0": "- Added: Keybind to toggle ability to damage Npcs"
-      }
+      },
+      "videoUrl": "https://youtu.be/rKYxD-ggevY"
     }
   ]
 }
