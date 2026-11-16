@@ -19,13 +19,13 @@ const ownerApproved = event.action === "labeled" && event.label?.name === "appro
 // only what changes how a listing LOOKS. the mod file, version, download link, fingerprint and
 // earned stats are left alone, so a hijacked edit can never swap what people actually install.
 const editable = ["name", "summary", "description", "tags", "category", "iconUrl", "screenshots", "videoUrl",
-  "sourceUrl", "supportUrl", "donateUrl", "license", "deprecated", "featured", "gameVersions", "minGameVersion", "maxGameVersion"];
+  "sourceUrl", "supportUrl", "donateUrl", "license", "deprecated", "featured", "gameVersions", "minGameVersion", "maxGameVersion", "changelog"];
 
 // same word list the launcher uses on comments (CommentFilter.cs). Block Story is mostly kids,
 // so it errs on the side of holding something back for a human look
 const explicit = /\b(porn|pornhub|xxx|nsfw|sex|sexual|nude|nudes|naked|boobs|tits|titty|nipple|penis|vagina|pussy|dick|cock|cum|blowjob|handjob|masturbat\w*|orgasm|hentai|rape|rapist|pedo|paedo|pedophile|paedophile|cp|loli|shota|fuck\w*|f4f|slut|whore|cunt|anal|creampie|deepthroat|bukkake|fetish|bdsm|onlyfans)\b/i;
 
-const limits = { name: 60, summary: 200, description: 20000, tag: 40, tags: 12, screenshots: 12 };
+const limits = { name: 60, summary: 200, description: 20000, changelog: 5000, tag: 40, tags: 12, screenshots: 12 };
 
 function gh(path, method = "GET", body) {
   return fetch(api + path, {
@@ -72,7 +72,7 @@ function check(current, wanted) {
     let value = wanted[key];
     if (JSON.stringify(value ?? null) === JSON.stringify(current[key] ?? null)) continue;
 
-    if (["name", "summary", "description", "category", "license", "minGameVersion", "maxGameVersion"].includes(key)) {
+    if (["name", "summary", "description", "category", "license", "minGameVersion", "maxGameVersion", "changelog"].includes(key)) {
       if (value != null && typeof value !== "string") { problems.push(`${key} isn't text`); continue; }
       value = value == null ? value : value.trim();
       if (limits[key] && value && value.length > limits[key]) { problems.push(`${key} is too long (max ${limits[key]})`); continue; }
@@ -177,6 +177,8 @@ async function main() {
 
     const summary = describe(current, changes);
     Object.assign(current, changes);
+    // the notes belong to the version that's live now, the version history reads them from here
+    if ("changelog" in changes) current.changelogs = { ...(current.changelogs || {}), [current.version]: changes.changelog || "" };
     current.authorNum ||= openerNum;
     current.updatedUtc = new Date().toISOString();
     catalog.updatedUtc = current.updatedUtc;
