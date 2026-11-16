@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-16T15:22:17.840Z",
+  "updatedUtc": "2026-11-16T15:31:27.212Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1536,7 +1536,7 @@
       "name": "Bigger Safebox",
       "author": "BlueKitsunex777x",
       "authorId": "BlueKitsunex777x",
-      "version": "1.0.1.0",
+      "version": "1.1.0.0",
       "summary": "Safeboxes get 6x6 slots",
       "description": "Safeboxes get 6x6 slots\nChanges from the main menu only\nBefore turning it off, take items out of the bottom slots: a safebox with something past slot 16 won't open without this mod",
       "category": "Single Player",
@@ -1552,9 +1552,9 @@
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-2.png",
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-3.png"
       ],
-      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.0.1.0/BiggerSafebox.dll",
-      "size": 23040,
-      "sha256": "2943BA995E1E694A547117A3EBC0B25709348A640AD8176CEE84B826A4A6F912",
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.1.0.0/BiggerSafebox.dll",
+      "size": 27648,
+      "sha256": "B463C72FBA04037A72C9373126F2E1E16FA9FE2E49E6E96EDCC9C6CB7074B714",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1571,15 +1571,16 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.0.9",
+      "minCoreVersion": "1.0.16",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-10T12:25:45.8332217Z",
-      "updatedUtc": "2026-11-11T14:23:23.265Z",
-      "changelog": "- Now works on Multiplayer servers",
+      "updatedUtc": "2026-11-16T15:31:27.212Z",
+      "changelog": "- Only runs on the official BSMK Core",
       "countFrom": {
         "1.0.1.0": 6,
-        "1.0.0.0": 6
+        "1.0.0.0": 6,
+        "1.1.0.0": 0
       },
       "authorNum": 84632135
     },
