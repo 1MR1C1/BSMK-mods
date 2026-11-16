@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-16T20:38:48.787Z",
+  "updatedUtc": "2026-11-16T20:42:24.205Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1757,7 +1757,7 @@
       "name": "Step Assist",
       "author": "BlueKitsunex777x",
       "authorId": "BlueKitsunex777x",
-      "version": "1.0.0.0",
+      "version": "1.1.0.0",
       "summary": "Assists in stepping",
       "description": "Turns auto jump into step assist\n\nCredits: Mr C - For Helping me make this mod",
       "category": "Client Side",
@@ -1771,9 +1771,9 @@
       "screenshots": [
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluekitsunex777x.stepassist-v1.0.0.0/shot1.png"
       ],
-      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluekitsunex777x.stepassist-v1.0.0.0/StepAssist.dll",
-      "size": 342528,
-      "sha256": "14E8633241EF8780AB00B870A735E5B187BB43A38203ABC94D4CAD7D9F59981E",
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluekitsunex777x.stepassist-v1.1.0.0/StepAssist.dll",
+      "size": 349696,
+      "sha256": "7016076A6D295EB82A8E5ABC3275FD9F0542C04DC1BA667B245BC6D8587C430A",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1791,15 +1791,20 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.0.14",
+      "minCoreVersion": "1.0.16",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-12T22:01:23.0499570Z",
-      "updatedUtc": "2026-11-12T22:07:58.470Z",
+      "updatedUtc": "2026-11-16T20:42:24.205Z",
       "countFrom": {
-        "1.0.0.0": 5
+        "1.0.0.0": 5,
+        "1.1.0.0": 0
       },
-      "authorNum": 84632135
+      "authorNum": 84632135,
+      "changelog": "- Only runs on the official BSMK Core",
+      "changelogs": {
+        "1.1.0.0": "- Only runs on the official BSMK Core"
+      }
     },
     {
       "id": "1mr1c1.multiplayerfixes",
