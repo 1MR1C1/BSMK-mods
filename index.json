@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-15T15:10:22.389Z",
+  "updatedUtc": "2026-11-16T15:22:17.840Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1588,7 +1588,7 @@
       "name": "Big Chest",
       "author": "BlueKitsunex777x",
       "authorId": "BlueKitsunex777x",
-      "version": "1.0.1.0",
+      "version": "1.1.1.0",
       "summary": "A Big Chest with 64 slots",
       "description": "A Big Chest with 64 slots. Put two side by side and they become one chest with 128.\n\nCredits: Mr C - For the code and assets",
       "category": "Single Player",
@@ -1605,9 +1605,9 @@
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot3.png",
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.0.0/shot4.png"
       ],
-      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.0.1.0/BigChest.dll",
-      "size": 57344,
-      "sha256": "4F9FF35D4511A5CF12563E36733ABB4104A5EAC5978966C9E0D4D8DBB07DB53E",
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.bigchest-v1.1.1.0/BigChest.dll",
+      "size": 273408,
+      "sha256": "A1BE9A04C73A34FB0F5831F8B00BE9FC377D1D7C565F6F9A0F6D5247E7B9BFDC",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1624,15 +1624,16 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "minCoreVersion": "1.0.9",
+      "minCoreVersion": "1.0.16",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-10T14:01:09.3595579Z",
-      "updatedUtc": "2026-11-11T14:29:08.585Z",
-      "changelog": "- Now works on Multiplayer servers",
+      "updatedUtc": "2026-11-16T15:22:17.840Z",
+      "changelog": "- Only runs on the official BSMK Core",
       "countFrom": {
         "1.0.1.0": 6,
-        "1.0.0.0": 6
+        "1.0.0.0": 6,
+        "1.1.1.0": 0
       },
       "authorNum": 84632135
     },
