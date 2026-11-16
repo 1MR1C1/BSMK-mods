@@ -201,6 +201,8 @@ async function main() {
     const updated = { ...current, ...wanted, ...keep };
     if (!Array.isArray(wanted.screenshots) || wanted.screenshots.length === 0) updated.screenshots = current.screenshots;
     if (!wanted.iconUrl) updated.iconUrl = current.iconUrl;
+    // every version keeps its own notes, an author's release on GitHub doesn't carry them
+    updated.changelogs = { ...(current.changelogs || {}), ...(wanted.changelog ? { [wanted.version]: String(wanted.changelog) } : {}) };
     if (checked) raiseMinCore(updated, checkSettings, newer);
     updated.updatedUtc = new Date().toISOString();
     catalog.mods[catalog.mods.indexOf(current)] = updated;
