@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-16T15:31:27.212Z",
+  "updatedUtc": "2026-11-16T18:18:11.311Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1852,7 +1852,7 @@
       "authorNum": 84632135,
       "version": "1.0.0.0",
       "summary": "Improves Npcs",
-      "description": "- Toggle to set ability to do damage to Npcs",
+      "description": "- Toggle to set ability to damage Npcs\n- Keybing to toggle ability to damage Npcs",
       "category": "Single Player",
       "tags": [
         "Single Player",
@@ -1889,9 +1889,13 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-14T12:39:20.0589229Z",
-      "updatedUtc": "2026-11-14T12:39:47.391Z",
+      "updatedUtc": "2026-11-16T18:18:11.311Z",
       "countFrom": {
         "1.0.0.0": 0
+      },
+      "changelog": "- Added: Keybind to toggle ability to damage Npcs",
+      "changelogs": {
+        "1.0.0.0": "- Added: Keybind to toggle ability to damage Npcs"
       }
     }
   ]
