@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-16T18:56:26.157Z",
+  "updatedUtc": "2026-11-16T20:38:48.787Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1652,7 +1652,7 @@
       "name": "Shark Fix",
       "author": "BlueKitsunex777x",
       "authorId": "BlueKitsunex777x",
-      "version": "1.0.0.0",
+      "version": "1.1.0.0",
       "summary": "Fixes sharks",
       "description": "Makes the collider of the shark smaller\n\nCredits: Mr C - For alot of code",
       "category": "Single Player",
@@ -1668,9 +1668,9 @@
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/shot2.png",
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.0.0.0/SharkFixes.dll",
-      "size": 7168,
-      "sha256": "249A2EA822452DBD27CD25909E85E7A7723655234A7BAEA2F002B299C352EEF9",
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.sharkfix-v1.1.0.0/SharkFixes.dll",
+      "size": 375296,
+      "sha256": "6B2FBB52BFF98892DA541A80053AAEEE89DD6BCAE31A6D1B4F84594575DCE053",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1690,11 +1690,17 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-11T13:46:25.6485652Z",
-      "updatedUtc": "2026-11-11T14:30:18.167Z",
+      "updatedUtc": "2026-11-16T20:38:48.787Z",
       "countFrom": {
-        "1.0.0.0": 6
+        "1.0.0.0": 6,
+        "1.1.0.0": 0
       },
-      "authorNum": 84632135
+      "authorNum": 84632135,
+      "changelog": "- Only runs on the official BSMK Core",
+      "changelogs": {
+        "1.1.0.0": "- Only runs on the official BSMK Core"
+      },
+      "minCoreVersion": "1.0.16"
     },
     {
       "id": "1mr1c1.sneak",
