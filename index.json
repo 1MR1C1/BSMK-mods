@@ -189,9 +189,9 @@
       "name": "Minimap",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.11.0",
+      "version": "1.0.12.0",
       "summary": "A minimap, a full world map and waypoints.",
-      "description": "A round minimap in the corner of your screen shows the land around you, with mobs, animals and NPCs marked with their names. It can stay pointing north or turn with you. You can zoom it, make it bigger or show your coordinates above it. N, E, S and W sit on the ring and on the world map, and can be switched off.\n\nOpen the full world map for the big picture. It remembers everywhere you've been, so the map fills in as you explore. Drag it around, zoom in and out, or switch between the surface and cave view.\n\nWaypoints let you mark your base, a good mine or anywhere else you want to find again. Pick a name, colour and icon, and it shows on both maps with how far away it is. Right-click the world map to drop one right there. When you die, a waypoint goes where it happened, so you can go get your stuff back.\n\nEvery world keeps its own map and waypoints. Realms and online servers get their own too, so they never draw over each other.",
+      "description": "A round minimap in the corner of your screen shows the land around you, with mobs, animals and NPCs marked with their names. It can stay pointing north or turn with you. You can zoom it, make it bigger or show your coordinates above it. N, E, S and W sit on the ring and on the world map, and can be switched off.\n\nOpen the full world map for the big picture. It's drawn in the real block colours with hill shading and height lines, and pointing at a spot shows its X Y Z and block. It remembers everywhere you've been, so the map fills in as you explore. Drag it around, zoom in and out, or switch between the surface and cave view.\n\nWaypoints let you mark your base, a good mine or anywhere else you want to find again. Pick a name, colour and icon, and it shows on both maps with how far away it is. Right-click the world map to drop one right there. When you die, a waypoint goes where it happened, so you can go get your stuff back.\n\nEvery world keeps its own map and waypoints. Realms and online servers get their own too, so they never draw over each other.",
       "category": "UI & HUD",
       "tags": [
         "UI & HUD",
@@ -205,9 +205,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.2.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.11.0/Minimap.dll",
-      "size": 97280,
-      "sha256": "B082BC1659DCB9EE1806E0C4EF9C5A41FAA2C5AEE57154A4165107849B4AE0CD",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.minimap-v1.0.12.0/Minimap.dll",
+      "size": 128512,
+      "sha256": "EF578A96EBE3739C9C0CF802AA31BABDA74CAB0CB182B998CAC0AB8D4D1EB82B",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -225,12 +225,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Only runs with the real BSMK Core (1.0.16 or newer). Copies of Core and other loaders can't run it, so what you get is always the real thing. Nothing else changed\nNeeds framework 1.0.16",
-      "minCoreVersion": "1.0.16",
+      "changelog": "- Map redone: real block colours, hill shading and height lines, so you can read the land at a glance\n- Full screen world map with a side panel: view, key with filters, zoom, scale ruler, and pointing shows X Y Z and the block\n- Cave view shows tunnels underground. Switches on its own (rock over your head, below a set height, or never) or use the Auto / Surface / Cave buttons\n- Names button for NPCs, creatures, players and waypoints, on both maps\n- Scroll zooms toward the mouse and glides, from 32 to 2048 blocks. Dragging is smooth\n- New minimap frame, no more edge shake, and + / - no longer grabs the mouse\n- Biome name switch, chunk grid, soft explored edges and Save map picture\n- Click to teleport switch (single player only)\nNeeds framework 1.0.17",
+      "minCoreVersion": "1.0.17",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-13T20:43:43.0000000Z",
+      "updatedUtc": "2026-11-20T10:09:55.0000000Z",
       "countFrom": {
         "1.0.10.0": 6,
         "1.0.9.0": 3,
@@ -244,7 +244,10 @@
         "1.0.1.0": 4,
         "1.0.0.0": 6
       },
-      "authorNum": 294251978
+      "authorNum": 294251978,
+      "changelogs": {
+        "1.0.12.0": "- Map redone: real block colours, hill shading and height lines, so you can read the land at a glance\n- Full screen world map with a side panel: view, key with filters, zoom, scale ruler, and pointing shows X Y Z and the block\n- Cave view shows tunnels underground. Switches on its own (rock over your head, below a set height, or never) or use the Auto / Surface / Cave buttons\n- Names button for NPCs, creatures, players and waypoints, on both maps\n- Scroll zooms toward the mouse and glides, from 32 to 2048 blocks. Dragging is smooth\n- New minimap frame, no more edge shake, and + / - no longer grabs the mouse\n- Biome name switch, chunk grid, soft explored edges and Save map picture\n- Click to teleport switch (single player only)"
+      }
     },
     {
       "id": "1mr1c1.npcmenu",
@@ -424,7 +427,7 @@
       "name": "Soul Tools",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.4.0",
+      "version": "1.0.5.0",
       "summary": "Spawners spawn on every click and the soul catcher locks on from any distance.",
       "description": "Two fixes for things that feel random in the base game.\n\nSure-fire spawners: left click a spawner and it spawns one creature, every single click. Mob caps, a crowd around it or a shaky mouse no longer eat your clicks. The spawner's own timer keeps running like normal, this only adds the ones you ask for.\n\nLock-on soul catcher: aim at a creature and click once. The catch locks on and keeps charging by itself, at any range, even if you let go or walk off. Click again or put the staff away to stop. Mana works like normal.\n\nBoth parts have their own switch in the settings. Single player only.",
       "category": "Quality of Life",
@@ -439,9 +442,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.0.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.0.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.4.0/SoulTools.dll",
-      "size": 92672,
-      "sha256": "58DF68F0F0FE95D88FC411AD5D32DCF3A6FAADD090AF70BA20B2849DC900C127",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.soultools-v1.0.5.0/SoulTools.dll",
+      "size": 94720,
+      "sha256": "23DC7236BD4886C31F77087CA5897B9435E098D7F539AA99ED3677308681CA6F",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -459,19 +462,22 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Only runs with the real BSMK Core (1.0.16 or newer). Copies of Core and other loaders can't run it, so what you get is always the real thing. Nothing else changed\nNeeds framework 1.0.16",
-      "minCoreVersion": "1.0.16",
+      "changelog": "- Spawners work properly online too: they keep spawning their own creatures and use the server's spare spawner slots\nNeeds framework 1.0.17",
+      "minCoreVersion": "1.0.17",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-30T17:34:37.0000000Z",
-      "updatedUtc": "2026-11-13T20:43:43.0000000Z",
+      "updatedUtc": "2026-11-20T10:09:55.0000000Z",
       "countFrom": {
         "1.0.3.0": 6,
         "1.0.2.0": 6,
         "1.0.1.0": 6,
         "1.0.0.0": 6
       },
-      "authorNum": 294251978
+      "authorNum": 294251978,
+      "changelogs": {
+        "1.0.5.0": "- Spawners work properly online too: they keep spawning their own creatures and use the server's spare spawner slots"
+      }
     },
     {
       "id": "1mr1c1.betterfishing",
@@ -805,7 +811,7 @@
       "name": "Equipment HUD",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.3.0",
+      "version": "1.0.4.0",
       "summary": "See your gear's durability and get real slots for ammo, torch, potions and food.",
       "description": "Shows your worn gear and its durability above the hotbar. It also adds real slots for ammo, a torch that lights without you holding it, health potions, mana potions and food.\n\nDrop any ammo on the ammo slot and it all stays inside, with a +1 or +2 on the slot showing how many other types are in there. Lift one out and the next comes up. Point at the slot with a window open to see what's inside: left click brings one to the front, right click sends it to your bag. The next ammo key only cycles what fits your weapon, and the slot swaps by itself when you change weapon.\n\nThere are keys for the torch and for changing ammo, and optional keys for using a potion or eating. Auto health potion, auto mana potion and auto food can each be switched on or off.\n\nEverything works on multiplayer servers too.",
       "category": "UI & HUD",
@@ -821,9 +827,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.0.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.0.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.3.0/EquipmentHud.dll",
-      "size": 65024,
-      "sha256": "D0CBC91A7257A17D9ECE07FFB786C5CA16A526415BE180A3F8180883B2D772A0",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.4.0/EquipmentHud.dll",
+      "size": 66048,
+      "sha256": "36741FBC506BBEA602EBB61D1DDF5498C41AC77F50DA8E14E31754C78A578198",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -841,18 +847,21 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Only runs with the real BSMK Core (1.0.16 or newer). Copies of Core and other loaders can't run it, so what you get is always the real thing. Nothing else changed\nNeeds framework 1.0.16",
-      "minCoreVersion": "1.0.16",
+      "changelog": "- Fixed: leaving a world and coming back could empty the HUD slots (torch, food, ammo, potions). Items already lost can't come back, sorry\nNeeds framework 1.0.17",
+      "minCoreVersion": "1.0.17",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-13T20:43:43.0000000Z",
+      "updatedUtc": "2026-11-20T10:09:55.0000000Z",
       "countFrom": {
         "1.0.2.0": 6,
         "1.0.1.0": 6,
         "1.0.0.0": 3
       },
-      "authorNum": 294251978
+      "authorNum": 294251978,
+      "changelogs": {
+        "1.0.4.0": "- Fixed: leaving a world and coming back could empty the HUD slots (torch, food, ammo, potions). Items already lost can't come back, sorry"
+      }
     },
     {
       "id": "1mr1c1.gravestone",
@@ -1427,7 +1436,7 @@
       "name": "Craft From Inventory",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.8.0",
+      "version": "1.0.9.0",
       "summary": "A recipe panel by the crafting grid that pulls from your bag and nearby chests.",
       "description": "Crafting without the back-and-forth. Craft From Inventory puts a recipe panel right next to your crafting grid, in your inventory and at the crafting table. Find what you want by category or search, click it, and the ingredients drop straight into the grid. It pulls from your bag and from any chests nearby, so you don't have to go fetch stuff first.\n\nWant a lot? Ctrl-click loads 10 crafts, Shift-click loads 100, and Alt-click adds one more each time with a running count. The same keys work on the crafted item to make that many in one go. Changed your mind? Clear sends everything back to the chest it came from.\n\nShort on parts? If you have the materials for them it offers to make them first, as many as the materials stretch to. Furnace recipes still need a furnace, so those aren't offered.\n\nQuick stack is in too. Press one key and everything in your bag goes onto matching stacks in nearby chests, without opening them. Your hotbar and tools stay put.\n\nOnly shows recipes you've unlocked, so it won't spoil your progress. You can peek at locked ones if you want. Chest range is a slider from 4 to 64 blocks. Single player only.",
       "category": "Quality of Life",
@@ -1446,9 +1455,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot5.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.0.0/shot6.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.8.0/CraftFromInventory.dll",
-      "size": 117760,
-      "sha256": "B46584CD7AB0601D518BB5ADFDEB9F8C73E6F75E57A91C3DE5C5877A035565B4",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.craftfrominventory-v1.0.9.0/CraftFromInventory.dll",
+      "size": 118784,
+      "sha256": "CA7105EDE9A85190A82ADBA4786DE71E31640B504B3DDAF776CD0F359F9E4783",
       "downloads": 37,
       "rating": 0,
       "ratingCount": 0,
@@ -1466,12 +1475,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": true,
-      "changelog": "- Only runs with the real BSMK Core (1.0.16 or newer). Copies of Core and other loaders can't run it, so what you get is always the real thing. Nothing else changed\nNeeds framework 1.0.16",
-      "minCoreVersion": "1.0.16",
+      "changelog": "- Right-click a recipe, or an ingredient in the hover box, to see what else it's used in. Back takes you back\n- Show locked now shows every recipe, secret ones too, and the hover tells you how to unlock it\nNeeds framework 1.0.17",
+      "minCoreVersion": "1.0.17",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-29T21:47:29.7397570Z",
-      "updatedUtc": "2026-11-13T20:43:43.0000000Z",
+      "updatedUtc": "2026-11-20T10:09:55.0000000Z",
       "countFrom": {
         "1.0.7.0": 5,
         "1.0.6.0": 4,
@@ -1482,7 +1491,10 @@
         "1.0.1.0": 6,
         "1.0.0.0": 3
       },
-      "authorNum": 294251978
+      "authorNum": 294251978,
+      "changelogs": {
+        "1.0.9.0": "- Right-click a recipe, or an ingredient in the hover box, to see what else it's used in. Back takes you back\n- Show locked now shows every recipe, secret ones too, and the hover tells you how to unlock it"
+      }
     },
     {
       "id": "bluedemonx911x.betterinventory",
@@ -1811,7 +1823,7 @@
       "name": "Multiplayer Fixes",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.6.0",
+      "version": "1.0.7.0",
       "summary": "Fair spawns, no doubled NPCs and unfrozen creatures online.",
       "description": "Fixes for the game's own online play. Nothing changes in single player.\n\nFair spawns\nEvery player's game spawns creatures around itself, so friends standing together used to get double and creatures piled up. Now a spot belongs to whoever is nearest, and only their game spawns there. Nothing spawns within 24 blocks of any player, so creatures don't pop in right beside you.\n\nNo doubled NPCs\nNPCs from boats, houses and camps only spawn from the nearest player's game, and there's a limit on how many of the same NPC or peasant can be around (2 to start, you can change it).\n\nUnfreeze creatures\nA creature that stops getting updates is fetched fresh from the server instead of standing frozen. Creatures the server hands you but your game never got are cleared, so they don't freeze for your friends. Creatures keep walking when they pass from one player's game to another, and dead bodies left lying around get cleared.\n\nWater fills holes\nOnline the game switches water off, so digging next to the sea leaves a hole of air in it. On a Block Story Server the hole fills back in like single player.\n\nEach part can be switched off on its own. Everyone on the server should have it for it to work best.",
       "category": "Quality of Life",
@@ -1823,9 +1835,9 @@
       "screenshots": [
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.0.0/shot1.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.6.0/MultiplayerFixes.dll",
-      "size": 43008,
-      "sha256": "3CBA6C7F992A3B3CC8F553421B21B397B637123B49D96A873A7EDE163A6BB806",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.7.0/MultiplayerFixes.dll",
+      "size": 39424,
+      "sha256": "B781C8A7BE20BB2742E09EC3B1D5182961FC00C127306F4A62DD44A1E70CD504",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1843,17 +1855,20 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Updated for the Nov 16 game update\n- Removed the server creature number fix, the game now uses the server's number itself\n- Removed the character save fix, the game now sends big characters in pieces so they don't get cut off\nNeeds framework 1.0.16",
-      "minCoreVersion": "1.0.16",
+      "changelog": "- Fixed: on a server almost no animals or mobs showed up, because creatures the server handed over early got cleared. That part is gone\nNeeds framework 1.0.17",
+      "minCoreVersion": "1.0.17",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-13T10:37:32.0000000Z",
-      "updatedUtc": "2026-11-16T11:09:40.0000000Z",
+      "updatedUtc": "2026-11-20T10:09:55.0000000Z",
       "countFrom": {
         "1.0.1.0": 6,
         "1.0.0.0": 4
       },
-      "authorNum": 294251978
+      "authorNum": 294251978,
+      "changelogs": {
+        "1.0.7.0": "- Fixed: on a server almost no animals or mobs showed up, because creatures the server handed over early got cleared. That part is gone"
+      }
     },
     {
       "id": "bluekitsunex777x.npcimprovements",
