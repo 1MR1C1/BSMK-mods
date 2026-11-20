@@ -650,7 +650,7 @@
       "name": "Better Guns",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.7.0",
+      "version": "1.0.8.0",
       "summary": "A bolt action rifle, an AM sniper with elemental rounds, new bullets and gun sliders.",
       "description": "Adds a bolt action rifle that hits as far as you can see and harder than the hand gun, with shots that go through 3 more enemies. Hold right click to look through the scope, and use the mouse wheel for 3 zoom levels.\n\nFour new bullets fit every gun that shoots Bullets:\n- Incendiary sets what it hits on fire for 4 seconds, harder guns burn harder\n- Hollow-Point does 50% more damage\n- Explosive makes a small blast on top of the bullet's damage, hurts nearby creatures and doesn't break blocks\n- Armour-Piercing goes through 2 more enemies\n\nPut a bullet in the ammo slot from the Equipment HUD mod to pick which one you shoot.\n\nSliders set damage, fire rate, range, spread and recoil. Each one starts at 1, the game's own value. Rockets no longer damage the world.\n\nAM Sniper: a late-game 20mm anti-materiel rifle with a 5-round magazine, deep zoom and a scope with day, night vision and heat view. Its rounds do the work: the AM Round hits hardest on one target and goes through up to 4 in a line, and six elemental rounds (Fire, Ice, Poison, Dark, Lightning, Life) each hit a whole area. Gun points make the bullet stronger, Magic points make the blast and healing stronger. Hover a round to see your own numbers.\n\nWorks on multiplayer servers too.",
       "category": "Gameplay",
@@ -666,9 +666,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/shot3.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/shot4.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.7.0/BetterGuns.dll",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.8.0/BetterGuns.dll",
       "size": 482816,
-      "sha256": "B59BB31EE0106ADE463C1B3EE1882A0DA28D9ABD1EDDE7924E474E5B5D78DEF2",
+      "sha256": "848E0DF1B396072B2AAD6B57A4BE8B31381EE98CA436627AFC0E0CA5F826AC2E",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -686,12 +686,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- NEW: AM Sniper, a late-game 20mm anti-materiel rifle. Built from the bolt action rifle (a full, unused one) plus late-game blocks. 5-round magazine, 10,000 shots, deep zoom, and a scope with day, night vision and heat view\n- NEW: 7 sniper rounds. AM Round is the single-target king and goes through up to 4 in a line. Fire, Ice, Poison, Dark, Lightning and Life rounds are area rounds, each with its own big effect\n- Elemental blasts get stronger with Magic points, the bullet with Gun points. Hover a round to see your own numbers and how many Magic points are still worth it\n- Life round heals you, your pets and other players by a share of their max health, wraps them in flowers, and wraps undead in thorns\n- Real magazine: a reload takes rounds out of your stuff, a reload key tops it up, rounds stay loaded when you put the gun away\n- Rifle recipe now uses 5 Gold Blocks instead of Electrite\n- The rifle and sniper cost in gems what their ingredients cost\n- Fixed: gun surfaces flickering\nNeeds framework 1.0.17",
+      "changelog": "- Fixed: a dropped rifle or sniper showed its wear (like 200) over it, now it's one gun\nNeeds framework 1.0.17",
       "minCoreVersion": "1.0.17",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-20T13:19:23.0000000Z",
+      "updatedUtc": "2026-11-20T13:43:48.0000000Z",
       "countFrom": {
         "1.0.5.0": 6,
         "1.0.4.0": 4,
@@ -702,7 +702,8 @@
       },
       "authorNum": 294251978,
       "changelogs": {
-        "1.0.7.0": "- NEW: AM Sniper, a late-game 20mm anti-materiel rifle. Built from the bolt action rifle (a full, unused one) plus late-game blocks. 5-round magazine, 10,000 shots, deep zoom, and a scope with day, night vision and heat view\n- NEW: 7 sniper rounds. AM Round is the single-target king and goes through up to 4 in a line. Fire, Ice, Poison, Dark, Lightning and Life rounds are area rounds, each with its own big effect\n- Elemental blasts get stronger with Magic points, the bullet with Gun points. Hover a round to see your own numbers and how many Magic points are still worth it\n- Life round heals you, your pets and other players by a share of their max health, wraps them in flowers, and wraps undead in thorns\n- Real magazine: a reload takes rounds out of your stuff, a reload key tops it up, rounds stay loaded when you put the gun away\n- Rifle recipe now uses 5 Gold Blocks instead of Electrite\n- The rifle and sniper cost in gems what their ingredients cost\n- Fixed: gun surfaces flickering"
+        "1.0.7.0": "- NEW: AM Sniper, a late-game 20mm anti-materiel rifle. Built from the bolt action rifle (a full, unused one) plus late-game blocks. 5-round magazine, 10,000 shots, deep zoom, and a scope with day, night vision and heat view\n- NEW: 7 sniper rounds. AM Round is the single-target king and goes through up to 4 in a line. Fire, Ice, Poison, Dark, Lightning and Life rounds are area rounds, each with its own big effect\n- Elemental blasts get stronger with Magic points, the bullet with Gun points. Hover a round to see your own numbers and how many Magic points are still worth it\n- Life round heals you, your pets and other players by a share of their max health, wraps them in flowers, and wraps undead in thorns\n- Real magazine: a reload takes rounds out of your stuff, a reload key tops it up, rounds stay loaded when you put the gun away\n- Rifle recipe now uses 5 Gold Blocks instead of Electrite\n- The rifle and sniper cost in gems what their ingredients cost\n- Fixed: gun surfaces flickering",
+        "1.0.8.0": "- Fixed: a dropped rifle or sniper showed its wear (like 200) over it, now it's one gun"
       }
     },
     {
