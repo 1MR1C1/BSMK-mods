@@ -1829,9 +1829,9 @@
       "name": "Multiplayer Fixes",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.8.0",
+      "version": "1.0.9.0",
       "summary": "Fair spawns, no doubled NPCs and unfrozen creatures online.",
-      "description": "Fixes for the game's own online play. Nothing changes in single player.\n\nFair spawns\nEvery player's game spawns creatures around itself, so friends standing together used to get double and creatures piled up. Now a spot belongs to whoever is nearest, and only their game spawns there. Nothing spawns within 24 blocks of any player, so creatures don't pop in right beside you.\n\nNo doubled NPCs\nNPCs from boats, houses and camps only spawn from the nearest player's game, and there's a limit on how many of the same NPC or peasant can be around (2 to start, you can change it).\n\nUnfreeze creatures\nA creature that stops getting updates is fetched fresh from the server instead of standing frozen. Creatures the server hands you but your game never got are cleared, so they don't freeze for your friends. Creatures keep walking when they pass from one player's game to another, and dead bodies left lying around get cleared.\n\nWater fills holes\nOnline the game switches water off, so digging next to the sea leaves a hole of air in it. On a Block Story Server the hole fills back in like single player.\n\nEach part can be switched off on its own. Everyone on the server should have it for it to work best.\n\nGems online\nOnline the game switches gems off. On a Block Story Server they work like single player: your count shows at the top, mining drops them and you can spend them. Any other server is left alone.",
+      "description": "Fixes for the game's own online play. Nothing changes in single player.\n\nFair spawns\nEvery player's game spawns creatures around itself, so friends standing together used to get double and creatures piled up. Now a spot belongs to whoever is nearest, and only their game spawns there. Nothing spawns within 24 blocks of any player, so creatures don't pop in right beside you.\n\nNo doubled NPCs\nNPCs from boats, houses and camps only spawn from the nearest player's game, and there's a limit on how many of the same NPC or peasant can be around (2 to start, you can change it).\n\nUnfreeze creatures\nA creature that stops getting updates is fetched fresh from the server instead of standing frozen. Creatures the server hands you but your game never got are cleared, so they don't freeze for your friends. Creatures keep walking when they pass from one player's game to another, and dead bodies left lying around get cleared.\n\nWater fills holes\nOnline the game switches water off, so digging next to the sea leaves a hole of air in it. On a Block Story Server the hole fills back in like single player.\n\nEach part can be switched off on its own. Everyone on the server should have it for it to work best.\n\nGems online\nOnline the game switches gems off. On a Block Story Server they work like single player: your count shows at the top, mining drops them and you can spend them. Each server keeps its own gems, apart from your single player ones. Any other server is left alone.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -1841,9 +1841,9 @@
       "screenshots": [
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.0.0/shot1.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.8.0/MultiplayerFixes.dll",
-      "size": 40448,
-      "sha256": "B91FD59BEBFFAA49B25D58F1D0B56823DADB0D001E091AD07ED2136A49887D06",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.9.0/MultiplayerFixes.dll",
+      "size": 41472,
+      "sha256": "52D2B6DD7DA6B155CDA7C93CE9E4A01FAB249FF4609EBCBB7D922EC8B564E897",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1861,12 +1861,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- New: gems work on Block Story Servers like single player. Shown at the top, dropped when mining, and you can spend them. Other servers are left alone\nNeeds framework 1.0.17",
+      "changelog": "- Fixed: online gems were your single player gems. Now each Block Story Server has its own gems, starting at 0, and your single player gems are left alone\nNeeds framework 1.0.17",
       "minCoreVersion": "1.0.17",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-13T10:37:32.0000000Z",
-      "updatedUtc": "2026-11-20T13:41:26.0000000Z",
+      "updatedUtc": "2026-11-20T14:21:36.0000000Z",
       "countFrom": {
         "1.0.1.0": 6,
         "1.0.0.0": 4
@@ -1874,7 +1874,8 @@
       "authorNum": 294251978,
       "changelogs": {
         "1.0.7.0": "- Fixed: on a server almost no animals or mobs showed up, because creatures the server handed over early got cleared. That part is gone",
-        "1.0.8.0": "- New: gems work on Block Story Servers like single player. Shown at the top, dropped when mining, and you can spend them. Other servers are left alone"
+        "1.0.8.0": "- New: gems work on Block Story Servers like single player. Shown at the top, dropped when mining, and you can spend them. Other servers are left alone",
+        "1.0.9.0": "- Fixed: online gems were your single player gems. Now each Block Story Server has its own gems, starting at 0, and your single player gems are left alone"
       }
     },
     {
