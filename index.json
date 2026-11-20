@@ -361,7 +361,7 @@
       "name": "Vein Miner",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.9.0",
+      "version": "1.0.10.0",
       "summary": "Break a whole ore vein in one hit.",
       "description": "Hit one block of ore and every connected block of the same kind breaks with it. Everything goes straight into your inventory, and you still get your XP and your normal drop chances for each block.\n\nIt isn't only for ore. Switch the dig shape to dig a pillar up or down, or cut a staircase up or down. Choose how many blocks a single hit can take and how deep the shapes go.\n\nYour tool wears per block like normal mining, or you can turn that off. Protect my tool stops it just before your pick breaks, so you never lose a good one halfway through a vein.\n\nPress the Vein Miner key to turn it on or off whenever you like.",
       "category": "Tools & Utility",
@@ -381,9 +381,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot6.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.0.0/shot7.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.9.0/VeinMiner.dll",
-      "size": 65024,
-      "sha256": "9FEC8D08DFEA4437909CD4DDA45DBD8A27AE32AF225E7CFD08F200911FC5CC88",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.veinminer-v1.0.10.0/VeinMiner.dll",
+      "size": 65536,
+      "sha256": "C8943968D5BBBEEADB025872E9F35494382307DF9E5BAB4AEB23790969AED5A0",
       "downloads": 0,
       "rating": 5,
       "ratingCount": 1,
@@ -401,12 +401,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Ores drop what they should (Cobalt, Devil Coal, Ruby and so on) instead of the ore block itself\nNeeds framework 1.0.16",
+      "changelog": "- Online on a Block Story Server with Multiplayer Fixes, the whole vein drops gems like single player, not just the first block\nNeeds framework 1.0.16",
       "minCoreVersion": "1.0.16",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-10-07T12:23:01.491020Z",
-      "updatedUtc": "2026-11-16T16:52:31.0000000Z",
+      "updatedUtc": "2026-11-20T13:41:26.0000000Z",
       "countFrom": {
         "1.0.7.0": 6,
         "1.0.6.0": 6,
@@ -419,7 +419,8 @@
       },
       "authorNum": 294251978,
       "changelogs": {
-        "1.0.9.0": "- Ores drop what they should (Cobalt, Devil Coal, Ruby and so on) instead of the ore block itself"
+        "1.0.9.0": "- Ores drop what they should (Cobalt, Devil Coal, Ruby and so on) instead of the ore block itself",
+        "1.0.10.0": "- Online on a Block Story Server with Multiplayer Fixes, the whole vein drops gems like single player, not just the first block"
       }
     },
     {
@@ -1827,9 +1828,9 @@
       "name": "Multiplayer Fixes",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.7.0",
+      "version": "1.0.8.0",
       "summary": "Fair spawns, no doubled NPCs and unfrozen creatures online.",
-      "description": "Fixes for the game's own online play. Nothing changes in single player.\n\nFair spawns\nEvery player's game spawns creatures around itself, so friends standing together used to get double and creatures piled up. Now a spot belongs to whoever is nearest, and only their game spawns there. Nothing spawns within 24 blocks of any player, so creatures don't pop in right beside you.\n\nNo doubled NPCs\nNPCs from boats, houses and camps only spawn from the nearest player's game, and there's a limit on how many of the same NPC or peasant can be around (2 to start, you can change it).\n\nUnfreeze creatures\nA creature that stops getting updates is fetched fresh from the server instead of standing frozen. Creatures the server hands you but your game never got are cleared, so they don't freeze for your friends. Creatures keep walking when they pass from one player's game to another, and dead bodies left lying around get cleared.\n\nWater fills holes\nOnline the game switches water off, so digging next to the sea leaves a hole of air in it. On a Block Story Server the hole fills back in like single player.\n\nEach part can be switched off on its own. Everyone on the server should have it for it to work best.",
+      "description": "Fixes for the game's own online play. Nothing changes in single player.\n\nFair spawns\nEvery player's game spawns creatures around itself, so friends standing together used to get double and creatures piled up. Now a spot belongs to whoever is nearest, and only their game spawns there. Nothing spawns within 24 blocks of any player, so creatures don't pop in right beside you.\n\nNo doubled NPCs\nNPCs from boats, houses and camps only spawn from the nearest player's game, and there's a limit on how many of the same NPC or peasant can be around (2 to start, you can change it).\n\nUnfreeze creatures\nA creature that stops getting updates is fetched fresh from the server instead of standing frozen. Creatures the server hands you but your game never got are cleared, so they don't freeze for your friends. Creatures keep walking when they pass from one player's game to another, and dead bodies left lying around get cleared.\n\nWater fills holes\nOnline the game switches water off, so digging next to the sea leaves a hole of air in it. On a Block Story Server the hole fills back in like single player.\n\nEach part can be switched off on its own. Everyone on the server should have it for it to work best.\n\nGems online\nOnline the game switches gems off. On a Block Story Server they work like single player: your count shows at the top, mining drops them and you can spend them. Any other server is left alone.",
       "category": "Quality of Life",
       "tags": [
         "Quality of Life",
@@ -1839,9 +1840,9 @@
       "screenshots": [
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.0.0/shot1.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.7.0/MultiplayerFixes.dll",
-      "size": 39424,
-      "sha256": "B781C8A7BE20BB2742E09EC3B1D5182961FC00C127306F4A62DD44A1E70CD504",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.multiplayerfixes-v1.0.8.0/MultiplayerFixes.dll",
+      "size": 40448,
+      "sha256": "B91FD59BEBFFAA49B25D58F1D0B56823DADB0D001E091AD07ED2136A49887D06",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1859,19 +1860,20 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Fixed: on a server almost no animals or mobs showed up, because creatures the server handed over early got cleared. That part is gone\nNeeds framework 1.0.17",
+      "changelog": "- New: gems work on Block Story Servers like single player. Shown at the top, dropped when mining, and you can spend them. Other servers are left alone\nNeeds framework 1.0.17",
       "minCoreVersion": "1.0.17",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-13T10:37:32.0000000Z",
-      "updatedUtc": "2026-11-20T10:09:55.0000000Z",
+      "updatedUtc": "2026-11-20T13:41:26.0000000Z",
       "countFrom": {
         "1.0.1.0": 6,
         "1.0.0.0": 4
       },
       "authorNum": 294251978,
       "changelogs": {
-        "1.0.7.0": "- Fixed: on a server almost no animals or mobs showed up, because creatures the server handed over early got cleared. That part is gone"
+        "1.0.7.0": "- Fixed: on a server almost no animals or mobs showed up, because creatures the server handed over early got cleared. That part is gone",
+        "1.0.8.0": "- New: gems work on Block Story Servers like single player. Shown at the top, dropped when mining, and you can spend them. Other servers are left alone"
       }
     },
     {
