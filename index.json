@@ -649,9 +649,9 @@
       "name": "Better Guns",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.6.0",
-      "summary": "A bolt action rifle, four new bullets and sliders for your guns.",
-      "description": "Adds a bolt action rifle that hits as far as you can see and harder than the hand gun, with shots that go through 3 more enemies. Hold right click to look through the scope, and use the mouse wheel for 3 zoom levels.\n\nFour new bullets fit every gun that shoots Bullets:\n- Incendiary sets what it hits on fire for 4 seconds, harder guns burn harder\n- Hollow-Point does 50% more damage\n- Explosive makes a small blast on top of the bullet's damage, hurts nearby creatures and doesn't break blocks\n- Armour-Piercing goes through 2 more enemies\n\nPut a bullet in the ammo slot from the Equipment HUD mod to pick which one you shoot.\n\nSliders set damage, fire rate, range, spread and recoil. Each one starts at 1, the game's own value. Rockets no longer damage the world.\n\nWorks on multiplayer servers too.",
+      "version": "1.0.7.0",
+      "summary": "A bolt action rifle, an AM sniper with elemental rounds, new bullets and gun sliders.",
+      "description": "Adds a bolt action rifle that hits as far as you can see and harder than the hand gun, with shots that go through 3 more enemies. Hold right click to look through the scope, and use the mouse wheel for 3 zoom levels.\n\nFour new bullets fit every gun that shoots Bullets:\n- Incendiary sets what it hits on fire for 4 seconds, harder guns burn harder\n- Hollow-Point does 50% more damage\n- Explosive makes a small blast on top of the bullet's damage, hurts nearby creatures and doesn't break blocks\n- Armour-Piercing goes through 2 more enemies\n\nPut a bullet in the ammo slot from the Equipment HUD mod to pick which one you shoot.\n\nSliders set damage, fire rate, range, spread and recoil. Each one starts at 1, the game's own value. Rockets no longer damage the world.\n\nAM Sniper: a late-game 20mm anti-materiel rifle with a 5-round magazine, deep zoom and a scope with day, night vision and heat view. Its rounds do the work: the AM Round hits hardest on one target and goes through up to 4 in a line, and six elemental rounds (Fire, Ice, Poison, Dark, Lightning, Life) each hit a whole area. Gun points make the bullet stronger, Magic points make the blast and healing stronger. Hover a round to see your own numbers.\n\nWorks on multiplayer servers too.",
       "category": "Gameplay",
       "tags": [
         "Gameplay",
@@ -665,9 +665,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/shot3.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.0.0/shot4.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.6.0/BetterGuns.dll",
-      "size": 180736,
-      "sha256": "1D3B769F15C49CB73F4090A2EA6D715010CBAC71DE37FB19A9B36AB27199C17B",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.betterguns-v1.0.7.0/BetterGuns.dll",
+      "size": 482816,
+      "sha256": "B59BB31EE0106ADE463C1B3EE1882A0DA28D9ABD1EDDE7924E474E5B5D78DEF2",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -685,12 +685,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Only runs with the real BSMK Core (1.0.16 or newer). Copies of Core and other loaders can't run it, so what you get is always the real thing. Nothing else changed\nNeeds framework 1.0.16",
-      "minCoreVersion": "1.0.16",
+      "changelog": "- NEW: AM Sniper, a late-game 20mm anti-materiel rifle. Built from the bolt action rifle (a full, unused one) plus late-game blocks. 5-round magazine, 10,000 shots, deep zoom, and a scope with day, night vision and heat view\n- NEW: 7 sniper rounds. AM Round is the single-target king and goes through up to 4 in a line. Fire, Ice, Poison, Dark, Lightning and Life rounds are area rounds, each with its own big effect\n- Elemental blasts get stronger with Magic points, the bullet with Gun points. Hover a round to see your own numbers and how many Magic points are still worth it\n- Life round heals you, your pets and other players by a share of their max health, wraps them in flowers, and wraps undead in thorns\n- Real magazine: a reload takes rounds out of your stuff, a reload key tops it up, rounds stay loaded when you put the gun away\n- Rifle recipe now uses 5 Gold Blocks instead of Electrite\n- The rifle and sniper cost in gems what their ingredients cost\n- Fixed: gun surfaces flickering\nNeeds framework 1.0.17",
+      "minCoreVersion": "1.0.17",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-13T20:43:43.0000000Z",
+      "updatedUtc": "2026-11-20T13:19:23.0000000Z",
       "countFrom": {
         "1.0.5.0": 6,
         "1.0.4.0": 4,
@@ -699,7 +699,10 @@
         "1.0.1.0": 6,
         "1.0.0.0": 3
       },
-      "authorNum": 294251978
+      "authorNum": 294251978,
+      "changelogs": {
+        "1.0.7.0": "- NEW: AM Sniper, a late-game 20mm anti-materiel rifle. Built from the bolt action rifle (a full, unused one) plus late-game blocks. 5-round magazine, 10,000 shots, deep zoom, and a scope with day, night vision and heat view\n- NEW: 7 sniper rounds. AM Round is the single-target king and goes through up to 4 in a line. Fire, Ice, Poison, Dark, Lightning and Life rounds are area rounds, each with its own big effect\n- Elemental blasts get stronger with Magic points, the bullet with Gun points. Hover a round to see your own numbers and how many Magic points are still worth it\n- Life round heals you, your pets and other players by a share of their max health, wraps them in flowers, and wraps undead in thorns\n- Real magazine: a reload takes rounds out of your stuff, a reload key tops it up, rounds stay loaded when you put the gun away\n- Rifle recipe now uses 5 Gold Blocks instead of Electrite\n- The rifle and sniper cost in gems what their ingredients cost\n- Fixed: gun surfaces flickering"
+      }
     },
     {
       "id": "1mr1c1.bettermagic",
@@ -811,7 +814,7 @@
       "name": "Equipment HUD",
       "author": "BSMK",
       "authorId": "1MR1C1",
-      "version": "1.0.4.0",
+      "version": "1.0.5.0",
       "summary": "See your gear's durability and get real slots for ammo, torch, potions and food.",
       "description": "Shows your worn gear and its durability above the hotbar. It also adds real slots for ammo, a torch that lights without you holding it, health potions, mana potions and food.\n\nDrop any ammo on the ammo slot and it all stays inside, with a +1 or +2 on the slot showing how many other types are in there. Lift one out and the next comes up. Point at the slot with a window open to see what's inside: left click brings one to the front, right click sends it to your bag. The next ammo key only cycles what fits your weapon, and the slot swaps by itself when you change weapon.\n\nThere are keys for the torch and for changing ammo, and optional keys for using a potion or eating. Auto health potion, auto mana potion and auto food can each be switched on or off.\n\nEverything works on multiplayer servers too.",
       "category": "UI & HUD",
@@ -827,9 +830,9 @@
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.0.0/shot2.png",
         "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.0.0/shot3.png"
       ],
-      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.4.0/EquipmentHud.dll",
-      "size": 66048,
-      "sha256": "36741FBC506BBEA602EBB61D1DDF5498C41AC77F50DA8E14E31754C78A578198",
+      "downloadUrl": "https://github.com/1MR1C1/BSMK-mods/releases/download/1mr1c1.equipmenthud-v1.0.5.0/EquipmentHud.dll",
+      "size": 66560,
+      "sha256": "56414A921DB7619891B16D59DE37435589F8EB369B46AB0A7A1B6C0AA660C3A2",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -847,12 +850,12 @@
       "flagged": false,
       "deprecated": false,
       "featured": false,
-      "changelog": "- Fixed: leaving a world and coming back could empty the HUD slots (torch, food, ammo, potions). Items already lost can't come back, sorry\nNeeds framework 1.0.17",
+      "changelog": "- The ammo slot takes Better Guns' sniper rounds and the sniper uses them from there first\nNeeds framework 1.0.17",
       "minCoreVersion": "1.0.17",
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-04T22:24:39.0000000Z",
-      "updatedUtc": "2026-11-20T10:09:55.0000000Z",
+      "updatedUtc": "2026-11-20T13:19:23.0000000Z",
       "countFrom": {
         "1.0.2.0": 6,
         "1.0.1.0": 6,
@@ -860,7 +863,8 @@
       },
       "authorNum": 294251978,
       "changelogs": {
-        "1.0.4.0": "- Fixed: leaving a world and coming back could empty the HUD slots (torch, food, ammo, potions). Items already lost can't come back, sorry"
+        "1.0.4.0": "- Fixed: leaving a world and coming back could empty the HUD slots (torch, food, ammo, potions). Items already lost can't come back, sorry",
+        "1.0.5.0": "- The ammo slot takes Better Guns' sniper rounds and the sniper uses them from there first"
       }
     },
     {
