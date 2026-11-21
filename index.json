@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedUtc": "2026-11-20T00:16:37.837Z",
+  "updatedUtc": "2026-11-21T02:25:54.416Z",
   "mods": [
     {
       "id": "1mr1c1.xray",
@@ -1563,7 +1563,7 @@
       "name": "Bigger Safebox",
       "author": "BlueKitsunex777x",
       "authorId": "BlueKitsunex777x",
-      "version": "1.1.0.0",
+      "version": "1.1.1.0",
       "summary": "Safeboxes get 6x6 slots",
       "description": "Safeboxes get 6x6 slots\nChanges from the main menu only\nBefore turning it off, take items out of the bottom slots: a safebox with something past slot 16 won't open without this mod",
       "category": "Single Player",
@@ -1579,9 +1579,9 @@
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-2.png",
         "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-listing/shot-20261111142302-3.png"
       ],
-      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.1.0.0/BiggerSafebox.dll",
-      "size": 27648,
-      "sha256": "B463C72FBA04037A72C9373126F2E1E16FA9FE2E49E6E96EDCC9C6CB7074B714",
+      "downloadUrl": "https://github.com/BlueKitsunex777x/BSMK-mods-uploads/releases/download/bluedemonx911x.biggersafebox-v1.1.1.0/BiggerSafebox.dll",
+      "size": 422912,
+      "sha256": "393B4A1825C9EB4718DC2B371E754A601921D35CAEDCD87A6201D9363B3AB7A4",
       "downloads": 0,
       "rating": 0,
       "ratingCount": 0,
@@ -1602,14 +1602,18 @@
       "conflicts": [],
       "capabilities": [],
       "createdUtc": "2026-11-10T12:25:45.8332217Z",
-      "updatedUtc": "2026-11-16T15:31:27.212Z",
-      "changelog": "- Only runs on the official BSMK Core",
+      "updatedUtc": "2026-11-21T02:25:54.416Z",
+      "changelog": "- Fixed: Icon not showing in the mod menu",
       "countFrom": {
         "1.0.1.0": 6,
         "1.0.0.0": 6,
-        "1.1.0.0": 0
+        "1.1.0.0": 0,
+        "1.1.1.0": 0
       },
-      "authorNum": 84632135
+      "authorNum": 84632135,
+      "changelogs": {
+        "1.1.1.0": "- Fixed: Icon not showing in the mod menu"
+      }
     },
     {
       "id": "bluedemonx911x.bigchest",
